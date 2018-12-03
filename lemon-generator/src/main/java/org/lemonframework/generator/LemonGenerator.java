@@ -59,6 +59,8 @@ public class LemonGenerator {
 
     private GeneratorContext initContext() {
         final GeneratorContext context = new GeneratorContext();
+        context.setDatabseConfig(databseConfig);
+        context.setProjectConfig(projectConfig);
         return context;
     }
 

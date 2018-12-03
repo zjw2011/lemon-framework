@@ -11,7 +11,7 @@
     <modules>
         <module>lemon-parent</module>
         <module>lemon-generator</module>
-        <module>lemon-framework-bom</module>
+        <module>lemon-dependencies</module>
     </modules>
 
 

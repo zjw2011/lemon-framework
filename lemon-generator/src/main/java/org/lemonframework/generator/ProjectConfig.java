@@ -13,6 +13,16 @@ public class ProjectConfig {
      */
     private String root;
 
+    /**
+     * 模块名.
+     */
+    private String module;
+
+    /**
+     * 包名.
+     */
+    private String packageName;
+
     public String getRoot() {
         return root;
     }

@@ -15,8 +15,7 @@ import org.apache.velocity.app.VelocityEngine;
 
 
 /**
- * Velocity工具类
- * Created by ZhangShuzheng on 2017/1/10.
+ * Velocity工具类.
  */
 public class VelocityUtil {
 
@@ -66,11 +65,10 @@ public class VelocityUtil {
      * @return
      */
     public static String getPath(String filePath) {
-        String path = "";
         if (StringUtils.isNotBlank(filePath)) {
-            path = filePath.substring(0, filePath.lastIndexOf("/") + 1);
+            return filePath.substring(0, filePath.lastIndexOf("/") + 1);
         }
-        return path;
+        return StringUtils.EMPTY;
     }
 
     /**
@@ -79,11 +77,10 @@ public class VelocityUtil {
      * @return
      */
     public static String getFile(String filePath) {
-        String file = "";
         if (StringUtils.isNotBlank(filePath)) {
-            file = filePath.substring(filePath.lastIndexOf("/") + 1);
+            return filePath.substring(filePath.lastIndexOf("/") + 1);
         }
-        return file;
+        return StringUtils.EMPTY;
     }
 
 }

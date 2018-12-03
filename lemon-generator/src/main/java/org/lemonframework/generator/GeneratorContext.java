@@ -11,7 +11,7 @@ package org.lemonframework.generator;
  * @author jiawei zhang
  * 2018/11/12 1:53 PM
  */
-class GeneratorContext {
+public class GeneratorContext {
 
     private DatabseConfig databseConfig;
 

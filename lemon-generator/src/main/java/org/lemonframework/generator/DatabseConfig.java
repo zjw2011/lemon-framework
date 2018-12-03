@@ -37,6 +37,11 @@ public class DatabseConfig {
      */
     private String database = "test";
 
+    /**
+     * 表前缀.
+     */
+    private String tablePrefix = "";
+
     public String getDriver() {
         return driver;
     }
@@ -75,5 +80,13 @@ public class DatabseConfig {
 
     public void setDatabase(String database) {
         this.database = database;
+    }
+
+    public String getTablePrefix() {
+        return tablePrefix;
+    }
+
+    public void setTablePrefix(String tablePrefix) {
+        this.tablePrefix = tablePrefix;
     }
 }

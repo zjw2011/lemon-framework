@@ -3,6 +3,7 @@ package org.lemonframework.generator.plugin;
 import java.util.List;
 import java.util.Properties;
 
+import org.apache.commons.lang3.RandomUtils;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.IntrospectedTable.TargetRuntime;
@@ -85,6 +86,7 @@ public class SerializablePlugin extends PluginAdapter {
             Field field = new Field();
             field.setFinal(true);
             field.setInitializationString("1L");
+
             field.setName("serialVersionUID");
             field.setStatic(true);
             field.setType(new FullyQualifiedJavaType("long"));

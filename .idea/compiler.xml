@@ -6,16 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lemon-core" />
         <module name="lemon-generator" />
-        <module name="lemon-parent" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lemon-bom" target="1.5" />
+      <module name="lemon-core" target="1.8" />
+      <module name="lemon-dependencies" target="1.5" />
+      <module name="lemon-dependencies-bom" target="1.5" />
       <module name="lemon-framework" target="1.5" />
       <module name="lemon-framework-bom" target="1.5" />
-      <module name="lemon-generator" target="1.5" />
-      <module name="lemon-parent" target="1.5" />
+      <module name="lemon-generator" target="1.8" />
+      <module name="lemon-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
