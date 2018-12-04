@@ -2,6 +2,7 @@ package org.lemonframework.generator;
 
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.lemonframework.generator.util.GeneratorUtil;
 
 /**
  * 代码自动生成.
@@ -39,6 +40,8 @@ public class LemonGenerator {
         }
 
         final GeneratorContext context = initContext();
+
+        GeneratorUtil.generate(context);
     }
 
     private boolean checkDatabaseConfig() {

@@ -1,7 +1,7 @@
 package org.lemonframework.generator;
 
-import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
 
 /**
  * desc.
@@ -10,12 +10,25 @@ import java.io.IOException;
  * 2018/11/30 10:53 AM
  */
 public class Test {
+
+    //-Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector
     public static void main(String[] args) throws IOException {
-        // 参数为空
-        File directory = new File("");
-        String courseFile = directory.getCanonicalPath();
-        System.out.println(courseFile);
-        //final String s = StringEscapeUtils.escapeXml("&sdsds<>");
-//        System.out.println(s);
+
+//        final Map<String, Object> bindingMap = new HashMap<>();
+//        bindingMap.put("name", "aa");
+//        Engine engine = TemplateUtil.createEngine(new TemplateConfig("", TemplateConfig.ResourceMode.CLASSPATH));
+//        Template template = engine.getTemplate("template/aa.vm");
+//        File outputFile = new File("test.txt");
+//        template.render(bindingMap, outputFile);
+//        System.out.println();
+
+        final Charset charset = Charset.forName("UTF-8");
+        System.out.println(charset);
+        final Charset charset2 = Charset.forName("utf-8");
+        System.out.println(charset2);
+        final Charset charset3 = Charset.forName("utf8");
+        System.out.println(charset3);
+        final Charset charset4 = Charset.forName("UTF8");
+        System.out.println(charset4);
     }
 }
