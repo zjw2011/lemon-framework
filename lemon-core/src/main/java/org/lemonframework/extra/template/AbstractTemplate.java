@@ -9,7 +9,7 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.IoUtil;
 
 /**
- * 抽象模板，提供将模板融合后写出到文件、返回字符串等方法
+ * 抽象模板，提供将模板融合后写出到文件、返回字符串等方法.
  * 
  * @author looly
  *

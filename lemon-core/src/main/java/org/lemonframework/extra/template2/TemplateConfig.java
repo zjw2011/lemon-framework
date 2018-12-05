@@ -20,7 +20,7 @@ public class TemplateConfig implements Serializable {
     private Charset charset;
 
     /**
-     * 配置文件的路径，如果ClassPath或者WebRoot模式，则表示相对路径.
+     * 文件的路径，如果ClassPath或者WebRoot模式，则表示相对路径.
      */
     private String path;
 

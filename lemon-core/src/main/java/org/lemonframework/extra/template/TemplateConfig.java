@@ -25,7 +25,7 @@ public class TemplateConfig implements Serializable {
 	 * 默认构造，使用UTF8编码，默认从ClassPath获取模板
 	 */
 	public TemplateConfig() {
-		this((String)null);
+		this(null);
 	}
 	
 	/**

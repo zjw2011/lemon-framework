@@ -31,6 +31,8 @@
         <freemarker.version>2.3.28</freemarker.version>
         <enjoy.version>3.5</enjoy.version>
         <beetl.version>2.9.6</beetl.version>
+        <junit.version>4.12</junit.version>
+        <assertj-core.version>3.11.1</assertj-core.version>
 
         <lemon.core.version>0.0.1-SNAPSHOT</lemon.core.version>
     </properties>
@@ -162,6 +164,18 @@
                 <groupId>org.lemonframework</groupId>
                 <artifactId>lemon-core</artifactId>
                 <version>${lemon.core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj-core.version}</version>
             </dependency>
 
         </dependencies>

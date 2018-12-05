@@ -38,18 +38,18 @@ public class EngineFactory {
 	 * @return {@link Engine}
 	 */
 	private static Engine doCreate(TemplateConfig config) {
+        try {
+            return new VelocityEngine(config);
+        } catch (NoClassDefFoundError e) {
+            // ignore
+        }
+        try {
+            return new FreemarkerEngine(config);
+        } catch (NoClassDefFoundError e) {
+            // ignore
+        }
 		try {
 			return new BeetlEngine(config);
-		} catch (NoClassDefFoundError e) {
-			// ignore
-		}
-		try {
-			return new FreemarkerEngine(config);
-		} catch (NoClassDefFoundError e) {
-			// ignore
-		}
-		try {
-			return new VelocityEngine(config);
 		} catch (NoClassDefFoundError e) {
 			// ignore
 		}
