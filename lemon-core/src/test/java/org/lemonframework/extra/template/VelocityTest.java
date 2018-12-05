@@ -8,7 +8,7 @@ import java.util.Map;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.resource.ResourceUtil;
 import org.assertj.core.api.Assertions;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.lemonframework.extra.template.engine.velocity.VelocityEngine;
 
@@ -20,21 +20,23 @@ import org.lemonframework.extra.template.engine.velocity.VelocityEngine;
  */
 public class VelocityTest {
 
-    @Before
-    public void setup() {
+    private static String resourcesRoot;
 
+    @BeforeClass
+    public static void setup() {
+        final String dir = ResourceUtil.getResource("").getPath();
+        resourcesRoot = dir.substring(0, dir.indexOf("/target/")) + "/src/test/resources/";
     }
 
     @Test
     public void writeFileByClasspathTest() {
-        final String dir = ResourceUtil.getResource("").getPath();
         final TemplateConfig config = new TemplateConfig("", TemplateConfig.ResourceMode.CLASSPATH);
         final Engine engine = new VelocityEngine(config);
         final Template template = engine.getTemplate("template/velocity_test.vm");
         final Map<String, Object> bindingMap = new HashMap<>();
         final String name = "zhangsan";
         bindingMap.put("name", name);
-        final String fileName = dir + "template/velocity_test_auto_classpath.vm";
+        final String fileName = this.resourcesRoot + "template/velocity_test_auto_classpath.vm";
         final File outFile = new File(fileName);
         template.render(bindingMap, outFile);
 
@@ -52,14 +54,13 @@ public class VelocityTest {
 
     @Test
     public void writeFileByFileTest() {
-        final String dir = ResourceUtil.getResource("").getPath();
-        final TemplateConfig config = new TemplateConfig(dir, TemplateConfig.ResourceMode.FILE);
+        final TemplateConfig config = new TemplateConfig(this.resourcesRoot, TemplateConfig.ResourceMode.FILE);
         final Engine engine = new VelocityEngine(config);
         final Template template = engine.getTemplate("template/velocity_test.vm");
         final Map<String, Object> bindingMap = new HashMap<>();
         final String name = "lisi";
         bindingMap.put("name", name);
-        final String fileName = dir + "template/velocity_test_auto_file.vm";
+        final String fileName = this.resourcesRoot + "template/velocity_test_auto_file.vm";
         final File outFile = new File(fileName);
         template.render(bindingMap, outFile);
 
@@ -70,6 +71,63 @@ public class VelocityTest {
             final int nameStart = strings.get(0).indexOf(":");
             if (nameStart >= 0) {
                 targetName = strings.get(0).substring(nameStart + 1);
+            }
+        }
+        Assertions.assertThat(name).isEqualTo(targetName);
+    }
+
+    @Test
+    public void buildStringByClasspath() {
+        final TemplateConfig config = new TemplateConfig("", TemplateConfig.ResourceMode.CLASSPATH);
+        final Engine engine = new VelocityEngine(config);
+        final Template template = engine.getTemplate("template/velocity_test.vm");
+        final Map<String, Object> bindingMap = new HashMap<>();
+        final String name = "wangwu";
+        bindingMap.put("name", name);
+        final String newName = template.render(bindingMap);
+        String targetName = "";
+        if (newName != null) {
+            final int nameStart = newName.indexOf(":");
+            if (nameStart >= 0) {
+                targetName = newName.substring(nameStart + 1);
+            }
+        }
+        Assertions.assertThat(name).isEqualTo(targetName);
+    }
+
+    @Test
+    public void buildStringByString() {
+        final TemplateConfig config = new TemplateConfig("", TemplateConfig.ResourceMode.STRING);
+        final Engine engine = new VelocityEngine(config);
+        final Template template = engine.getTemplate("测试,hello:${name}");
+        final Map<String, Object> bindingMap = new HashMap<>();
+        final String name = "zhaoliu";
+        bindingMap.put("name", name);
+        final String newName = template.render(bindingMap);
+        String targetName = "";
+        if (newName != null) {
+            final int nameStart = newName.indexOf(":");
+            if (nameStart >= 0) {
+                targetName = newName.substring(nameStart + 1);
+            }
+        }
+        Assertions.assertThat(name).isEqualTo(targetName);
+    }
+
+    @Test
+    public void buildStringByDefault() {
+        final TemplateConfig config = new TemplateConfig();
+        final Engine engine = new VelocityEngine(config);
+        final Template template = engine.getTemplate("测试,hello:${name}");
+        final Map<String, Object> bindingMap = new HashMap<>();
+        final String name = "zhaoliu";
+        bindingMap.put("name", name);
+        final String newName = template.render(bindingMap);
+        String targetName = "";
+        if (newName != null) {
+            final int nameStart = newName.indexOf(":");
+            if (nameStart >= 0) {
+                targetName = newName.substring(nameStart + 1);
             }
         }
         Assertions.assertThat(name).isEqualTo(targetName);

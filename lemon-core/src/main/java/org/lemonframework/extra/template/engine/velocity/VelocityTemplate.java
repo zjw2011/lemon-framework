@@ -3,7 +3,6 @@ package org.lemonframework.extra.template.engine.velocity;
 import java.io.OutputStream;
 import java.io.Serializable;
 import java.io.Writer;
-import java.nio.charset.Charset;
 import java.util.Map;
 
 import cn.hutool.core.io.IoUtil;
@@ -21,8 +20,6 @@ public class VelocityTemplate extends AbstractTemplate implements Serializable {
 
 	private org.apache.velocity.Template rawTemplate;
 
-    private Charset charset;
-
 	/**
 	 * 包装Velocity模板
 	 * 
@@ -30,7 +27,7 @@ public class VelocityTemplate extends AbstractTemplate implements Serializable {
 	 * @return {@link VelocityTemplate}
 	 */
 	public static VelocityTemplate wrap(org.apache.velocity.Template template) {
-		return (null == template) ? null : new VelocityTemplate(template);
+	    return (null == template) ? null : new VelocityTemplate(template);
 	}
 	
 	/**
