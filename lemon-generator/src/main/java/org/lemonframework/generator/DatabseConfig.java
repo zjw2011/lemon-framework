@@ -1,5 +1,7 @@
 package org.lemonframework.generator;
 
+import java.util.Map;
+
 /**
  * 数据库配置.
  *  1) 驱动
@@ -41,6 +43,16 @@ public class DatabseConfig {
      * 表前缀.
      */
     private String tablePrefix = "";
+
+    /**
+     * 行版本号.
+     */
+    private boolean includeVersion = false;
+
+    /**
+     * 需要生成ID的表.
+     */
+    private Map<String, Object> lastInsertIdTables;
 
     public String getDriver() {
         return driver;
@@ -88,5 +100,21 @@ public class DatabseConfig {
 
     public void setTablePrefix(String tablePrefix) {
         this.tablePrefix = tablePrefix;
+    }
+
+    public Map<String, Object> getLastInsertIdTables() {
+        return lastInsertIdTables;
+    }
+
+    public void setLastInsertIdTables(Map<String, Object> lastInsertIdTables) {
+        this.lastInsertIdTables = lastInsertIdTables;
+    }
+
+    public boolean isIncludeVersion() {
+        return includeVersion;
+    }
+
+    public void setIncludeVersion(boolean includeVersion) {
+        this.includeVersion = includeVersion;
     }
 }

@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-core/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-generator-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-demo-generator/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -5,15 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.lemonframework</groupId>
-    <artifactId>lemon-framework</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>lemon-demo-generator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>lemon-dependencies</module>
-        <module>lemon-parent</module>
-        <module>lemon-core</module>
-        <module>lemon-generator</module>
-    </modules>
+    <description>代码自动生成的DEMO</description>
 
-
+    
 </project>

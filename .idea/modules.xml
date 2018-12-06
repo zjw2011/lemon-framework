@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lemon-core/lemon-core.iml" filepath="$PROJECT_DIR$/lemon-core/lemon-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-demo-generator/lemon-demo-generator.iml" filepath="$PROJECT_DIR$/lemon-demo-generator/lemon-demo-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-dependencies/lemon-dependencies.iml" filepath="$PROJECT_DIR$/lemon-dependencies/lemon-dependencies.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-framework.iml" filepath="$PROJECT_DIR$/lemon-framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-generator/lemon-generator.iml" filepath="$PROJECT_DIR$/lemon-generator/lemon-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-generator-sample/lemon-generator-sample.iml" filepath="$PROJECT_DIR$/lemon-generator-sample/lemon-generator-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-parent/lemon-parent.iml" filepath="$PROJECT_DIR$/lemon-parent/lemon-parent.iml" />
     </modules>
   </component>

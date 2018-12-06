@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859a11e7-c73e-4135-9ace-cc3a867e3ffc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_3_11.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityTemplate.java" afterPath="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityTemplate.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Stub.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Stub.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/resources/generatorConfig1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/resources/template/aa.vm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/lemon-generator.iml" afterPath="$PROJECT_DIR$/lemon-generator/lemon-generator.iml" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/pom.xml" afterPath="$PROJECT_DIR$/lemon-generator/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/GeneratorConfig.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/GeneratorConfig.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/ProjectConfig.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/ProjectConfig.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Stub.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,6 +32,8 @@
     <ignored path="$PROJECT_DIR$/lemon-core/target/" />
     <ignored path="$PROJECT_DIR$/lemon-dependencies-bom/target/" />
     <ignored path="$PROJECT_DIR$/lemon-dependencies/target/" />
+    <ignored path="$PROJECT_DIR$/lemon-generator-sample/target/" />
+    <ignored path="$PROJECT_DIR$/lemon-demo-generator/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,21 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DatabseConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GeneratorUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+            <state relative-caret-position="1924">
+              <caret line="114" column="17" lean-forward="false" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,18 +65,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stub.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Stub.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generatorConfig.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/resources/template/generatorConfig.vm">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -79,65 +85,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VelocityEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityEngine.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-generator/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-394">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="190">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VelocityTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityTemplate.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+            <state relative-caret-position="1520">
+              <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lemon-demo-generator/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-parent/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-335">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-generator-sample/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SerializablePlugin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/plugin/SerializablePlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabseConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1225">
+              <caret line="112" column="39" lean-forward="false" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="39" />
               <folding>
-                <element signature="e#971#972#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1716#1717#0" expanded="true" />
+                <element signature="e#1762#1763#0" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="e#2080#2081#0" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#2193#2194#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TemplateConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/TemplateConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2188">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VelocityEngine.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/velocity/velocity/1.7/velocity-1.7-sources.jar!/org/apache/velocity/app/VelocityEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="64" column="11" lean-forward="false" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="velocity.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/resources/velocity.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -204,23 +225,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/plugin/SerializablePlugin.java" />
-        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java" />
-        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/ProjectConfig.java" />
-        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/GeneratorContext.java" />
-        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/lemon-framework-bom/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/core/util/CharsetUtil.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/core/io/FileUtil.java" />
         <option value="$PROJECT_DIR$/lemon-dependencies-bom/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-parent/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lemon-generator/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java" />
         <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/VelocityUtil.java" />
-        <option value="$PROJECT_DIR$/lemon-generator/pom.xml" />
-        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java" />
         <option value="$PROJECT_DIR$/lemon-generator/src/main/resources/velocity.properties" />
         <option value="$PROJECT_DIR$/lemon-generator/src/main/resources/template/aa.vm" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/Engine.java" />
@@ -237,7 +248,6 @@
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template2/TemplateConfig.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/EngineFactory.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/test/resources/template/velocity_test.vm" />
-        <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityEngine.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/test/java/org/lemonframework/extra/template/VelocityTest.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/commons/ApacheCommonsLog.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/commons/ApacheCommonsLog4JLog.java" />
@@ -253,8 +263,19 @@
         <option value="$PROJECT_DIR$/lemon-core/src/test/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/lemon-core/src/test/java/org/lemonframework/log/Log4j2Test.java" />
         <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Stub.java" />
-        <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityTemplate.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/ProjectConfig.java" />
+        <option value="$PROJECT_DIR$/lemon-generator-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityTemplate.java" />
+        <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityEngine.java" />
+        <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/StaticLog.java" />
+        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/GeneratorConfig.java" />
+        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java" />
+        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java" />
+        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java" />
+        <option value="$PROJECT_DIR$/lemon-demo-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-generator/pom.xml" />
       </list>
     </option>
   </component>
@@ -381,7 +402,62 @@
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-demo-generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-dependencies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-parent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -500,6 +576,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -527,12 +604,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Log4j2Test">
+  <component name="RunManager" selected="Application.LemonGenerator">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="LemonGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.lemonframework.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.lemonframework.generator.LemonGenerator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lemon-generator" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -598,7 +694,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VelocityTest.writeFileByString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VelocityTest.writeFileByClasspathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.lemonframework.extra.template.*" />
@@ -610,32 +706,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.lemonframework.extra.template" />
       <option name="MAIN_CLASS_NAME" value="org.lemonframework.extra.template.VelocityTest" />
-      <option name="METHOD_NAME" value="writeFileByString" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="VelocityTest.writeString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.lemonframework.extra.template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lemon-core" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.lemonframework.extra.template" />
-      <option name="MAIN_CLASS_NAME" value="org.lemonframework.extra.template.VelocityTest" />
-      <option name="METHOD_NAME" value="writeString" />
+      <option name="METHOD_NAME" value="writeFileByClasspathTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -734,19 +805,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeFileByString" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeString" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeStringByString" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VelocityTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeStringByString" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VelocityTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LemonGenerator" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeFileByClasspathTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VelocityTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeStringByString" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeString" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeFileByString" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LemonGenerator" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeFileByClasspathTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VelocityTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeStringByString" />
       </list>
     </recent_temporary>
   </component>
@@ -768,7 +839,7 @@
       <workItem from="1542161091402" duration="4880000" />
       <workItem from="1543543354782" duration="22663000" />
       <workItem from="1543818068694" duration="25338000" />
-      <workItem from="1543916338428" duration="20572000" />
+      <workItem from="1543916338428" duration="29746000" />
     </task>
     <servers />
   </component>
@@ -788,24 +859,24 @@
     <history-entry file="Log4j2Test - 2018.12.05 at 17h 12m 18s.xml">
       <configuration name="Log4j2Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VelocityTest - 2018.12.05 at 14h 35m 35s.xml">
-      <configuration name="VelocityTest" configurationId="JUnit" />
+    <history-entry file="VelocityTest_writeFileByClasspathTest - 2018.12.06 at 15h 32m 42s.xml">
+      <configuration name="VelocityTest.writeFileByClasspathTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VelocityTest - 2018.12.05 at 14h 36m 38s.xml">
-      <configuration name="VelocityTest" configurationId="JUnit" />
+    <history-entry file="VelocityTest_writeFileByClasspathTest - 2018.12.06 at 15h 32m 59s.xml">
+      <configuration name="VelocityTest.writeFileByClasspathTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VelocityTest - 2018.12.05 at 14h 37m 37s.xml">
-      <configuration name="VelocityTest" configurationId="JUnit" />
+    <history-entry file="VelocityTest_writeFileByClasspathTest - 2018.12.06 at 15h 33m 52s.xml">
+      <configuration name="VelocityTest.writeFileByClasspathTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VelocityTest - 2018.12.05 at 14h 39m 23s.xml">
-      <configuration name="VelocityTest" configurationId="JUnit" />
+    <history-entry file="VelocityTest_writeFileByClasspathTest - 2018.12.06 at 15h 39m 47s.xml">
+      <configuration name="VelocityTest.writeFileByClasspathTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VelocityTest_writeStringByString - 2018.12.05 at 14h 33m 44s.xml">
-      <configuration name="VelocityTest.writeStringByString" configurationId="JUnit" />
+    <history-entry file="VelocityTest_writeFileByClasspathTest - 2018.12.06 at 16h 03m 19s.xml">
+      <configuration name="VelocityTest.writeFileByClasspathTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76175000" />
+    <option name="totallyTimeSpent" value="85349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -819,13 +890,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38109306" sideWeight="0.50651467" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42915308" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.081240766" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12703101" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.495114" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2747415" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24348535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23615634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -833,7 +904,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.057607092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124076806" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -930,229 +1001,11 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/AbstractLocationAwareLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/AbstractLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/log/dialect/tinylog/TinyLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="60" column="51" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/tinylog/TinyLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-811">
-          <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/log/dialect/tinylog/TinyLogFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/log/dialect/slf4j/Slf4jLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/log4j/Log4jLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/jdk/JdkLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="192" column="20" lean-forward="false" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/console/ConsoleLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1975">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/log/dialect/console/ConsoleLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="151" column="12" lean-forward="false" selection-start-line="151" selection-start-column="12" selection-end-line="155" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/log/dialect/jboss/JbossLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1235">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/jboss/JbossLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/commons/ApacheCommonsLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/text/StrFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/util/StrUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="2038" column="31" lean-forward="false" selection-start-line="2038" selection-start-column="31" selection-end-line="2038" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/level/InfoLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/level/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/level/DebugLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar!/org/apache/logging/log4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="422" column="12" lean-forward="false" selection-start-line="422" selection-start-column="12" selection-end-line="422" selection-end-column="12" />
-          <folding>
-            <marker date="1541904286218" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1541904286218" expanded="false" signature="148:400" ph="..." />
-            <marker date="1541904286218" expanded="true" signature="4051:4069" ph="/**...*/" />
-            <marker date="1541904286218" expanded="true" signature="7677:7695" ph="/**...*/" />
-            <marker date="1541904286218" expanded="true" signature="7734:7752" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1-sources.jar!/org/apache/logging/log4j/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1-sources.jar!/org/apache/logging/log4j/LogManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="646" column="25" lean-forward="false" selection-start-line="646" selection-start-column="25" selection-end-line="646" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/ibeetl/beetl/2.9.6/beetl-2.9.6.jar!/org/beetl/core/om/GeneralGetMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/log4j2/Log4j2LogFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#486#487#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/slf4j/Slf4jLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1193,22 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/test/java/org/lemonframework/extra/template/VelocityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1384">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-core/src/test/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -1241,33 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/GlobalLogFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/LogFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding>
-            <element signature="e#2513#2514#0" expanded="false" />
-            <element signature="e#2549#2550#0" expanded="false" />
-            <element signature="e#3353#3354#0" expanded="false" />
-            <element signature="e#3399#3400#0" expanded="false" />
-            <element signature="e#3503#3504#0" expanded="false" />
-            <element signature="e#3552#3553#0" expanded="false" />
-            <element signature="e#3660#3661#0" expanded="false" />
-            <element signature="e#3710#3711#0" expanded="false" />
-            <element signature="e#3769#3770#0" expanded="false" />
-            <element signature="e#3816#3817#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-core/src/test/java/org/lemonframework/log/Log4j2Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1275,14 +1085,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,36 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/resources/template/generatorConfig.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Stub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-394">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1360,14 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/IoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="334" column="37" lean-forward="false" selection-start-line="334" selection-start-column="37" selection-end-line="334" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/TemplateConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2188">
@@ -1376,21 +1144,329 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityTemplate.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        <state relative-caret-position="298">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-518">
+          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1-sources.jar!/org/apache/commons/lang3/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="339" column="26" lean-forward="false" selection-start-line="339" selection-start-column="26" selection-end-line="339" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/resource/ResourceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="156" column="94" lean-forward="false" selection-start-line="156" selection-start-column="94" selection-end-line="156" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2183">
+          <caret line="1437" column="23" lean-forward="false" selection-start-line="1437" selection-start-column="23" selection-end-line="1437" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-739">
+          <caret line="177" column="22" lean-forward="false" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/util/ClassLoaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#983#1001#0" expanded="false" />
+            <element signature="e#1876#1877#0" expanded="false" />
+            <element signature="e#1936#1937#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7-sources.jar!/org/mybatis/generator/internal/util/ClassloaderUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="-266">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/AbstractTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/IoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="334" column="37" lean-forward="false" selection-start-line="334" selection-start-column="37" selection-end-line="334" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/velocity/velocity/1.7/velocity-1.7-sources.jar!/org/apache/velocity/Template.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="51" column="95" lean-forward="false" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="95" />
+          <folding>
+            <element signature="e#794#795#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/extra/template/engine/velocity/VelocityTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/LogFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4064">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/GlobalLogFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/test/resources/template/velocity_test_auto_classpath.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/StaticLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="1825" column="52" lean-forward="false" selection-start-line="1825" selection-start-column="43" selection-end-line="1825" selection-end-column="52" />
+          <folding>
+            <element signature="e#66457#66458#0" expanded="false" />
+            <element signature="e#66495#66496#0" expanded="false" />
+            <element signature="e#70749#70750#0" expanded="false" />
+            <element signature="e#70802#70803#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/src/test/java/org/lemonframework/extra/template/VelocityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="50" column="9" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="50" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/GeneratorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="53" />
+          <folding>
+            <element signature="e#324#325#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#391#392#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#462#463#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#601#602#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/ProjectConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#411#412#0" expanded="false" />
+            <element signature="e#443#444#0" expanded="false" />
+            <element signature="e#480#481#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#647#648#0" expanded="false" />
+            <element signature="e#681#682#0" expanded="false" />
+            <element signature="e#735#736#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/GeneratorContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="e#576#577#0" expanded="false" />
+            <element signature="e#612#613#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#816#817#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/resources/template/generatorConfig.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1190">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/VelocityUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/plugin/SerializablePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/DatabseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="112" column="39" lean-forward="false" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="39" />
+          <folding>
+            <element signature="e#1716#1717#0" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator-sample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1924">
+          <caret line="114" column="17" lean-forward="false" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-demo-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
         </state>
       </provider>

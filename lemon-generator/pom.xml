@@ -38,6 +38,11 @@
         </dependency>
 
         <dependency>
+            <groupId>org.lemonframework</groupId>
+            <artifactId>lemon-core</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
         </dependency>

@@ -16,7 +16,7 @@ public class ProjectConfig {
     /**
      * 模块名.
      */
-    private String module;
+    private String moduleName;
 
     /**
      * 包名.
@@ -29,5 +29,21 @@ public class ProjectConfig {
 
     public void setRoot(String root) {
         this.root = root;
+    }
+
+    public String getModuleName() {
+        return moduleName;
+    }
+
+    public void setModuleName(String moduleName) {
+        this.moduleName = moduleName;
+    }
+
+    public String getPackageName() {
+        return packageName;
+    }
+
+    public void setPackageName(String packageName) {
+        this.packageName = packageName;
     }
 }
