@@ -1,5 +1,7 @@
 package org.lemonframework.generator;
 
+import cn.hutool.extra.template.TemplateConfig;
+
 /**
  * 占位的类，没有作用.
  *
