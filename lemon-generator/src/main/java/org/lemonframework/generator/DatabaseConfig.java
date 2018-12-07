@@ -13,7 +13,7 @@ import java.util.Map;
  * @author jiawei zhang
  * 2018/11/16 5:01 PM
  */
-public class DatabseConfig {
+public class DatabaseConfig {
     /**
      * 驱动.
      */

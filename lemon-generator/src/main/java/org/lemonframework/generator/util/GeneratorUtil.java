@@ -18,10 +18,9 @@ import org.lemonframework.extra.template.Engine;
 import org.lemonframework.extra.template.Template;
 import org.lemonframework.extra.template.TemplateConfig;
 import org.lemonframework.extra.template.engine.velocity.VelocityEngine;
-import org.lemonframework.generator.DatabseConfig;
+import org.lemonframework.generator.DatabaseConfig;
 import org.lemonframework.generator.GeneratorConfig;
 import org.lemonframework.generator.GeneratorContext;
-import org.lemonframework.generator.ProjectConfig;
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
@@ -40,19 +39,19 @@ public class GeneratorUtil {
         //2 MBG生成代码
         generatorCode(context.getGeneratorConfig());
         //3 生成业务代码
-        if (context.getDatabseConfig().isIncludeVersion()) {
+        if (context.getDatabaseConfig().isIncludeVersion()) {
             createVersion();
         }
     }
 
     private static void createGeneratorConfigXml(final GeneratorContext context) {
-        final DatabseConfig databseConfig = context.getDatabseConfig();
+        final DatabaseConfig databaseConfig = context.getDatabaseConfig();
         final GeneratorConfig generatorConfig = context.getGeneratorConfig();
 
         final Map<String, Object> bindingMap = new HashMap<>();
 
         try {
-            bindingMap.put("tables", getTables(databseConfig));
+            bindingMap.put("tables", getTables(databaseConfig));
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
             return;
@@ -70,11 +69,11 @@ public class GeneratorUtil {
         bindingMap.put("generator_sqlMapGenerator_targetProject",
                 context.getXmlMapperPath());
 
-        bindingMap.put("generator_jdbc_driver", databseConfig.getDriver());
-        bindingMap.put("generator_jdbc_url", databseConfig.getUrl());
-        bindingMap.put("generator_jdbc_username", databseConfig.getUsername());
-        bindingMap.put("generator_jdbc_password", databseConfig.getPassword());
-        bindingMap.put("last_insert_id_tables", databseConfig.getLastInsertIdTables());
+        bindingMap.put("generator_jdbc_driver", databaseConfig.getDriver());
+        bindingMap.put("generator_jdbc_url", databaseConfig.getUrl());
+        bindingMap.put("generator_jdbc_username", databaseConfig.getUsername());
+        bindingMap.put("generator_jdbc_password", databaseConfig.getPassword());
+        bindingMap.put("last_insert_id_tables", databaseConfig.getLastInsertIdTables());
 
         final String generatorConfigXml = generatorConfig.getRoot() + generatorConfig.getRelativePath() + "/generatorConfig.xml";
         final File outFile = new File(generatorConfigXml);
@@ -85,7 +84,7 @@ public class GeneratorUtil {
         template.render(bindingMap, outFile);
     }
 
-    private static List<Map<String, String>> getTables(final DatabseConfig context) throws SQLException {
+    private static List<Map<String, String>> getTables(final DatabaseConfig context) throws SQLException {
         final String database = context.getDatabase();
         final String tablePrefix = context.getTablePrefix();
         final String jdbcUrl = context.getUrl();

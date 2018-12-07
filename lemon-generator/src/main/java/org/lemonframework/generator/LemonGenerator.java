@@ -18,11 +18,11 @@ import org.lemonframework.generator.util.GeneratorUtil;
  */
 public class LemonGenerator {
 
-    private DatabseConfig databseConfig;
+    private DatabaseConfig databseConfig;
 
     private ProjectConfig projectConfig;
 
-    public LemonGenerator(DatabseConfig databseConfig, ProjectConfig projectConfig) {
+    public LemonGenerator(DatabaseConfig databseConfig, ProjectConfig projectConfig) {
         this.databseConfig = databseConfig;
         this.projectConfig = projectConfig;
     }
@@ -34,7 +34,7 @@ public class LemonGenerator {
 
     public void run() {
         if (!ObjectUtils.allNotNull(databseConfig, projectConfig)) {
-            System.out.println("DatabseConfig And ProjectConfig all Not Null!!!");
+            System.out.println("DatabaseConfig And ProjectConfig all Not Null!!!");
             return;
         }
 
@@ -112,7 +112,7 @@ public class LemonGenerator {
     private GeneratorContext initContext() {
         final GeneratorContext context = new GeneratorContext();
         final GeneratorConfig generatorConfig = new GeneratorConfig();
-        context.setDatabseConfig(databseConfig);
+        context.setDatabaseConfig(databseConfig);
         context.setProjectConfig(projectConfig);
         context.setGeneratorConfig(generatorConfig);
         if (!initRootPath(context)) {

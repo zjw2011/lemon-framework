@@ -13,7 +13,7 @@ package org.lemonframework.generator;
  */
 public class GeneratorContext {
 
-    private DatabseConfig databseConfig;
+    private DatabaseConfig databaseConfig;
 
     private ProjectConfig projectConfig;
 
@@ -31,12 +31,12 @@ public class GeneratorContext {
 
     private String mapperPackage;
 
-    public DatabseConfig getDatabseConfig() {
-        return databseConfig;
+    public DatabaseConfig getDatabaseConfig() {
+        return databaseConfig;
     }
 
-    public void setDatabseConfig(DatabseConfig databseConfig) {
-        this.databseConfig = databseConfig;
+    public void setDatabaseConfig(DatabaseConfig databaseConfig) {
+        this.databaseConfig = databaseConfig;
     }
 
     public ProjectConfig getProjectConfig() {
