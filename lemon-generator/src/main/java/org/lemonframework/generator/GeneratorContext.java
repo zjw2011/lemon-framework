@@ -9,7 +9,7 @@ package org.lemonframework.generator;
  *  4）密码
  *  5）数据库名称
  * @author jiawei zhang
- * 2018/11/12 1:53 PM
+ * @since 0.0.1
  */
 public class GeneratorContext {
 

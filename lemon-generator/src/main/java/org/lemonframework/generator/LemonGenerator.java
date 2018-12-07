@@ -11,7 +11,6 @@ import org.lemonframework.generator.util.GeneratorUtil;
 /**
  * 代码自动生成.
  * 1 实现version 替换
- * 2 实现序列号 位于第一行,并加上注释
  *
  * @author jiawei zhang
  * 2018/11/13 4:26 PM
