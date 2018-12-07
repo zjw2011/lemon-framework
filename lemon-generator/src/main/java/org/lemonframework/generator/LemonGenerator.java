@@ -1,6 +1,9 @@
 package org.lemonframework.generator;
 
+import java.io.File;
+
 import cn.hutool.core.io.resource.ResourceUtil;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.lemonframework.generator.util.GeneratorUtil;
@@ -93,20 +96,17 @@ public class LemonGenerator {
         return false;
     }
 
-    /**
-     * 创建目录.
-     * @return
-     */
-    private void mkDir() {
-
-    }
-
-    /**
-     * 删除目录.
-     * @return
-     */
-    private void rmDir() {
-
+    private void cleanOldFiles(final GeneratorContext context) {
+        try {
+            //删除model
+            FileUtils.deleteDirectory(new File(context.getModelPath()));
+            //删除mapper
+            FileUtils.deleteDirectory(new File(context.getMapperPath()));
+            //删除xml
+            FileUtils.deleteDirectory(new File(context.getXmlMapperPath()));
+        } catch (Exception e) {
+            // do nothing
+        }
     }
 
     private GeneratorContext initContext() {
@@ -120,7 +120,23 @@ public class LemonGenerator {
             return null;
         }
 
-        mkDir();
+        final String modelPackage = projectConfig.getPackageName() + ".dao.model";
+        final String mapperPackage = projectConfig.getPackageName() + ".dao.mapper";
+
+        final String modelPath = modelPackage.replace("\\.", "/");
+        final String mapperPath = mapperPackage.replace("\\.", "/");
+        final String modulePath = projectConfig.getRoot() + projectConfig.getModuleName();
+
+        context.setModelPackage(modelPackage);
+        context.setMapperPackage(mapperPackage);
+        context.setModulePath(modulePath);
+        context.setModelPath(modulePath + "/src/main/java/" + modelPath);
+        context.setMapperPath(modulePath + "/src/main/java/" + mapperPath);
+        context.setXmlMapperPath(modulePath + "/src/main/resources/" + mapperPath);
+
+        cleanOldFiles(context);
+
+//        FileUtils.forceMkdir(new File(generatorConfigXmlDir));
 
         return context;
     }

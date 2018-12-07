@@ -19,6 +19,18 @@ public class GeneratorContext {
 
     private GeneratorConfig generatorConfig;
 
+    private String modulePath;
+
+    private String modelPath;
+
+    private String mapperPath;
+
+    private String xmlMapperPath;
+
+    private String modelPackage;
+
+    private String mapperPackage;
+
     public DatabseConfig getDatabseConfig() {
         return databseConfig;
     }
@@ -41,5 +53,53 @@ public class GeneratorContext {
 
     public void setGeneratorConfig(GeneratorConfig generatorConfig) {
         this.generatorConfig = generatorConfig;
+    }
+
+    public String getModulePath() {
+        return modulePath;
+    }
+
+    public void setModulePath(String modulePath) {
+        this.modulePath = modulePath;
+    }
+
+    public String getModelPath() {
+        return modelPath;
+    }
+
+    public void setModelPath(String modelPath) {
+        this.modelPath = modelPath;
+    }
+
+    public String getMapperPath() {
+        return mapperPath;
+    }
+
+    public void setMapperPath(String mapperPath) {
+        this.mapperPath = mapperPath;
+    }
+
+    public String getXmlMapperPath() {
+        return xmlMapperPath;
+    }
+
+    public void setXmlMapperPath(String xmlMapperPath) {
+        this.xmlMapperPath = xmlMapperPath;
+    }
+
+    public String getModelPackage() {
+        return modelPackage;
+    }
+
+    public void setModelPackage(String modelPackage) {
+        this.modelPackage = modelPackage;
+    }
+
+    public String getMapperPackage() {
+        return mapperPackage;
+    }
+
+    public void setMapperPackage(String mapperPackage) {
+        this.mapperPackage = mapperPackage;
     }
 }

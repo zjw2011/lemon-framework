@@ -19,8 +19,13 @@ import org.lemonframework.extra.template.Template;
 import org.lemonframework.extra.template.TemplateConfig;
 import org.lemonframework.extra.template.engine.velocity.VelocityEngine;
 import org.lemonframework.generator.DatabseConfig;
+import org.lemonframework.generator.GeneratorConfig;
 import org.lemonframework.generator.GeneratorContext;
 import org.lemonframework.generator.ProjectConfig;
+import org.mybatis.generator.api.MyBatisGenerator;
+import org.mybatis.generator.config.Configuration;
+import org.mybatis.generator.config.xml.ConfigurationParser;
+import org.mybatis.generator.internal.DefaultShellCallback;
 
 /**
  * 生成代码的util.
@@ -33,6 +38,7 @@ public class GeneratorUtil {
     public static void generate(final GeneratorContext context) {
         createGeneratorConfigXml(context);
         //2 MBG生成代码
+        generatorCode(context.getGeneratorConfig());
         //3 生成业务代码
         if (context.getDatabseConfig().isIncludeVersion()) {
             createVersion();
@@ -40,15 +46,10 @@ public class GeneratorUtil {
     }
 
     private static void createGeneratorConfigXml(final GeneratorContext context) {
-        final ProjectConfig projectConfig = context.getProjectConfig();
         final DatabseConfig databseConfig = context.getDatabseConfig();
-        final String modulePath = projectConfig.getRoot() + projectConfig.getModuleName();
-        final String packagePath = projectConfig.getPackageName().replace("\\.", "/");
-        final TemplateConfig config = new TemplateConfig("", TemplateConfig.ResourceMode.CLASSPATH);
-        final Engine engine = new VelocityEngine(config);
-        final Template template = engine.getTemplate("template/generatorConfig.vm");
+        final GeneratorConfig generatorConfig = context.getGeneratorConfig();
+
         final Map<String, Object> bindingMap = new HashMap<>();
-        final String projectResourcesPath = modulePath + "/src/main/resources";
 
         try {
             bindingMap.put("tables", getTables(databseConfig));
@@ -56,19 +57,18 @@ public class GeneratorUtil {
             sqlEx.printStackTrace();
             return;
         }
-        bindingMap.put("generator_javaModelGenerator_targetPackage",
-                modulePath + "src/main/" + packagePath + "/dao/model");
-        bindingMap.put("generator_sqlMapGenerator_targetPackage",
-                modulePath + "src/main/" + packagePath + "/dao/mapper");
+        bindingMap.put("generator_javaModelGenerator_targetPackage",context.getModelPackage());
         bindingMap.put("generator_javaClientGenerator_targetPackage",
-                modulePath + "src/main/" + packagePath + "/dao/mapper");
+                context.getMapperPackage());
+        bindingMap.put("generator_sqlMapGenerator_targetPackage",
+                context.getMapperPackage());
 
         bindingMap.put("generator_javaModelGenerator_targetProject",
-                modulePath);
-        bindingMap.put("generator_sqlMapGenerator_targetProject",
-                modulePath);
+                context.getModelPath());
         bindingMap.put("generator_javaClientGenerator_targetProject",
-                modulePath);
+                context.getMapperPath());
+        bindingMap.put("generator_sqlMapGenerator_targetProject",
+                context.getXmlMapperPath());
 
         bindingMap.put("generator_jdbc_driver", databseConfig.getDriver());
         bindingMap.put("generator_jdbc_url", databseConfig.getUrl());
@@ -76,10 +76,13 @@ public class GeneratorUtil {
         bindingMap.put("generator_jdbc_password", databseConfig.getPassword());
         bindingMap.put("last_insert_id_tables", databseConfig.getLastInsertIdTables());
 
-        final String fileName = projectResourcesPath + "template/generatorConfig.xml";
-        final File outFile = new File(fileName);
-        template.render(bindingMap, outFile);
+        final String generatorConfigXml = generatorConfig.getRoot() + generatorConfig.getRelativePath() + "/generatorConfig.xml";
+        final File outFile = new File(generatorConfigXml);
 
+        final TemplateConfig config = new TemplateConfig("", TemplateConfig.ResourceMode.CLASSPATH);
+        final Engine engine = new VelocityEngine(config);
+        final Template template = engine.getTemplate("template/generatorConfig.vm");
+        template.render(bindingMap, outFile);
     }
 
     private static List<Map<String, String>> getTables(final DatabseConfig context) throws SQLException {
@@ -110,6 +113,25 @@ public class GeneratorUtil {
         DbUtils.close(conn);
 
         return tables;
+    }
+
+    private static void generatorCode(final GeneratorConfig generatorConfig) {
+        try {
+            final String generatorConfigXml = generatorConfig.getRoot() + generatorConfig.getRelativePath() + "/generatorConfig.xml";
+            final List<String> warnings = new ArrayList<>();
+            final File configFile = new File(generatorConfigXml);
+            final ConfigurationParser cp = new ConfigurationParser(warnings);
+            final Configuration config = cp.parseConfiguration(configFile);
+            final DefaultShellCallback callback = new DefaultShellCallback(true);
+            final MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
+
+            myBatisGenerator.generate(null);
+            for (String warning : warnings) {
+                System.out.println(warning);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void createVersion() {
