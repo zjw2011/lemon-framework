@@ -10,6 +10,7 @@
         <module name="lemon-demo-generator" />
         <module name="lemon-generator" />
         <module name="lemon-generator-sample" />
+        <module name="lemon-uid" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="lemon-generator" target="1.8" />
       <module name="lemon-generator-sample" target="1.5" />
       <module name="lemon-parent" target="1.8" />
+      <module name="lemon-uid" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

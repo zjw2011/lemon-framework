@@ -13,6 +13,7 @@
         <module>lemon-parent</module>
         <module>lemon-core</module>
         <module>lemon-generator</module>
+        <module>lemon-uid</module>
     </modules>
 
 

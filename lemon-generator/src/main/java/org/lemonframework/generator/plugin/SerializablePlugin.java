@@ -3,7 +3,6 @@ package org.lemonframework.generator.plugin;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.commons.lang3.RandomUtils;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.IntrospectedTable.TargetRuntime;
@@ -40,6 +39,7 @@ public class SerializablePlugin extends PluginAdapter {
         gwtSerializable = new FullyQualifiedJavaType("com.google.gwt.user.client.rpc.IsSerializable");
     }
 
+    @Override
     public boolean validate(List<String> warnings) {
         return true;
     }

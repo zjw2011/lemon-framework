@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/lemon-generator/lemon-generator.iml" filepath="$PROJECT_DIR$/lemon-generator/lemon-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-generator-sample/lemon-generator-sample.iml" filepath="$PROJECT_DIR$/lemon-generator-sample/lemon-generator-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-parent/lemon-parent.iml" filepath="$PROJECT_DIR$/lemon-parent/lemon-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-uid/lemon-uid.iml" filepath="$PROJECT_DIR$/lemon-uid/lemon-uid.iml" />
     </modules>
   </component>
 </project>
