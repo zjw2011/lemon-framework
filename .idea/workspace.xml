@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859a11e7-c73e-4135-9ace-cc3a867e3ffc" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/ZookeeperWorkerIdAssigner.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/lemon-dependencies/pom.xml" afterPath="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
       <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java" />
       <change beforePath="$PROJECT_DIR$/lemon-uid/pom.xml" afterPath="$PROJECT_DIR$/lemon-uid/pom.xml" />
       <change beforePath="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java" afterPath="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java" afterPath="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java" />
       <change beforePath="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java" afterPath="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java" />
       <change beforePath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml" afterPath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml" />
       <change beforePath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml" afterPath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml" />
@@ -42,7 +44,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DefaultUidGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultUidGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
@@ -154,26 +156,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="61" column="25" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="61" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultUidGeneratorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -182,6 +164,26 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CachedUidGeneratorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZookeeperWorkerIdAssigner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/ZookeeperWorkerIdAssigner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,7 +209,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default-uid-spring.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="default-uid-spring.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="319">
@@ -1099,7 +1101,7 @@
       <workItem from="1542161091402" duration="4880000" />
       <workItem from="1543543354782" duration="22663000" />
       <workItem from="1543818068694" duration="25338000" />
-      <workItem from="1543916338428" duration="50386000" />
+      <workItem from="1543916338428" duration="50477000" />
     </task>
     <servers />
   </component>
@@ -1136,7 +1138,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105989000" />
+    <option name="totallyTimeSpent" value="106080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1551,14 +1553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/FixedWorkerIdAssigner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1575,38 +1569,6 @@
         <state relative-caret-position="143">
           <caret line="93" column="88" lean-forward="false" selection-start-line="93" selection-start-column="80" selection-end-line="93" selection-end-column="88" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/ZookeeperWorkerIdAssigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#860#861#0" expanded="false" />
-            <element signature="e#890#891#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#974#975#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-            <element signature="e#1110#1111#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1198#1199#0" expanded="false" />
-            <element signature="e#1231#1232#0" expanded="false" />
-            <element signature="e#1280#1281#0" expanded="false" />
-            <element signature="e#1324#1325#0" expanded="false" />
-            <element signature="e#1364#1365#0" expanded="false" />
-            <element signature="e#1403#1404#0" expanded="false" />
-            <element signature="e#1464#1465#0" expanded="false" />
-            <element signature="e#1520#1521#0" expanded="false" />
-            <element signature="e#1551#1552#0" expanded="false" />
-            <element signature="e#1578#1579#0" expanded="false" />
-            <element signature="e#1618#1619#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2638#2639#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1701,22 +1663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.21.RELEASE/spring-test-4.3.21.RELEASE.jar!/org/springframework/test/context/cache/DefaultCacheAwareContextLoaderDelegate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1732,16 +1678,6 @@
             <marker date="1544330501799" expanded="true" signature="1498:2468" ph="{...}" />
             <marker date="1544330501799" expanded="true" signature="2567:3622" ph="{...}" />
             <marker date="1544330501799" expanded="true" signature="3737:3924" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1878,6 +1814,48 @@
             <element signature="e#8698#8699#0" expanded="true" />
             <element signature="e#8746#8747#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/ZookeeperWorkerIdAssigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
