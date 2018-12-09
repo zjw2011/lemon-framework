@@ -9,6 +9,6 @@ package org.lemonframework.uid.worker;
 public class FixedWorkerIdAssigner implements WorkerIdAssigner {
     @Override
     public long assignWorkerId() {
-        return 2;
+        return 1;
     }
 }
