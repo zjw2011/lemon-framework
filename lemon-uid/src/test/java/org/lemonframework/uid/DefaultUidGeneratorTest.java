@@ -13,8 +13,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import org.apache.commons.lang3.StringUtils;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,22 +33,22 @@ public class DefaultUidGeneratorTest {
     @Resource
     private UidGenerator uidGenerator;
 
-    /**
-     * Test for serially generate
-     */
-    @Test
-    public void testSingleSerialGenerate() {
-
-        DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
-        fmt.parseDateTime("2018-12-15");
-
-        for (int i = 0; i < 20; i++) {
-            long uid = uidGenerator.getUID();
-            String id = uidGenerator.parseUID(uid);
-            System.out.println("id:" + id + ",uid:" + uid);
-        }
-
-    }
+//    /**
+//     * Test for serially generate
+//     */
+//    @Test
+//    public void testSingleSerialGenerate() {
+//
+//        DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
+//        fmt.parseDateTime("2018-12-15");
+//
+//        for (int i = 0; i < 20; i++) {
+//            long uid = uidGenerator.getUID();
+//            String id = uidGenerator.parseUID(uid);
+//            System.out.println("id:" + id + ",uid:" + uid);
+//        }
+//
+//    }
 
     /**
      * Test for serially generate

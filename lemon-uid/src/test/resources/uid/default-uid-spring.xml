@@ -16,6 +16,7 @@
         <property name="workerBits" value="21"/>
         <property name="seqBits" value="13"/>
         <property name="epochStr" value="2016-09-20"/>
+        <property name="workerIdFile" value="/Users/apple/workerId"/>
     </bean>
 
     <!-- Import mybatis config -->

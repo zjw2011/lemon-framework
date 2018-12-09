@@ -1,10 +1,12 @@
 package org.lemonframework.uid.impl;
 
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.springframework.beans.factory.InitializingBean;
 
+import cn.hutool.core.io.FileUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.lemonframework.log.Log;
 import org.lemonframework.log.LogFactory;
@@ -54,6 +56,7 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
     /** Customer epoch, unit as second. For example 2016-05-20 (ms: 1463673600000)*/
     protected String epochStr = "2016-05-20";
     protected long epochSeconds = TimeUnit.MILLISECONDS.toSeconds(1463673600000L);
+    protected String workerIdFile = "/etc/workerid";
 
     /** Stable fields after spring bean initializing */
     protected BitsAllocator bitsAllocator;
@@ -72,10 +75,7 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
         bitsAllocator = new BitsAllocator(timeBits, workerBits, seqBits);
 
         // initialize worker id
-        workerId = workerIdAssigner.assignWorkerId();
-        if (workerId > bitsAllocator.getMaxWorkerId()) {
-            throw new RuntimeException("Worker id " + workerId + " exceeds the max " + bitsAllocator.getMaxWorkerId());
-        }
+        assignWorkerId(false);
 
         LOGGER.info("Initialized bits(1, {}, {}, {}) for workerID:{}", timeBits, workerBits, seqBits, workerId);
     }
@@ -123,7 +123,30 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
         // Clock moved backwards, refuse to generate uid
         if (currentSecond < lastSecond) {
             long refusedSeconds = lastSecond - currentSecond;
-            throw new UidGenerateException("Clock moved backwards. Refusing for %d seconds", refusedSeconds);
+
+            LOGGER.warn("Clock moved backwards. Refusing for {} seconds", refusedSeconds);
+            if (refusedSeconds <= 5) {
+                try {
+                    //时间偏差大小小于5ms，则等待两倍时间
+                    //wait
+                    wait(refusedSeconds << 1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                currentSecond = getCurrentSecond();
+                //时钟回拨较大
+                if (currentSecond < lastSecond) {
+                    //获取新的workerId
+                    assignWorkerId(true);
+                }
+            }
+            //时钟回拨较大
+            else {
+                //获取新的workerId
+                assignWorkerId(true);
+            }
+
+            //throw new UidGenerateException("Clock moved backwards. Refusing for %d seconds", refusedSeconds);
         }
 
         // At the same second, increase sequence
@@ -170,6 +193,32 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
     }
 
     /**
+     * initialize worker id
+     */
+    private void assignWorkerId(boolean force) {
+        // initialize worker id
+        // 看看本地是否存在 如果不存在，才去服务器服务器获取
+        boolean found = false;
+        if (!force && FileUtil.exist(workerIdFile)) {
+            //读取第一行
+            final List<String> lines = FileUtil.readUtf8Lines(workerIdFile);
+            if (lines.size() > 0) {
+                workerId = Long.parseLong(lines.get(0));
+                found = true;
+            }
+        }
+
+        if (!found) {
+            workerId = workerIdAssigner.assignWorkerId();
+            FileUtil.writeUtf8String(String.valueOf(workerId), workerIdFile);
+        }
+
+        if (workerId > bitsAllocator.getMaxWorkerId()) {
+            throw new RuntimeException("Worker id " + workerId + " exceeds the max " + bitsAllocator.getMaxWorkerId());
+        }
+    }
+
+    /**
      * Setters for spring property
      */
     public void setWorkerIdAssigner(WorkerIdAssigner workerIdAssigner) {
@@ -199,5 +248,9 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
             this.epochStr = epochStr;
             this.epochSeconds = TimeUnit.MILLISECONDS.toSeconds(DateUtils.parseByDayPattern(epochStr).getTime());
         }
+    }
+
+    public void setWorkerIdFile(String workerIdFile) {
+        this.workerIdFile = workerIdFile;
     }
 }

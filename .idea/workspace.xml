@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="859a11e7-c73e-4135-9ace-cc3a867e3ffc" name="Default" comment="" />
+    <list default="true" id="859a11e7-c73e-4135-9ace-cc3a867e3ffc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/lemon-dependencies/pom.xml" afterPath="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-uid/pom.xml" afterPath="$PROJECT_DIR$/lemon-uid/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java" afterPath="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java" afterPath="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml" afterPath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml" />
+      <change beforePath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml" afterPath="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/lemon-parent/target/" />
@@ -33,73 +42,114 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="RingBuffer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/buffer/RingBuffer.java">
+      <file leaf-file-name="DefaultUidGenerator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="148" column="36" lean-forward="false" selection-start-line="148" selection-start-column="36" selection-end-line="148" selection-end-column="36" />
+            <state relative-caret-position="385">
+              <caret line="212" column="60" lean-forward="false" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="60" />
               <folding>
-                <element signature="e#7460#7461#0" expanded="true" />
-                <element signature="e#7511#7512#0" expanded="true" />
+                <element signature="e#7936#7937#0" expanded="true" />
+                <element signature="e#7992#7993#0" expanded="true" />
+                <element signature="e#8698#8699#0" expanded="true" />
+                <element signature="e#8746#8747#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BufferPaddingExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/buffer/BufferPaddingExecutor.java">
+      <file leaf-file-name="AbstractAutowireCapableBeanFactory.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.21.RELEASE/spring-beans-4.3.21.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+            <state relative-caret-position="103">
+              <caret line="1098" column="0" lean-forward="false" selection-start-line="1098" selection-start-column="0" selection-end-line="1098" selection-end-column="0" />
               <folding>
-                <element signature="e#4006#4007#0" expanded="true" />
-                <element signature="e#4068#4069#0" expanded="true" />
+                <marker date="1544328476547" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1544328476547" expanded="false" signature="165:3353" ph="..." />
+                <marker date="1544328476547" expanded="true" signature="4040:4753" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="4832:4909" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="4997:5064" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="5128:5139" ph=" { " />
+                <marker date="1544328476547" expanded="false" signature="5173:5179" ph=" }" />
+                <marker date="1544328476547" expanded="true" signature="5273:5344" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="5412:5423" ph=" { " />
+                <marker date="1544328476547" expanded="false" signature="5459:5465" ph=" }" />
+                <marker date="1544328476547" expanded="true" signature="5543:5614" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="5710:5799" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="5852:5863" ph=" { " />
+                <marker date="1544328476547" expanded="false" signature="5901:5907" ph=" }" />
+                <marker date="1544328476547" expanded="false" signature="5964:5975" ph=" { " />
+                <marker date="1544328476547" expanded="false" signature="6017:6023" ph=" }" />
+                <marker date="1544328476547" expanded="true" signature="6101:6734" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="6806:7075" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="7127:7517" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="7611:8460" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="8580:8690" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="8806:9018" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="9132:10169" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="9599:9673" ph="run() → {" />
+                <marker date="1544328476547" expanded="false" signature="9860:9883" ph="}" />
+                <marker date="1544328476547" expanded="true" signature="10296:10814" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="10916:11203" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="11276:11369" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="11493:11911" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="12034:12451" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="12502:12632" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="12751:14155" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="14288:18628" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="15779:15874" ph="getObject() → {" />
+                <marker date="1544328476547" expanded="false" signature="15998:16017" ph="}" />
+                <marker date="1544328476547" expanded="true" signature="18733:19681" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="19790:20251" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="20364:25339" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="25427:27004" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="27111:28026" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="27134:27218" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="27193:27208" ph="{}" />
+                <marker date="1544328476547" expanded="false" signature="27378:27448" ph="doWith(method) → {" />
+                <marker date="1544328476547" expanded="false" signature="27900:27915" ph="}" />
+                <marker date="1544328476547" expanded="true" signature="28125:28906" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="29012:30529" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="30638:31689" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="31810:32247" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="32338:33033" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="33136:33702" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="33805:35395" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="35531:36256" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="36353:37265" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="36518:36592" ph="run() → {" />
+                <marker date="1544328476547" expanded="false" signature="36776:36799" ph="}" />
+                <marker date="1544328476547" expanded="true" signature="37387:37501" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="37637:37748" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="37839:40998" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="41122:42074" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="42198:44242" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="44342:44972" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="45084:45654" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="45751:46190" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="46267:46482" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="46650:47446" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="47560:51177" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="51293:51716" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="51820:52912" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="51915:51985" ph="run() → {" />
+                <marker date="1544328476547" expanded="false" signature="52127:52146" ph="}" />
+                <marker date="1544328476547" expanded="true" signature="52980:53452" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="53568:54936" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="54047:54151" ph="run() → {" />
+                <marker date="1544328476547" expanded="false" signature="54288:54315" ph="}" />
+                <marker date="1544328476547" expanded="true" signature="55057:57262" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="56121:56221" ph="run() → {" />
+                <marker date="1544328476547" expanded="false" signature="56343:56366" ph="}" />
+                <marker date="1544328476547" expanded="false" signature="56442:56546" ph="run() → {" />
+                <marker date="1544328476547" expanded="false" signature="56661:56688" ph="}" />
+                <marker date="1544328476547" expanded="true" signature="57350:57439" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="57493:57664" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="57707:57865" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="57956:58203" ph="{...}" />
+                <marker date="1544328476547" expanded="true" signature="58056:58117" ph="{...}" />
+                <marker date="1544328476547" expanded="false" signature="58160:58175" ph=" { " />
+                <marker date="1544328476547" expanded="false" signature="58187:58197" ph=" }" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CachedUidGeneratorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="104" column="36" lean-forward="false" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixedWorkerIdAssigner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/FixedWorkerIdAssigner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UidGenerateException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/exception/UidGenerateException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-514">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/DateUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -107,31 +157,51 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-uid/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="188">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cached-uid-spring.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="381">
+              <caret line="61" column="25" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="61" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultUidGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java">
+      <file leaf-file-name="DefaultUidGeneratorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="74" column="43" lean-forward="false" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+            <state relative-caret-position="89">
+              <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
               <folding>
-                <element signature="e#6439#6440#0" expanded="true" />
-                <element signature="e#6495#6496#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultCacheAwareContextLoaderDelegate.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.21.RELEASE/spring-test-4.3.21.RELEASE.jar!/org/springframework/test/context/cache/DefaultCacheAwareContextLoaderDelegate.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1544330501799" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1544330501799" expanded="false" signature="162:663" ph="..." />
+                <marker date="1544330501799" expanded="false" signature="1041:1052" ph=" { " />
+                <marker date="1544330501799" expanded="false" signature="1078:1084" ph=" }" />
+                <marker date="1544330501799" expanded="true" signature="1163:1283" ph="{...}" />
+                <marker date="1544330501799" expanded="false" signature="1329:1340" ph=" { " />
+                <marker date="1544330501799" expanded="false" signature="1365:1371" ph=" }" />
+                <marker date="1544330501799" expanded="true" signature="1498:2468" ph="{...}" />
+                <marker date="1544330501799" expanded="true" signature="2567:3622" ph="{...}" />
+                <marker date="1544330501799" expanded="true" signature="3737:3924" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -140,9 +210,50 @@
       <file leaf-file-name="default-uid-spring.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="319">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="69" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cached-uid-spring.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/FileUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="2253" column="20" lean-forward="false" selection-start-line="2253" selection-start-column="20" selection-end-line="2253" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+                <element signature="e#2660#2661#0" expanded="true" />
+                <element signature="e#9958#9959#0" expanded="true" />
+                <element signature="e#10016#10017#0" expanded="true" />
+                <element signature="e#25564#25565#0" expanded="true" />
+                <element signature="e#25605#25606#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileReader.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/file/FileReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+              <folding>
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#867#868#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,9 +272,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>last_insert_id_tables</find>
-      <find>getString</find>
-      <find>camel</find>
       <find>toString</find>
       <find>doCreate</find>
       <find>Log4jContextSelector</find>
@@ -191,6 +299,9 @@
       <find>rejectedPutBufferHandler</find>
       <find>rejectedPutHandler</find>
       <find>put</find>
+      <find>nextIdsForOneSecond</find>
+      <find>workerId</find>
+      <find>canread</find>
     </findStrings>
     <dirStrings>
       <dir>$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1.jar!/org/apache/logging/log4j/core</dir>
@@ -215,8 +326,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/dialect/jdk/JdkLog.java" />
-        <option value="$PROJECT_DIR$/lemon-core/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/Log.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/Test.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/LogFactory.java" />
@@ -255,17 +364,19 @@
         <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/ValuedEnum.java" />
         <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/DateUtils.java" />
         <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/NetUtils.java" />
-        <option value="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java" />
         <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/WorkerIdAssigner.java" />
         <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/WorkerNodeType.java" />
-        <option value="$PROJECT_DIR$/lemon-uid/pom.xml" />
-        <option value="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java" />
-        <option value="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml" />
-        <option value="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml" />
         <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/buffer/RingBuffer.java" />
         <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/FixedWorkerIdAssigner.java" />
+        <option value="$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/ZookeeperWorkerIdAssigner.java" />
+        <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java" />
+        <option value="$PROJECT_DIR$/lemon-uid/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml" />
+        <option value="$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml" />
+        <option value="$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java" />
       </list>
     </option>
   </component>
@@ -392,7 +503,143 @@
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-dependencies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
               <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uid" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uid" type="462c0819:PsiDirectoryNode" />
+              <item name="worker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="uid" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -415,6 +662,23 @@
               <item name="Maven: cn.hutool:hutool-all:4.2.1" type="70bed36:NamedLibraryElementNode" />
               <item name="hutool-all-4.2.1.jar" type="462c0819:PsiDirectoryNode" />
               <item name="hutool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:4.2.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hutool-all-4.2.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: cn.hutool:hutool-all:4.2.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="hutool-all-4.2.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hutool" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -492,6 +756,24 @@
               <item name="log" type="462c0819:PsiDirectoryNode" />
               <item name="dialect" type="462c0819:PsiDirectoryNode" />
               <item name="tinylog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: commons-io:commons-io:2.6" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: commons-io:commons-io:2.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-io-2.6.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: commons-io:commons-io:2.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-io-2.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -576,31 +858,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CachedUidGeneratorTest.testSerialGenerate">
+  <component name="RunManager" selected="JUnit.DefaultUidGeneratorTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="LemonGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.lemonframework.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.lemonframework.generator.LemonGenerator" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lemon-generator" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -616,6 +879,31 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration name="CachedUidGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.lemonframework.uid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lemon-uid" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.lemonframework.uid" />
+      <option name="MAIN_CLASS_NAME" value="org.lemonframework.uid.CachedUidGeneratorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="CachedUidGeneratorTest.testSerialGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -630,6 +918,31 @@
       <option name="MAIN_CLASS_NAME" value="org.lemonframework.uid.CachedUidGeneratorTest" />
       <option name="METHOD_NAME" value="testSerialGenerate" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="DefaultUidGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.lemonframework.uid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lemon-uid" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.lemonframework.uid" />
+      <option name="MAIN_CLASS_NAME" value="org.lemonframework.uid.DefaultUidGeneratorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -679,31 +992,6 @@
       <option name="PACKAGE_NAME" value="org.lemonframework.uid" />
       <option name="MAIN_CLASS_NAME" value="org.lemonframework.uid.DefaultUidGeneratorTest" />
       <option name="METHOD_NAME" value="testSingleSerialGenerate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="VelocityTest.writeFileByClasspathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.lemonframework.extra.template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lemon-core" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.lemonframework.extra.template" />
-      <option name="MAIN_CLASS_NAME" value="org.lemonframework.extra.template.VelocityTest" />
-      <option name="METHOD_NAME" value="writeFileByClasspathTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -777,19 +1065,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.LemonGenerator" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeFileByClasspathTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSerialGenerate" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CachedUidGeneratorTest.testSerialGenerate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSingleSerialGenerate" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSerialGenerate" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CachedUidGeneratorTest.testSerialGenerate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSingleSerialGenerate" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CachedUidGeneratorTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CachedUidGeneratorTest.testSerialGenerate" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSingleSerialGenerate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSerialGenerate" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LemonGenerator" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VelocityTest.writeFileByClasspathTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSerialGenerate" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CachedUidGeneratorTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CachedUidGeneratorTest.testSerialGenerate" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultUidGeneratorTest.testSingleSerialGenerate" />
       </list>
     </recent_temporary>
   </component>
@@ -811,47 +1099,48 @@
       <workItem from="1542161091402" duration="4880000" />
       <workItem from="1543543354782" duration="22663000" />
       <workItem from="1543818068694" duration="25338000" />
-      <workItem from="1543916338428" duration="45234000" />
+      <workItem from="1543916338428" duration="50386000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CachedUidGeneratorTest_testSerialGenerate - 2018.12.09 at 13h 51m 45s.xml">
-      <configuration name="CachedUidGeneratorTest.testSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 28m 47s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CachedUidGeneratorTest_testSerialGenerate - 2018.12.09 at 14h 08m 28s.xml">
-      <configuration name="CachedUidGeneratorTest.testSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 29m 18s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CachedUidGeneratorTest_testSerialGenerate - 2018.12.09 at 15h 45m 57s.xml">
-      <configuration name="CachedUidGeneratorTest.testSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 30m 03s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CachedUidGeneratorTest_testSerialGenerate - 2018.12.09 at 15h 51m 04s.xml">
-      <configuration name="CachedUidGeneratorTest.testSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 31m 19s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CachedUidGeneratorTest_testSerialGenerate - 2018.12.09 at 16h 08m 28s.xml">
-      <configuration name="CachedUidGeneratorTest.testSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 32m 58s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CachedUidGeneratorTest_testSerialGenerate - 2018.12.09 at 16h 10m 02s.xml">
-      <configuration name="CachedUidGeneratorTest.testSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 33m 46s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultUidGeneratorTest_testSingleSerialGenerate - 2018.12.09 at 12h 53m 46s.xml">
-      <configuration name="DefaultUidGeneratorTest.testSingleSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 36m 30s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultUidGeneratorTest_testSingleSerialGenerate - 2018.12.09 at 13h 47m 57s.xml">
-      <configuration name="DefaultUidGeneratorTest.testSingleSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 39m 05s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultUidGeneratorTest_testSingleSerialGenerate - 2018.12.09 at 13h 48m 14s.xml">
-      <configuration name="DefaultUidGeneratorTest.testSingleSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 39m 51s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultUidGeneratorTest_testSingleSerialGenerate - 2018.12.09 at 14h 45m 37s.xml">
-      <configuration name="DefaultUidGeneratorTest.testSingleSerialGenerate" configurationId="JUnit" />
+    <history-entry file="DefaultUidGeneratorTest - 2018.12.09 at 23h 46m 11s.xml">
+      <configuration name="DefaultUidGeneratorTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100837000" />
+    <option name="totallyTimeSpent" value="105989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38109306" sideWeight="0.50651467" order="7" side_tool="true" content_ui="tabs" />
@@ -863,18 +1152,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25110784" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3397341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32791728" sideWeight="0.49674267" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49778435" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3323486" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.495114" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2747415" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25325733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23859935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -979,7 +1268,7 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="64" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1018,164 +1307,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7-sources.jar!/org/mybatis/generator/api/CommentGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2272">
-          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/plugin/CommentGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/resources/velocity.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/util/GeneratorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1622">
-          <caret line="108" column="50" lean-forward="false" selection-start-line="108" selection-start-column="50" selection-end-line="108" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/GeneratorContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding>
-            <element signature="e#575#576#0" expanded="false" />
-            <element signature="e#612#613#0" expanded="false" />
-            <element signature="e#680#681#0" expanded="false" />
-            <element signature="e#732#733#0" expanded="false" />
-            <element signature="e#1181#1182#0" expanded="false" />
-            <element signature="e#1214#1215#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-            <element signature="e#1310#1311#0" expanded="false" />
-            <element signature="e#1346#1347#0" expanded="false" />
-            <element signature="e#1378#1379#0" expanded="false" />
-            <element signature="e#1428#1429#0" expanded="false" />
-            <element signature="e#1470#1471#0" expanded="false" />
-            <element signature="e#1507#1508#0" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1592#1593#0" expanded="false" />
-            <element signature="e#1636#1637#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1712#1713#0" expanded="false" />
-            <element signature="e#1770#1771#0" expanded="false" />
-            <element signature="e#1820#1821#0" expanded="false" />
-            <element signature="e#1859#1860#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2038#2039#0" expanded="false" />
-            <element signature="e#2074#2075#0" expanded="false" />
-            <element signature="e#2132#2133#0" expanded="false" />
-            <element signature="e#2182#2183#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6-sources.jar!/org/apache/commons/io/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19985">
-          <caret line="1720" column="27" lean-forward="false" selection-start-line="1720" selection-start-column="16" selection-end-line="1720" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="121" column="74" lean-forward="false" selection-start-line="121" selection-start-column="71" selection-end-line="121" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/buffer/RejectedTakeBufferHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/log/LogFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="178" column="21" lean-forward="false" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="21" />
-          <folding>
-            <element signature="e#3660#3661#0" expanded="false" />
-            <element signature="e#3710#3711#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/plugin/SerializablePlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/DockerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1-sources.jar!/org/apache/commons/lang3/time/DateFormatUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/ValuedEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1212,14 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="122" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="174" column="25" lean-forward="false" selection-start-line="170" selection-start-column="12" selection-end-line="174" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1326,25 +1449,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/BitsAllocator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
           <folding>
-            <element signature="e#2727#2728#0" expanded="true" />
-            <element signature="e#2765#2766#0" expanded="true" />
-            <element signature="e#2871#2872#0" expanded="true" />
-            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2727#2728#0" expanded="false" />
+            <element signature="e#2765#2766#0" expanded="false" />
+            <element signature="e#2871#2872#0" expanded="false" />
+            <element signature="e#2905#2906#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1386,17 +1499,9 @@
         <state relative-caret-position="158">
           <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="25" />
           <folding>
-            <element signature="e#2573#2574#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
+            <element signature="e#2573#2574#0" expanded="false" />
+            <element signature="e#2601#2602#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/CachedUidGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,8 +1510,8 @@
         <state relative-caret-position="144">
           <caret line="148" column="36" lean-forward="false" selection-start-line="148" selection-start-column="36" selection-end-line="148" selection-end-column="36" />
           <folding>
-            <element signature="e#7460#7461#0" expanded="true" />
-            <element signature="e#7511#7512#0" expanded="true" />
+            <element signature="e#7460#7461#0" expanded="false" />
+            <element signature="e#7511#7512#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1416,56 +1521,8 @@
         <state relative-caret-position="-21">
           <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
           <folding>
-            <element signature="e#4006#4007#0" expanded="true" />
-            <element signature="e#4068#4069#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="104" column="36" lean-forward="false" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="74" column="43" lean-forward="false" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
-          <folding>
-            <element signature="e#6439#6440#0" expanded="true" />
-            <element signature="e#6495#6496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/FixedWorkerIdAssigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#4006#4007#0" expanded="false" />
+            <element signature="e#4068#4069#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1478,27 +1535,382 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/pom.xml">
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/DateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="479">
+          <caret line="68" column="25" lean-forward="false" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/utils/DateUtils.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        <state relative-caret-position="1067">
+          <caret line="381" column="29" lean-forward="false" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/CachedUidGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/FixedWorkerIdAssigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#221#222#0" expanded="false" />
+            <element signature="e#245#246#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/CachedUidGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="93" column="88" lean-forward="false" selection-start-line="93" selection-start-column="80" selection-end-line="93" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/worker/ZookeeperWorkerIdAssigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#860#861#0" expanded="false" />
+            <element signature="e#890#891#0" expanded="false" />
+            <element signature="e#936#937#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1164#1165#0" expanded="false" />
+            <element signature="e#1198#1199#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1280#1281#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1364#1365#0" expanded="false" />
+            <element signature="e#1403#1404#0" expanded="false" />
+            <element signature="e#1464#1465#0" expanded="false" />
+            <element signature="e#1520#1521#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1578#1579#0" expanded="false" />
+            <element signature="e#1618#1619#0" expanded="false" />
+            <element signature="e#1650#1651#0" expanded="false" />
+            <element signature="e#2608#2609#0" expanded="false" />
+            <element signature="e#2638#2639#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6-sources.jar!/org/apache/commons/io/IOUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="1081" column="25" lean-forward="false" selection-start-line="1081" selection-start-column="25" selection-end-line="1081" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="122" column="11" lean-forward="false" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/file/FileWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1338" column="19" lean-forward="false" selection-start-line="1338" selection-start-column="19" selection-end-line="1338" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/file/FileWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="134" column="19" lean-forward="false" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+          <folding>
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#920#921#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/FileTypeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6-sources.jar!/org/apache/commons/io/HexDump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6-sources.jar!/org/apache/commons/io/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5161">
+          <caret line="1804" column="38" lean-forward="false" selection-start-line="1804" selection-start-column="38" selection-end-line="1804" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="61" column="25" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="61" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/default-uid-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/resources/uid/cached-uid-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.21.RELEASE/spring-test-4.3.21.RELEASE.jar!/org/springframework/test/context/cache/DefaultCacheAwareContextLoaderDelegate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1544330501799" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544330501799" expanded="false" signature="162:663" ph="..." />
+            <marker date="1544330501799" expanded="false" signature="1041:1052" ph=" { " />
+            <marker date="1544330501799" expanded="false" signature="1078:1084" ph=" }" />
+            <marker date="1544330501799" expanded="true" signature="1163:1283" ph="{...}" />
+            <marker date="1544330501799" expanded="false" signature="1329:1340" ph=" { " />
+            <marker date="1544330501799" expanded="false" signature="1365:1371" ph=" }" />
+            <marker date="1544330501799" expanded="true" signature="1498:2468" ph="{...}" />
+            <marker date="1544330501799" expanded="true" signature="2567:3622" ph="{...}" />
+            <marker date="1544330501799" expanded="true" signature="3737:3924" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/test/java/org/lemonframework/uid/DefaultUidGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/file/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding>
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.21.RELEASE/spring-beans-4.3.21.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="1098" column="0" lean-forward="false" selection-start-line="1098" selection-start-column="0" selection-end-line="1098" selection-end-column="0" />
+          <folding>
+            <marker date="1544328476547" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544328476547" expanded="false" signature="165:3353" ph="..." />
+            <marker date="1544328476547" expanded="true" signature="4040:4753" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="4832:4909" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="4997:5064" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="5128:5139" ph=" { " />
+            <marker date="1544328476547" expanded="false" signature="5173:5179" ph=" }" />
+            <marker date="1544328476547" expanded="true" signature="5273:5344" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="5412:5423" ph=" { " />
+            <marker date="1544328476547" expanded="false" signature="5459:5465" ph=" }" />
+            <marker date="1544328476547" expanded="true" signature="5543:5614" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="5710:5799" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="5852:5863" ph=" { " />
+            <marker date="1544328476547" expanded="false" signature="5901:5907" ph=" }" />
+            <marker date="1544328476547" expanded="false" signature="5964:5975" ph=" { " />
+            <marker date="1544328476547" expanded="false" signature="6017:6023" ph=" }" />
+            <marker date="1544328476547" expanded="true" signature="6101:6734" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="6806:7075" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="7127:7517" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="7611:8460" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="8580:8690" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="8806:9018" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="9132:10169" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="9599:9673" ph="run() → {" />
+            <marker date="1544328476547" expanded="false" signature="9860:9883" ph="}" />
+            <marker date="1544328476547" expanded="true" signature="10296:10814" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="10916:11203" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="11276:11369" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="11493:11911" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="12034:12451" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="12502:12632" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="12751:14155" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="14288:18628" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="15779:15874" ph="getObject() → {" />
+            <marker date="1544328476547" expanded="false" signature="15998:16017" ph="}" />
+            <marker date="1544328476547" expanded="true" signature="18733:19681" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="19790:20251" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="20364:25339" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="25427:27004" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="27111:28026" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="27134:27218" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="27193:27208" ph="{}" />
+            <marker date="1544328476547" expanded="false" signature="27378:27448" ph="doWith(method) → {" />
+            <marker date="1544328476547" expanded="false" signature="27900:27915" ph="}" />
+            <marker date="1544328476547" expanded="true" signature="28125:28906" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="29012:30529" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="30638:31689" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="31810:32247" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="32338:33033" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="33136:33702" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="33805:35395" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="35531:36256" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="36353:37265" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="36518:36592" ph="run() → {" />
+            <marker date="1544328476547" expanded="false" signature="36776:36799" ph="}" />
+            <marker date="1544328476547" expanded="true" signature="37387:37501" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="37637:37748" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="37839:40998" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="41122:42074" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="42198:44242" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="44342:44972" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="45084:45654" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="45751:46190" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="46267:46482" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="46650:47446" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="47560:51177" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="51293:51716" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="51820:52912" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="51915:51985" ph="run() → {" />
+            <marker date="1544328476547" expanded="false" signature="52127:52146" ph="}" />
+            <marker date="1544328476547" expanded="true" signature="52980:53452" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="53568:54936" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="54047:54151" ph="run() → {" />
+            <marker date="1544328476547" expanded="false" signature="54288:54315" ph="}" />
+            <marker date="1544328476547" expanded="true" signature="55057:57262" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="56121:56221" ph="run() → {" />
+            <marker date="1544328476547" expanded="false" signature="56343:56366" ph="}" />
+            <marker date="1544328476547" expanded="false" signature="56442:56546" ph="run() → {" />
+            <marker date="1544328476547" expanded="false" signature="56661:56688" ph="}" />
+            <marker date="1544328476547" expanded="true" signature="57350:57439" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="57493:57664" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="57707:57865" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="57956:58203" ph="{...}" />
+            <marker date="1544328476547" expanded="true" signature="58056:58117" ph="{...}" />
+            <marker date="1544328476547" expanded="false" signature="58160:58175" ph=" { " />
+            <marker date="1544328476547" expanded="false" signature="58187:58197" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.2.1/hutool-all-4.2.1-sources.jar!/cn/hutool/core/io/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="2253" column="20" lean-forward="false" selection-start-line="2253" selection-start-column="20" selection-end-line="2253" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2660#2661#0" expanded="true" />
+            <element signature="e#9958#9959#0" expanded="true" />
+            <element signature="e#10016#10017#0" expanded="true" />
+            <element signature="e#25564#25565#0" expanded="true" />
+            <element signature="e#25605#25606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-uid/src/main/java/org/lemonframework/uid/impl/DefaultUidGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="212" column="60" lean-forward="false" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="60" />
+          <folding>
+            <element signature="e#7936#7937#0" expanded="true" />
+            <element signature="e#7992#7993#0" expanded="true" />
+            <element signature="e#8698#8699#0" expanded="true" />
+            <element signature="e#8746#8747#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>groovy-2.5.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1520,6 +1932,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>lemon-core</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -1534,6 +1959,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

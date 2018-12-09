@@ -10,6 +10,7 @@
 
 	<bean id="cachedUidGenerator" class="org.lemonframework.uid.impl.CachedUidGenerator">
 		<property name="workerIdAssigner" ref="fixedWorkerIdAssigner" />
+        <property name="workerIdFile" value="/Users/apple/workerId"/>
 
 		<!-- 以下为可选配置, 如未指定将采用默认值 -->
 		<!-- RingBuffer size扩容参数, 可提高UID生成的吞吐量. --> 

@@ -30,5 +30,7 @@ public class Test {
         System.out.println(charset3);
         final Charset charset4 = Charset.forName("UTF8");
         System.out.println(charset4);
+
+//        FileUtils.readFileToString();
     }
 }
