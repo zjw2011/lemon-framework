@@ -40,7 +40,7 @@ public abstract class DateUtils extends org.apache.commons.lang3.time.DateUtils 
      * Parse date by 'yyyy-MM-dd' pattern
      *
      * @param str
-     * @return
+     * @return Date
      */
     public static Date parseByDayPattern(String str) {
         return parseDate(str, DAY_PATTERN);

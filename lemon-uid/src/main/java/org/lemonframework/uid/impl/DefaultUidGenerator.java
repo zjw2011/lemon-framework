@@ -12,6 +12,7 @@ import org.lemonframework.uid.BitsAllocator;
 import org.lemonframework.uid.UidGenerator;
 import org.lemonframework.uid.exception.UidGenerateException;
 import org.lemonframework.uid.utils.DateUtils;
+import org.lemonframework.uid.worker.WorkerIdAssigner;
 
 /**
  * Represents an implementation of {@link UidGenerator}
@@ -63,7 +64,7 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
     protected long lastSecond = -1L;
 
     /** Spring property */
-    //protected WorkerIdAssigner workerIdAssigner;
+    protected WorkerIdAssigner workerIdAssigner;
 
     @Override
     public void afterPropertiesSet() throws Exception {
@@ -71,8 +72,7 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
         bitsAllocator = new BitsAllocator(timeBits, workerBits, seqBits);
 
         // initialize worker id
-        //workerIdAssigner.assignWorkerId();
-        workerId = 1;
+        workerId = workerIdAssigner.assignWorkerId();
         if (workerId > bitsAllocator.getMaxWorkerId()) {
             throw new RuntimeException("Worker id " + workerId + " exceeds the max " + bitsAllocator.getMaxWorkerId());
         }
@@ -172,9 +172,9 @@ public class DefaultUidGenerator implements UidGenerator, InitializingBean {
     /**
      * Setters for spring property
      */
-//    public void setWorkerIdAssigner(WorkerIdAssigner workerIdAssigner) {
-//        this.workerIdAssigner = workerIdAssigner;
-//    }
+    public void setWorkerIdAssigner(WorkerIdAssigner workerIdAssigner) {
+        this.workerIdAssigner = workerIdAssigner;
+    }
 
     public void setTimeBits(int timeBits) {
         if (timeBits > 0) {
