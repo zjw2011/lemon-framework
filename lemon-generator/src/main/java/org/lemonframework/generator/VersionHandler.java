@@ -1,8 +1,6 @@
 package org.lemonframework.generator;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.ReUtil;
@@ -42,45 +40,61 @@ public class VersionHandler implements GeneratorHandler {
     public void run(GeneratorContext context) {
         //比较传统的方式 查找替换
         final List<String> targetTables = this.tables == null ? context.getDbTables() : this.tables;
-        final String xmlMapperPath = context.getXmlMapperPath();
+        final String mapperPackage = context.getMapperPackage();
+        final String mapperPath = mapperPackage.replaceAll("\\.", "/");
+        final String xmlMapperPath = context.getXmlMapperPath() + "/" + mapperPath;
 
         for (int i = 0; i < targetTables.size(); i++) {
             final String tableName = targetTables.get(i);
             final String clsName = StrUtil.upperFirst(StrUtil.toCamelCase(tableName));
-            this.replaceVersion(xmlMapperPath + "/" + clsName + "Mapper.xml");
+            this.replaceUpdateVersion(xmlMapperPath + "/" + clsName + "Mapper.xml");
         }
     }
 
-    private void replaceVersion(String filePath) {
+    private void replaceUpdateVersion(String filePath) {
+        this.replaceVersion(filePath, "update");
+    }
+
+    private void replaceVersion(String filePath, String eleName) {
         // version = #{ ==> version = 1 + #{
         final String xmlText = FileUtil.readUtf8String(filePath);
-        List<String> resultFindAll = this.findAll("<update .*?</update>", xmlText, 0);
-        for (int i = 0; i < resultFindAll.size(); i++) {
-            final String result = resultFindAll.get(i);
-            StrUtil.replaceIgnoreCase(result, this.columnName + " = #{", this.columnName + " = 1 + #{");
-        }
-    }
+        final StringBuilder sb = new StringBuilder();
+        final String startEle = "<" + eleName;
+        final String endEle = "</" + eleName + ">";
+        final int endUpdateLen = endEle.length();
+        final int xmlTextLen = xmlText.length();
 
-    /**
-     * 取得内容中匹配的所有结果
-     *
-     * @param regex 正则
-     * @param content 被查找的内容
-     * @param group 正则的分组
-     * @return 结果集
-     */
-    public List<String> findAll(String regex, String content, int group) {
-        if (null == regex) {
-            return null;
+        int lastEnd = 0;
+        while (lastEnd > -1) {
+            final int nextStart = StrUtil.indexOfIgnoreCase(xmlText, startEle, lastEnd);
+
+            if (nextStart < 0) {
+                sb.append(StrUtil.sub(xmlText, lastEnd, xmlTextLen));
+                break;
+            }
+
+            // lastEnd, nextStart ->不变
+            sb.append(StrUtil.sub(xmlText, lastEnd, nextStart));
+
+            final int nextEnd = StrUtil.indexOfIgnoreCase(xmlText, endEle, nextStart) + endUpdateLen;
+
+            final String updateXml = StrUtil.sub(xmlText, nextStart, nextEnd);
+            //可以考虑正则替换
+            final String newUpdateXml = ReUtil.replaceAll(updateXml, this.columnName + "\\s*=\\s*#\\{", this.columnName + " = 1 + #{");
+            //final String newUpdateXml = StrUtil.replaceIgnoreCase(updateXml, this.columnName + " = #{", this.columnName + " = 1 + #{");
+            sb.append(newUpdateXml);
+
+            lastEnd = nextEnd;
         }
 
-        Pattern pattern = Pattern.compile(regex, Pattern.DOTALL | Pattern.CASE_INSENSITIVE);
-        return ReUtil.findAll(pattern, content, group, new ArrayList<String>());
+        FileUtil.writeUtf8String(sb.toString(), filePath);
     }
 
 //    public static void main(String[] args) {
-//        String xmlText = "<Update id='111'>12345</update><update id='111'>23455</update>";
-//        List<String> resultFindAll = new VersionHandler().findAll("<update .*?</update>", xmlText, 0);
-//        System.out.println(resultFindAll);
+//        String updateXml = "version = #{aa}";
+//        String columnName = "version";
+//        System.out.println(ReUtil.findAll(columnName + "\\s*=\\s*#\\{", updateXml, 0));
+//        final String s = ReUtil.replaceAll(updateXml, columnName + "\\s*=\\s*#\\{", columnName + " = 1 + #{");
+//        System.out.println(s);
 //    }
 }

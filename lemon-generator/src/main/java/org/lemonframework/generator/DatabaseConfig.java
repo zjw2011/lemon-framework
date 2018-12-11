@@ -45,11 +45,6 @@ public class DatabaseConfig {
     private String tablePrefix = "";
 
     /**
-     * 行版本号.
-     */
-    private boolean includeVersion = false;
-
-    /**
      * 需要生成ID的表.
      */
     private Map<String, Object> lastInsertIdTables;
@@ -108,13 +103,5 @@ public class DatabaseConfig {
 
     public void setLastInsertIdTables(Map<String, Object> lastInsertIdTables) {
         this.lastInsertIdTables = lastInsertIdTables;
-    }
-
-    public boolean isIncludeVersion() {
-        return includeVersion;
-    }
-
-    public void setIncludeVersion(boolean includeVersion) {
-        this.includeVersion = includeVersion;
     }
 }

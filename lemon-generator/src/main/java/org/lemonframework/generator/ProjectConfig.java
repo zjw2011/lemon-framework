@@ -14,6 +14,11 @@ public class ProjectConfig {
     private String root;
 
     /**
+     * 生成项目模块名.
+     */
+    private String generatorModuleName = "*-generator";
+
+    /**
      * 模块名.
      */
     private String moduleName;
@@ -45,5 +50,13 @@ public class ProjectConfig {
 
     public void setPackageName(String packageName) {
         this.packageName = packageName;
+    }
+
+    public String getGeneratorModuleName() {
+        return generatorModuleName;
+    }
+
+    public void setGeneratorModuleName(String generatorModuleName) {
+        this.generatorModuleName = generatorModuleName;
     }
 }

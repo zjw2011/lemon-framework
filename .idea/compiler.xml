@@ -16,7 +16,7 @@
     <bytecodeTargetLevel>
       <module name="lemon-bom" target="1.5" />
       <module name="lemon-core" target="1.8" />
-      <module name="lemon-demo-generator" target="1.5" />
+      <module name="lemon-demo-generator" target="1.8" />
       <module name="lemon-dependencies" target="1.5" />
       <module name="lemon-dependencies-bom" target="1.5" />
       <module name="lemon-framework" target="1.5" />

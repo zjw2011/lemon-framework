@@ -44,6 +44,7 @@
         <spring.version>4.3.21.RELEASE</spring.version>
 
         <lemon.core.version>0.0.1-SNAPSHOT</lemon.core.version>
+        <lemon.generator.version>0.0.1-SNAPSHOT</lemon.generator.version>
     </properties>
 
     <dependencyManagement>
@@ -235,6 +236,11 @@
                 <groupId>org.lemonframework</groupId>
                 <artifactId>lemon-core</artifactId>
                 <version>${lemon.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework</groupId>
+                <artifactId>lemon-generator</artifactId>
+                <version>${lemon.generator.version}</version>
             </dependency>
 
             <dependency>

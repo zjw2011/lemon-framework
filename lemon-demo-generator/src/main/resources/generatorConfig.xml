@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+    <context id="MysqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 由于beginningDelimiter和endingDelimiter的默认值为双引号(")，在Mysql中不能这么写，所以还要将这两个默认值改为`  -->
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!-- 为生成的Java模型创建一个toString方法 -->
+
+        <!-- 为生成的Java模型类添加序列化接口，并生成serialVersionUID字段 -->
+        <plugin type="org.lemonframework.generator.plugin.SerializablePlugin">
+            <property name="suppressJavaInterface" value="false"/>
+        </plugin>
+
+
+
+
+        <!-- 生成的代码去掉注释 -->
+        <commentGenerator type="org.lemonframework.generator.plugin.CommentGenerator">
+            <property name="suppressAllComments" value="true" />
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+
+        <!-- 数据库连接 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/ant?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+        <!-- model生成 -->
+        <javaModelGenerator targetPackage="org.lemonframework.generator.sample.dao.model" targetProject="/Users/apple/Documents/project/lemon-framework/lemon-generator-sample/src/main/java" />
+
+        <!-- MapperXML生成 -->
+        <sqlMapGenerator targetPackage="org.lemonframework.generator.sample.dao.mapper" targetProject="/Users/apple/Documents/project/lemon-framework/lemon-generator-sample/src/main/resources" />
+
+        <!-- Mapper接口生成 -->
+        <javaClientGenerator targetPackage="org.lemonframework.generator.sample.dao.mapper" targetProject="/Users/apple/Documents/project/lemon-framework/lemon-generator-sample/src/main/java" type="XMLMAPPER" />
+
+        <!-- 需要映射的表 -->
+                                    <table tableName="appointment_record" domainObjectName="AppointmentRecord"></table>
+                                                <table tableName="appointment_record1" domainObjectName="AppointmentRecord1"></table>
+                                                <table tableName="person" domainObjectName="Person"></table>
+                                                <table tableName="trade_order_record" domainObjectName="TradeOrderRecord"></table>
+                                                <table tableName="trade_order_record1" domainObjectName="TradeOrderRecord1"></table>
+                        </context>
+</generatorConfiguration>

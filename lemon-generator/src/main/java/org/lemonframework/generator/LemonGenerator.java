@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.hutool.core.io.resource.ResourceUtil;
+import cn.hutool.core.util.XmlUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -62,6 +63,8 @@ public class LemonGenerator {
             return false;
         }
 
+        databseConfig.setUrl(XmlUtil.escape(url));
+
         return true;
     }
 
@@ -81,17 +84,23 @@ public class LemonGenerator {
 
     private boolean initRootPath(final GeneratorContext context) {
         final String path = ResourceUtil.getResource("").getPath();
-        final int idx = path.lastIndexOf("-generator/");
+        final ProjectConfig projectConfig = context.getProjectConfig();
+        final GeneratorConfig generatorConfig = context.getGeneratorConfig();
+        final String generatorModulePath = projectConfig.getGeneratorModuleName() + "/";
+        final String generatorNameSubfix =
+                generatorModulePath.startsWith("*") ? generatorModulePath.substring(1) : generatorModulePath;
+
+        final int idx = path.lastIndexOf(generatorNameSubfix);
         if (idx > 0) {
             //表示和当前生成代码的项目是在同一个空间下
-            if (StringUtils.isBlank(context.getProjectConfig().getRoot())) {
+            if (StringUtils.isBlank(projectConfig.getRoot())) {
                 final String subPath = path.substring(0, idx);
                 final String rootPath = subPath.substring(0, subPath.lastIndexOf("/") + 1);
-                context.getProjectConfig().setRoot(rootPath);
+                projectConfig.setRoot(rootPath);
             }
-            final String generatorRootPath = path.substring(0, idx + "-generator/".length());
+            final String generatorRootPath = path.substring(0, idx + generatorNameSubfix.length());
 
-            context.getGeneratorConfig().setRoot(generatorRootPath);
+            generatorConfig.setRoot(generatorRootPath);
             return true;
         }
 
@@ -99,13 +108,18 @@ public class LemonGenerator {
     }
 
     private void cleanOldFiles(final GeneratorContext context) {
+        final String modelPackage = context.getModelPackage();
+        final String mapperPackage = context.getMapperPackage();
+
+        final String modelPath = modelPackage.replaceAll("\\.", "/");
+        final String mapperPath = mapperPackage.replaceAll("\\.", "/");
         try {
             //删除model
-            FileUtils.deleteDirectory(new File(context.getModelPath()));
+            FileUtils.deleteDirectory(new File(context.getModelPath() + "/" + modelPath));
             //删除mapper
-            FileUtils.deleteDirectory(new File(context.getMapperPath()));
+            FileUtils.deleteDirectory(new File(context.getMapperPath() + "/" + mapperPath));
             //删除xml
-            FileUtils.deleteDirectory(new File(context.getXmlMapperPath()));
+            FileUtils.deleteDirectory(new File(context.getXmlMapperPath() + "/" + mapperPath));
         } catch (Exception e) {
             // do nothing
         }
@@ -125,16 +139,14 @@ public class LemonGenerator {
         final String modelPackage = projectConfig.getPackageName() + ".dao.model";
         final String mapperPackage = projectConfig.getPackageName() + ".dao.mapper";
 
-        final String modelPath = modelPackage.replace("\\.", "/");
-        final String mapperPath = mapperPackage.replace("\\.", "/");
         final String modulePath = projectConfig.getRoot() + projectConfig.getModuleName();
 
         context.setModelPackage(modelPackage);
         context.setMapperPackage(mapperPackage);
         context.setModulePath(modulePath);
-        context.setModelPath(modulePath + "/src/main/java/" + modelPath);
-        context.setMapperPath(modulePath + "/src/main/java/" + mapperPath);
-        context.setXmlMapperPath(modulePath + "/src/main/resources/" + mapperPath);
+        context.setModelPath(modulePath + "/src/main/java");
+        context.setMapperPath(modulePath + "/src/main/java");
+        context.setXmlMapperPath(modulePath + "/src/main/resources");
 
         cleanOldFiles(context);
 
@@ -147,19 +159,19 @@ public class LemonGenerator {
         this.handlers.add(handler);
     }
 
-    public static void main(String[] args) {
-        final String path = ResourceUtil.getResource("").getPath();
-        final int idx = path.lastIndexOf("-generator/");
-        if (idx > 0) {
-            //表示和当前生成代码的项目是在同一个空间下
-                final String subPath = path.substring(0, idx);
-                final String rootPath = subPath.substring(0, subPath.lastIndexOf("/") + 1);
-                System.out.println(rootPath);
-            final String generatorRootPath = path.substring(0, idx + "-generator/".length());
-
-            System.out.println(generatorRootPath);
-        }
-
-    }
+//    public static void main(String[] args) {
+//        final String path = ResourceUtil.getResource("").getPath();
+//        final int idx = path.lastIndexOf("-generator/");
+//        if (idx > 0) {
+//            //表示和当前生成代码的项目是在同一个空间下
+//                final String subPath = path.substring(0, idx);
+//                final String rootPath = subPath.substring(0, subPath.lastIndexOf("/") + 1);
+//                System.out.println(rootPath);
+//            final String generatorRootPath = path.substring(0, idx + "-generator/".length());
+//
+//            System.out.println(generatorRootPath);
+//        }
+//
+//    }
 
 }
