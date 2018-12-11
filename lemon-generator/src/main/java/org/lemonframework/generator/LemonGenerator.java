@@ -26,9 +26,12 @@ public class LemonGenerator {
 
     private List<GeneratorHandler> handlers;
 
+    private boolean clear;
+
     public LemonGenerator(DatabaseConfig databseConfig, ProjectConfig projectConfig) {
         this.databseConfig = databseConfig;
         this.projectConfig = projectConfig;
+        this.clear = false;
         handlers = new ArrayList<>();
     }
 
@@ -46,6 +49,10 @@ public class LemonGenerator {
         final GeneratorContext context = initContext();
         if (context == null) {
            return;
+        }
+
+        if (this.clear) {
+            return;
         }
 
         GeneratorUtil.generate(context);
@@ -159,7 +166,15 @@ public class LemonGenerator {
         this.handlers.add(handler);
     }
 
-//    public static void main(String[] args) {
+    public boolean isClear() {
+        return clear;
+    }
+
+    public void setClear(boolean clear) {
+        this.clear = clear;
+    }
+
+    //    public static void main(String[] args) {
 //        final String path = ResourceUtil.getResource("").getPath();
 //        final int idx = path.lastIndexOf("-generator/");
 //        if (idx > 0) {
