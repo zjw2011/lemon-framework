@@ -38,10 +38,6 @@ public class GeneratorUtil {
         createGeneratorConfigXml(context);
         //2 MBG生成代码
         generatorCode(context.getGeneratorConfig());
-        //3 生成业务代码
-        if (context.getDatabaseConfig().isIncludeVersion()) {
-            createVersion();
-        }
     }
 
     private static void createGeneratorConfigXml(final GeneratorContext context) {
@@ -49,13 +45,28 @@ public class GeneratorUtil {
         final GeneratorConfig generatorConfig = context.getGeneratorConfig();
 
         final Map<String, Object> bindingMap = new HashMap<>();
-
+        final List<Map<String, String>> bindTables = new ArrayList<>();
+        List<String> tables = null;
         try {
-            bindingMap.put("tables", getTables(databaseConfig));
+            tables = getTables(databaseConfig);
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
             return;
         }
+        if (tables == null) {
+            System.out.println("数据库中没有表");
+            return;
+        }
+        context.setDbTables(tables);
+        for (int i = 0; i < tables.size(); i++) {
+            final String tableName = tables.get(i);
+            final Map<String, String> table = new HashMap<>(2);
+            table.put("table_name", Objects.toString(tableName));
+            table.put("model_name", tableName2ClassName(tableName));
+            bindTables.add(table);
+        }
+        bindingMap.put("tables", bindTables);
+
         bindingMap.put("generator_javaModelGenerator_targetPackage",context.getModelPackage());
         bindingMap.put("generator_javaClientGenerator_targetPackage",
                 context.getMapperPackage());
@@ -84,7 +95,7 @@ public class GeneratorUtil {
         template.render(bindingMap, outFile);
     }
 
-    private static List<Map<String, String>> getTables(final DatabaseConfig context) throws SQLException {
+    private static List<String> getTables(final DatabaseConfig context) throws SQLException {
         final String database = context.getDatabase();
         final String tablePrefix = context.getTablePrefix();
         final String jdbcUrl = context.getUrl();
@@ -102,12 +113,9 @@ public class GeneratorUtil {
         final List<Map<String, Object>> result = queryRunner.query(conn, sql, new MapListHandler(), new Object[] { database, tablePrefix });
 
         // 查询定制前缀项目的所有表
-        final List<Map<String, String>> tables = new ArrayList<>();
+        final List<String> tables = new ArrayList<>();
         for (Map map : result) {
-            final Map<String, String> table = new HashMap<>(2);
-            table.put("table_name", Objects.toString(map.get("table_name")));
-            table.put("model_name", StrUtil.toCamelCase(Objects.toString(map.get("table_name"), "")));
-            tables.add(table);
+            tables.add(Objects.toString(map.get("table_name")));
         }
         DbUtils.close(conn);
 
@@ -133,8 +141,7 @@ public class GeneratorUtil {
         }
     }
 
-    public static void createVersion() {
-
+    public static String tableName2ClassName(final String tableName) {
+        return StrUtil.upperFirst(StrUtil.toCamelCase(tableName));
     }
-
 }

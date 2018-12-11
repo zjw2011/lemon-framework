@@ -38,6 +38,9 @@
         <jboss-logging.version>3.3.2.Final</jboss-logging.version>
         <joda-time.veriosn>2.9.9</joda-time.veriosn>
         <curator.version>4.0.1</curator.version>
+        <redisson.version>3.9.1</redisson.version>
+        <jedis.version>2.9.1</jedis.version>
+        <caffeine.version>2.6.2</caffeine.version>
         <spring.version>4.3.21.RELEASE</spring.version>
 
         <lemon.core.version>0.0.1-SNAPSHOT</lemon.core.version>
@@ -178,6 +181,26 @@
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-framework</artifactId>
                 <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffeine.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>guava</artifactId>
+                <version>${caffeine.version}</version>
             </dependency>
 
             <dependency>

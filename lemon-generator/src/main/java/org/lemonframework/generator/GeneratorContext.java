@@ -1,5 +1,7 @@
 package org.lemonframework.generator;
 
+import java.util.List;
+
 /**
  * 生成代码的上下文.
  * 1 数据库相关的
@@ -30,6 +32,8 @@ public class GeneratorContext {
     private String modelPackage;
 
     private String mapperPackage;
+
+    private List<String> dbTables;
 
     public DatabaseConfig getDatabaseConfig() {
         return databaseConfig;
@@ -101,5 +105,13 @@ public class GeneratorContext {
 
     public void setMapperPackage(String mapperPackage) {
         this.mapperPackage = mapperPackage;
+    }
+
+    public List<String> getDbTables() {
+        return dbTables;
+    }
+
+    public void setDbTables(List<String> dbTables) {
+        this.dbTables = dbTables;
     }
 }

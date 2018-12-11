@@ -1,6 +1,8 @@
 package org.lemonframework.generator;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import cn.hutool.core.io.resource.ResourceUtil;
 import org.apache.commons.io.FileUtils;
@@ -21,14 +23,12 @@ public class LemonGenerator {
 
     private ProjectConfig projectConfig;
 
+    private List<GeneratorHandler> handlers;
+
     public LemonGenerator(DatabaseConfig databseConfig, ProjectConfig projectConfig) {
         this.databseConfig = databseConfig;
         this.projectConfig = projectConfig;
-    }
-
-    public GeneratorContext buildGeneratorContext() {
-        final GeneratorContext context = new GeneratorContext();
-        return context;
+        handlers = new ArrayList<>();
     }
 
     public void run() {
@@ -48,6 +48,9 @@ public class LemonGenerator {
         }
 
         GeneratorUtil.generate(context);
+        for (int i = 0; i < this.handlers.size(); i++) {
+            this.handlers.get(i).run(context);
+        }
     }
 
     private boolean checkDatabaseConfig() {
@@ -138,6 +141,10 @@ public class LemonGenerator {
 //        FileUtils.forceMkdir(new File(generatorConfigXmlDir));
 
         return context;
+    }
+
+    public void registerHandler(GeneratorHandler handler) {
+        this.handlers.add(handler);
     }
 
     public static void main(String[] args) {
