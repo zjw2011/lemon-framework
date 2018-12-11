@@ -77,7 +77,6 @@ public class VersionHandler implements GeneratorHandler {
             sb.append(StrUtil.sub(xmlText, lastEnd, nextStart));
 
             final int nextEnd = StrUtil.indexOfIgnoreCase(xmlText, endEle, nextStart) + endUpdateLen;
-
             final String updateXml = StrUtil.sub(xmlText, nextStart, nextEnd);
             //可以考虑正则替换
             final String newUpdateXml = ReUtil.replaceAll(updateXml, this.columnName + "\\s*=\\s*#\\{", this.columnName + " = 1 + #{");

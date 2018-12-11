@@ -9,19 +9,19 @@ package org.lemonframework.generator;
 public class ProjectConfig {
 
     /**
-     * 项目的根目录.
+     * 目标项目的根目录，可为空，默认是当前项目的上一级目录.
      */
     private String root;
+
+    /**
+     * 目标项目的模块名，root + moduleName = 目标项目的全路径.
+     */
+    private String moduleName;
 
     /**
      * 生成项目模块名.
      */
     private String generatorModuleName = "*-generator";
-
-    /**
-     * 模块名.
-     */
-    private String moduleName;
 
     /**
      * 包名.
