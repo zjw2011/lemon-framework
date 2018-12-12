@@ -25,7 +25,7 @@ public class MainApplication {
 
         final LemonGenerator generator = new LemonGenerator(databseConfig, projectConfig);
         generator.registerHandler(new VersionHandler());
-        generator.setClear(true);
+        generator.setClear(false);
         generator.run();
     }
 

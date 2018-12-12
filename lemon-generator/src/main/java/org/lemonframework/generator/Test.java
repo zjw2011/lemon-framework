@@ -1,7 +1,8 @@
 package org.lemonframework.generator;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
+
+import org.lemonframework.dao.entity.Example;
 
 /**
  * desc.
@@ -22,15 +23,24 @@ public class Test {
 //        template.render(bindingMap, outputFile);
 //        System.out.println();
 
-        final Charset charset = Charset.forName("UTF-8");
-        System.out.println(charset);
-        final Charset charset2 = Charset.forName("utf-8");
-        System.out.println(charset2);
-        final Charset charset3 = Charset.forName("utf8");
-        System.out.println(charset3);
-        final Charset charset4 = Charset.forName("UTF8");
-        System.out.println(charset4);
+//        final Charset charset = Charset.forName("UTF-8");
+//        System.out.println(charset);
+//        final Charset charset2 = Charset.forName("utf-8");
+//        System.out.println(charset2);
+//        final Charset charset3 = Charset.forName("utf8");
+//        System.out.println(charset3);
+//        final Charset charset4 = Charset.forName("UTF8");
+//        System.out.println(charset4);
 
 //        FileUtils.readFileToString();
+
+        Example example = new Example();
+        example.createCriteria()
+                .start("id")
+                .andGreaterThan(100L)
+                .andLessThan(151L)
+                .end();
+        example.or().start("id").andLessThan( 41L).end();
+        System.out.println(example.getOredCriteria());
     }
 }

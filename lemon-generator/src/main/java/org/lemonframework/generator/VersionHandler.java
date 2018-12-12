@@ -90,10 +90,10 @@ public class VersionHandler implements GeneratorHandler {
     }
 
 //    public static void main(String[] args) {
-//        String updateXml = "version = #{aa}";
+//        String updateXml = "version = #{aa}}";
 //        String columnName = "version";
 //        System.out.println(ReUtil.findAll(columnName + "\\s*=\\s*#\\{", updateXml, 0));
-//        final String s = ReUtil.replaceAll(updateXml, columnName + "\\s*=\\s*#\\{", columnName + " = 1 + #{");
+//        final String s = ReUtil.replaceAll(updateXml, columnName + "\\s*=\\s*#\\{(.*?)\\}", columnName + " = 1 + #{$1}");
 //        System.out.println(s);
 //    }
 }
