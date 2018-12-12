@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- DEBUG < INFO < WARN < ERROR < FATAL -->
 <Configuration status="WARN">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <Console name="AsyncConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <Console name="SyncConsole" target="SYSTEM_OUT">
+            <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{HH:mm} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
 
     </Appenders>
@@ -10,6 +20,15 @@
         <root level="DEBUG">
             <AppenderRef ref="Console"/>
         </root>
+        <AsyncLogger name="org.lemonframework" level="INFO" includeLocation="true">
+            <AppenderRef ref="AsyncConsole"/>
+        </AsyncLogger>
+        <!--<Logger name="org.lemonframework" level="INFO" includeLocation="true">-->
+            <!--<AppenderRef ref="AsyncConsole"/>-->
+        <!--</Logger>-->
+        <Logger name="org" level="WARN" additivity="false">
+            <AppenderRef ref="SyncConsole"/>
+        </Logger>
         <!--<Logger name="org.apache.kafka" level="INFO" includeLocation="true" />-->
     </Loggers>
 </Configuration>
