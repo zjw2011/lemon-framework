@@ -21,7 +21,7 @@ import org.lemonframework.cache.CacheObject;
 import org.lemonframework.cache.CacheProvider;
 
 /**
- * Caffeine cache provider
+ * Caffeine cache provider.
  *
  * @author jiawei zhang
  * @since 0.0.1

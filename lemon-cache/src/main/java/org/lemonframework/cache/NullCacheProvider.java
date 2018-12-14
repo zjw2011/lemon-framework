@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Properties;
 
 /**
+ * 空缓存提供.
  * @author jiawei zhang
  * @since 0.0.1
  */

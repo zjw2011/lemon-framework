@@ -12,7 +12,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Cache Channel, the J2Cache methods explored to developers
+ * Cache Channel, the LemonCache methods explored to developers.
  *
  * @author jiawei zhang
  * @since 0.0.1
@@ -143,7 +143,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
     }
 
     /**
-     * 批量读取缓存中的对象（用户无需判断返回的对象是否为空）
+     * 批量读取缓存中的对象(用户无需判断返回的对象是否为空).
      *
      * @param region Cache region name
      * @param keys   cache keys
@@ -176,7 +176,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
     }
 
     /**
-     * 使用数据加载器的批量缓存读取
+     * 使用数据加载器的批量缓存读取.
      *
      * @param region          Cache region name
      * @param keys            cache keys
@@ -214,7 +214,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
     }
 
     /**
-     * 判断某个缓存键是否存在
+     * 判断某个缓存键是否存在.
      *
      * @param region Cache region name
      * @param key    cache key
@@ -532,7 +532,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
     }
 
     /**
-     * <p>Get cache region keys</p>
+     * <p>Get cache region keys</p>.
      * <p><strong>Notice: ehcache3 not support keys</strong></p>
      *
      * @param region: Cache region name
@@ -586,7 +586,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
     }
 
     /**
-     * Cache Region Define
+     * Cache Region Define.
      */
     public static class Region {
 

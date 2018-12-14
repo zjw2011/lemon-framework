@@ -9,7 +9,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
 
 /**
- * 命令消息封装
+ * 命令消息封装.
  *
  * @author jiawei zhang
  * @since 0.0.1
@@ -18,10 +18,14 @@ public class Command {
 
     private final static Logger log = LoggerFactory.getLogger(Command.class);
 
-    public final static byte OPT_JOIN = 0x01;    //加入集群
-    public final static byte OPT_EVICT_KEY = 0x02;    //删除缓存
-    public final static byte OPT_CLEAR_KEY = 0x03;    //清除缓存
-    public final static byte OPT_QUIT = 0x04;    //退出集群
+    //加入集群
+    public final static byte OPT_JOIN = 0x01;
+    //删除缓存
+    public final static byte OPT_EVICT_KEY = 0x02;
+    //清除缓存
+    public final static byte OPT_CLEAR_KEY = 0x03;
+    //退出集群
+    public final static byte OPT_QUIT = 0x04;
 
     private int src;
     private int operator;
@@ -34,8 +38,9 @@ public class Command {
         return (int) (rnd_seed.nextInt(10000) * 1000 + ct % 1000);
     }
 
+    //just for json deserialize , dont remove it.
     public Command() {
-    }//just for json deserialize , dont remove it.
+    }
 
     public Command(byte o, String r, String... keys) {
         this.operator = o;

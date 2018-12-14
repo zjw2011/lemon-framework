@@ -9,6 +9,7 @@ import java.util.Properties;
 
 /**
  * J2Cache configurations
+ *
  * @author jiawei zhang
  * @since 0.0.1
  */
@@ -28,16 +29,18 @@ public class LemonCacheConfig {
 
     /**
      * Read configuration from resource
+     *
      * @param configResource config resource
      */
     public final static LemonCacheConfig initFromConfig(String configResource) throws IOException {
-        try (InputStream stream = getConfigStream(configResource)){
+        try (InputStream stream = getConfigStream(configResource)) {
             return initFromConfig(stream);
         }
     }
 
     /**
      * Read configuration from file
+     *
      * @param configFile config file
      */
     public final static LemonCacheConfig initFromConfig(File configFile) throws IOException {
@@ -48,6 +51,7 @@ public class LemonCacheConfig {
 
     /**
      * Read configuration from input stream
+     *
      * @param stream config stream
      */
     public final static LemonCacheConfig initFromConfig(InputStream stream) throws IOException {
@@ -73,15 +77,16 @@ public class LemonCacheConfig {
 
     /**
      * read sub properties by prefix
-     * @param i_prefix  prefix of config
+     *
+     * @param i_prefix prefix of config
      * @return properties without prefix
      */
     public Properties getSubProperties(String i_prefix) {
         Properties props = new Properties();
         final String prefix = i_prefix + '.';
-        properties.forEach((k,v) -> {
-            String key = (String)k;
-            if(key.startsWith(prefix)) {
+        properties.forEach((k, v) -> {
+            String key = (String) k;
+            if (key.startsWith(prefix)) {
                 props.setProperty(key.substring(prefix.length()), trim((String) v));
             }
         });
@@ -90,14 +95,15 @@ public class LemonCacheConfig {
 
     /**
      * get j2cache properties stream
+     *
      * @return
      */
     private static InputStream getConfigStream(String resource) {
         InputStream configStream = LemonCache.class.getResourceAsStream(resource);
-        if(configStream == null) {
+        if (configStream == null) {
             configStream = LemonCache.class.getClassLoader().getParent().getResourceAsStream(resource);
         }
-        if(configStream == null) {
+        if (configStream == null) {
             throw new CacheException("Cannot find " + resource + " !!!");
         }
         return configStream;
@@ -105,11 +111,11 @@ public class LemonCacheConfig {
 
     public void dump(PrintStream writer) {
         writer.printf("j2cache.serialization = %s%n", this.serialization);
-        writer.printf("[%s]%n",this.broadcast);
+        writer.printf("[%s]%n", this.broadcast);
         broadcastProperties.list(writer);
-        writer.printf("[%s]%n",this.l1CacheName);
+        writer.printf("[%s]%n", this.l1CacheName);
         l1CacheProperties.list(writer);
-        writer.printf("[%s]%n",this.l2CacheName);
+        writer.printf("[%s]%n", this.l2CacheName);
         l2CacheProperties.list(writer);
     }
 

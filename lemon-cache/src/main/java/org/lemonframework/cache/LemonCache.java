@@ -19,7 +19,8 @@ import java.io.IOException;
 
 /**
  * J2Cache 的缓存入口
- * @author Winter Lau(javayou@gmail.com)
+ * @author jiawei zhang
+ * @since 0.0.1
  */
 public class LemonCache {
 

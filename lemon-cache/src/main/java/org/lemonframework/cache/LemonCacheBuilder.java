@@ -10,9 +10,10 @@ import org.lemonframework.log.Log;
 import org.lemonframework.log.LogFactory;
 
 /**
- * 使用自定义配置构建 J2Cache
+ * 使用自定义配置构建 J2Cache.
  *
- * @author Winter Lau (javayou@gmail.com)
+ * @author jiawei zhang
+ * @since 0.0.1
  */
 public class LemonCacheBuilder {
 
@@ -30,10 +31,10 @@ public class LemonCacheBuilder {
     }
 
     /**
-     * 初始化 J2Cache，这是一个很重的操作，请勿重复执行
+     * 初始化 LemonCache，这是一个很重的操作，请勿重复执行.
      *
-     * @param config j2cache config instance
-     * @return J2CacheBuilder instance
+     * @param config lemon config instance
+     * @return LemonCacheBuilder instance
      */
     public final static LemonCacheBuilder init(LemonCacheConfig config) {
         return new LemonCacheBuilder(config);
@@ -77,7 +78,7 @@ public class LemonCacheBuilder {
     }
 
     /**
-     * 关闭 J2Cache
+     * 关闭 LemonCache
      */
     public void close() {
         this.channel.close();
@@ -101,7 +102,7 @@ public class LemonCacheBuilder {
                 //再一次清除一级缓存是为了避免缓存失效时再次从 L2 获取到值
                 this.holder.getLevel1Cache(region).evict(key);
             }
-            log.debug("Level 1 cache object expired, evict level 2 cache object [{},{}]", region, key);
+            log.debug("Local cache object expired, evict level 2 cache object [{},{}]", region, key);
             if (policy != null) {
                 policy.sendEvictCmd(region, key);
             }

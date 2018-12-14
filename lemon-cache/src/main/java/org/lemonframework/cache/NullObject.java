@@ -18,8 +18,9 @@ package org.lemonframework.cache;
 import java.io.Serializable;
 
 /**
- * Null Object
- * @author Winter Lau(javayou@gmail.com)
+ * Null Object.
+ * @author jiawei zhang
+ * @since 0.0.1
  */
 public class NullObject implements Serializable {
 }

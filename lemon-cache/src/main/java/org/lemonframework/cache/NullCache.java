@@ -21,7 +21,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 空的缓存Provider
+ * 空的缓存Provider.
+ *
  * @author jiawei zhang
  * @since 0.0.1
  */

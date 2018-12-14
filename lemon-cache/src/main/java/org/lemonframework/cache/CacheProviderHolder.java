@@ -67,25 +67,6 @@ public class CacheProviderHolder {
     }
 
     private static CacheProvider loadProviderInstance(String cacheIdent) {
-//        switch (cacheIdent.toLowerCase()) {
-//            case "ehcache":
-//                return new EhCacheProvider();
-//            case "ehcache3":
-//                return new EhCacheProvider3();
-//            case "caffeine":
-//                return new CaffeineProvider();
-//            case "redis":
-//                return new RedisCacheProvider();
-//            case "readonly-redis":
-//                return new ReadonlyRedisCacheProvider();
-//            case "memcached":
-//                return new XmemcachedCacheProvider();
-//            case "lettuce":
-//                return new LettuceCacheProvider();
-//            case "none":
-//                return new NullCacheProvider();
-//        }
-
         switch (cacheIdent.toLowerCase()) {
             case "ehcache":
                 return new EhCacheProvider();
@@ -116,7 +97,7 @@ public class CacheProviderHolder {
     }
 
     /**
-     * 一级缓存实例
+     * 本地缓存实例
      *
      * @param region cache region
      * @return level 1 cache instance
@@ -126,7 +107,7 @@ public class CacheProviderHolder {
     }
 
     /**
-     * 一级缓存实例
+     * 本地缓存实例
      *
      * @param region            cache region
      * @param timeToLiveSeconds cache ttl
@@ -137,7 +118,7 @@ public class CacheProviderHolder {
     }
 
     /**
-     * 二级缓存实例
+     * 集群缓存实例.
      *
      * @param region cache region
      * @return level 2 cache instance
@@ -147,7 +128,7 @@ public class CacheProviderHolder {
     }
 
     /**
-     * return all regions
+     * return all regions.
      *
      * @return all regions
      */
