@@ -18,7 +18,7 @@ import org.lemonframework.cache.ClusterCache;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * Redis 缓存管理，实现对多种 Redis 运行模式的支持和自动适配，实现连接池管理等
+ * Redis 缓存管理，实现对多种 Redis 运行模式的支持和自动适配，实现连接池管理等.
  *
  * @author jiawei zhang
  * @since 0.0.1
@@ -45,6 +45,7 @@ public class RedisCacheProvider implements CacheProvider {
 
     /**
      * 初始化 Redis 连接
+     *
      * @param props current configuration settings.
      */
     @Override
@@ -76,7 +77,7 @@ public class RedisCacheProvider implements CacheProvider {
                 database,
                 storage,
                 namespace,
-                (System.currentTimeMillis()-ct)
+                (System.currentTimeMillis() - ct)
         );
     }
 
@@ -92,8 +93,8 @@ public class RedisCacheProvider implements CacheProvider {
 
     @Override
     public Cache buildCache(String region, CacheExpiredListener listener) {
-        return regions.computeIfAbsent(this.namespace+":"+region, v -> "hash".equalsIgnoreCase(this.storage)?
-                new RedisHashCache(this.namespace, region, redisClient):
+        return regions.computeIfAbsent(this.namespace + ":" + region, v -> "hash".equalsIgnoreCase(this.storage) ?
+                new RedisHashCache(this.namespace, region, redisClient) :
                 new RedisGenericCache(this.namespace, region, redisClient));
     }
 
@@ -109,6 +110,7 @@ public class RedisCacheProvider implements CacheProvider {
 
     /**
      * 获取 Redis 客户端实例
+     *
      * @return redis client interface instance
      */
     public RedisClient getRedisClient() {

@@ -24,7 +24,7 @@ import java.io.IOException;
  */
 public class LemonCache {
 
-	private final static String CONFIG_FILE = "/j2cache.properties";
+	private final static String CONFIG_FILE = "/lemoncache.properties";
 
 	private final static LemonCacheBuilder builder;
 
@@ -33,12 +33,12 @@ public class LemonCache {
             LemonCacheConfig config = LemonCacheConfig.initFromConfig(CONFIG_FILE);
             builder = LemonCacheBuilder.init(config);
 		} catch (IOException e) {
-			throw new CacheException("Failed to load j2cache configuration " + CONFIG_FILE, e);
+			throw new CacheException("Failed to load lemoncache configuration " + CONFIG_FILE, e);
 		}
 	}
 
 	/**
-	 * 返回缓存操作接口
+	 * 返回缓存操作接口.
 	 * @return CacheChannel
 	 */
 	public static CacheChannel getChannel(){

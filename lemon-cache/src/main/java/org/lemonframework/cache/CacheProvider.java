@@ -5,7 +5,9 @@ import java.util.Properties;
 
 /**
  * Support for pluggable caches.
- * @author Winter Lau(javayou@gmail.com)
+ *
+ * @author jiawei zhang
+ * @since 0.0.1
  */
 public interface CacheProvider {
 
@@ -68,5 +70,4 @@ public interface CacheProvider {
 	 * during SessionFactory.close().
 	 */
 	void stop();
-
 }

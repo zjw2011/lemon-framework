@@ -70,23 +70,23 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
         }
 
         CacheObject obj = new CacheObject(region, key, CacheObject.LOCAL);
-        obj.setValue(holder.getLevel1Cache(region).get(key));
+        obj.setValue(holder.getLocalCache(region).get(key));
         if (obj.rawValue() != null) {
             return obj;
         }
 
         String lock_key = key + '%' + region;
         synchronized (_g_keyLocks.computeIfAbsent(lock_key, v -> new Object())) {
-            obj.setValue(holder.getLevel1Cache(region).get(key));
+            obj.setValue(holder.getLocalCache(region).get(key));
             if (obj.rawValue() != null) {
                 return obj;
             }
 
             try {
                 obj.setLevel(CacheObject.ClUSTER);
-                obj.setValue(holder.getLevel2Cache(region).get(key));
+                obj.setValue(holder.getClusterCache(region).get(key));
                 if (obj.rawValue() != null) {
-                    holder.getLevel1Cache(region).put(key, obj.rawValue());
+                    holder.getLocalCache(region).put(key, obj.rawValue());
                 } else {
                     boolean cacheNull = (cacheNullObject.length > 0) ? cacheNullObject[0] : defaultCacheNullObject;
                     if (cacheNull) {
@@ -155,7 +155,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
             throw new IllegalStateException("CacheChannel closed");
         }
 
-        final Map<String, Object> objs = holder.getLevel1Cache(region).get(keys);
+        final Map<String, Object> objs = holder.getLocalCache(region).get(keys);
         List<String> level2Keys = keys.stream().filter(k -> !objs.containsKey(k) || objs.get(k) == null).collect(Collectors.toList());
         Map<String, CacheObject> results = objs.entrySet().stream().filter(p -> p.getValue() != null).collect(
                 Collectors.toMap(
@@ -164,11 +164,11 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
                 )
         );
 
-        Map<String, Object> objs_level2 = holder.getLevel2Cache(region).get(level2Keys);
-        objs_level2.forEach((k, v) -> {
+        Map<String, Object> objsClusterCache = holder.getClusterCache(region).get(level2Keys);
+        objsClusterCache.forEach((k, v) -> {
             results.put(k, new CacheObject(region, k, CacheObject.ClUSTER, v));
             if (v != null) {
-                holder.getLevel1Cache(region).put(k, v);
+                holder.getLocalCache(region).put(k, v);
             }
         });
 
@@ -236,10 +236,10 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
             throw new IllegalStateException("CacheChannel closed");
         }
 
-        if (holder.getLevel1Cache(region).exists(key)) {
+        if (holder.getLocalCache(region).exists(key)) {
             return 1;
         }
-        if (holder.getLevel2Cache(region).exists(key)) {
+        if (holder.getClusterCache(region).exists(key)) {
             return 2;
         }
         return 0;
@@ -275,17 +275,18 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
         }
 
         try {
-            LocalCache level1 = holder.getLevel1Cache(region);
-            level1.put(key, (value == null && cacheNullObject) ? newNullObject() : value);
-            ClusterCache level2 = holder.getLevel2Cache(region);
+            LocalCache localCache = holder.getLocalCache(region);
+            localCache.put(key, (value == null && cacheNullObject) ? newNullObject() : value);
+            ClusterCache clusterCache = holder.getClusterCache(region);
             if (config.isSyncTtlToRedis()) {
-                level2.put(key, (value == null && cacheNullObject) ? newNullObject() : value, level1.ttl());
+                clusterCache.put(key, (value == null && cacheNullObject) ? newNullObject() : value, localCache.ttl());
             }
             else {
-                level2.put(key, (value == null && cacheNullObject) ? newNullObject() : value);
+                clusterCache.put(key, (value == null && cacheNullObject) ? newNullObject() : value);
             }
         } finally {
-            this.sendEvictCmd(region, key);//清除原有的一级缓存的内容
+            // 清除原有的一级缓存的内容
+            this.sendEvictCmd(region, key);
         }
     }
 
@@ -329,8 +330,8 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
         }
         else {
             try {
-                holder.getLevel1Cache(region, timeToLiveInSeconds).put(key, (value == null && cacheNullObject) ? newNullObject() : value);
-                ClusterCache level2 = holder.getLevel2Cache(region);
+                holder.getLocalCache(region, timeToLiveInSeconds).put(key, (value == null && cacheNullObject) ? newNullObject() : value);
+                ClusterCache level2 = holder.getClusterCache(region);
                 if (config.isSyncTtlToRedis()) {
                     level2.put(key, (value == null && cacheNullObject) ? newNullObject() : value, timeToLiveInSeconds);
                 }
@@ -338,7 +339,8 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
                     level2.put(key, (value == null && cacheNullObject) ? newNullObject() : value);
                 }
             } finally {
-                this.sendEvictCmd(region, key);//清除原有的一级缓存的内容
+                //清除原有的一级缓存的内容
+                this.sendEvictCmd(region, key);
             }
         }
     }
@@ -375,22 +377,22 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
                         newElems.put(k, newNullObject());
                     }
                 });
-                LocalCache level1 = holder.getLevel1Cache(region);
-                level1.put(newElems);
+                LocalCache localCache = holder.getLocalCache(region);
+                localCache.put(newElems);
                 if (config.isSyncTtlToRedis()) {
-                    holder.getLevel2Cache(region).put(newElems, level1.ttl());
+                    holder.getClusterCache(region).put(newElems, localCache.ttl());
                 }
                 else {
-                    holder.getLevel2Cache(region).put(newElems);
+                    holder.getClusterCache(region).put(newElems);
                 }
             } else {
-                LocalCache level1 = holder.getLevel1Cache(region);
+                LocalCache level1 = holder.getLocalCache(region);
                 level1.put(elements);
                 if (config.isSyncTtlToRedis()) {
-                    holder.getLevel2Cache(region).put(elements, level1.ttl());
+                    holder.getClusterCache(region).put(elements, level1.ttl());
                 }
                 else {
-                    holder.getLevel2Cache(region).put(elements);
+                    holder.getClusterCache(region).put(elements);
                 }
             }
         } finally {
@@ -441,20 +443,20 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
                             newElems.put(k, newNullObject());
                         }
                     });
-                    holder.getLevel1Cache(region, timeToLiveInSeconds).put(newElems);
+                    holder.getLocalCache(region, timeToLiveInSeconds).put(newElems);
                     if (config.isSyncTtlToRedis()) {
-                        holder.getLevel2Cache(region).put(newElems, timeToLiveInSeconds);
+                        holder.getClusterCache(region).put(newElems, timeToLiveInSeconds);
                     }
                     else {
-                        holder.getLevel2Cache(region).put(newElems);
+                        holder.getClusterCache(region).put(newElems);
                     }
                 } else {
-                    holder.getLevel1Cache(region, timeToLiveInSeconds).put(elements);
+                    holder.getLocalCache(region, timeToLiveInSeconds).put(elements);
                     if (config.isSyncTtlToRedis()) {
-                        holder.getLevel2Cache(region).put(elements, timeToLiveInSeconds);
+                        holder.getClusterCache(region).put(elements, timeToLiveInSeconds);
                     }
                     else {
-                        holder.getLevel2Cache(region).put(elements);
+                        holder.getClusterCache(region).put(elements);
                     }
                 }
             } finally {
@@ -478,8 +480,8 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
 
         try {
             //先清比较耗时的二级缓存，再清一级缓存
-            holder.getLevel2Cache(region).evict(keys);
-            holder.getLevel1Cache(region).evict(keys);
+            holder.getClusterCache(region).evict(keys);
+            holder.getLocalCache(region).evict(keys);
         } finally {
             this.sendEvictCmd(region, keys); //发送广播
         }
@@ -498,8 +500,8 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
 
         try {
             //先清比较耗时的二级缓存，再清一级缓存
-            holder.getLevel2Cache(region).clear();
-            holder.getLevel1Cache(region).clear();
+            holder.getClusterCache(region).clear();
+            holder.getLocalCache(region).clear();
         } finally {
             this.sendClearCmd(region);
         }
@@ -544,8 +546,8 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
         }
 
         Set<String> keys = new HashSet<>();
-        keys.addAll(holder.getLevel1Cache(region).keys());
-        keys.addAll(holder.getLevel2Cache(region).keys());
+        keys.addAll(holder.getLocalCache(region).keys());
+        keys.addAll(holder.getClusterCache(region).keys());
         return keys;
     }
 

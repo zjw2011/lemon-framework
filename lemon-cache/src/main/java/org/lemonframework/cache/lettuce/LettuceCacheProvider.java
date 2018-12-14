@@ -27,24 +27,25 @@ import org.lemonframework.cache.Command;
 import org.lemonframework.cache.cluster.ClusterPolicy;
 
 /**
- *  使用 Lettuce 进行 Redis 的操作
- *
- *  配置信息：
- *
- *  lettuce.namespace =
- *  lettuce.storage = generic
- *  lettuce.scheme = redis|rediss|redis-sentinel
- *  lettuce.hosts = 127.0.0.1:6379
- *  lettuce.password =
- *  lettuce.database = 0
- *  lettuce.sentinelMasterId =
+ * 使用 Lettuce 进行 Redis 的操作
+ * <p>
+ * 配置信息：
+ * <p>
+ * lettuce.namespace =
+ * lettuce.storage = generic
+ * lettuce.scheme = redis|rediss|redis-sentinel
+ * lettuce.hosts = 127.0.0.1:6379
+ * lettuce.password =
+ * lettuce.database = 0
+ * lettuce.sentinelMasterId =
  *
  * @author jiawei zhang
  * @since 0.0.1
  */
 public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> implements CacheProvider, ClusterPolicy {
 
-    private int LOCAL_COMMAND_ID = Command.genRandomSrc(); //命令源标识，随机生成，每个节点都有唯一标识
+    //命令源标识，随机生成，每个节点都有唯一标识
+    private int LOCAL_COMMAND_ID = Command.genRandomSrc();
 
     private static final LettuceByteCodec codec = new LettuceByteCodec();
 
@@ -79,7 +80,7 @@ public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> imp
     public void start(Properties props) {
         this.namespace = props.getProperty("namespace");
         this.storage = props.getProperty("storage", "hash");
-        this.channel = props.getProperty("channel", "j2cache");
+        this.channel = props.getProperty("channel", "lemoncache");
 
         String scheme = props.getProperty("scheme", "redis");
         String hosts = props.getProperty("hosts", "127.0.0.1:6379");
@@ -88,14 +89,14 @@ public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> imp
         String sentinelMasterId = props.getProperty("sentinelMasterId");
 
         boolean isCluster = false;
-        if("redis-cluster".equalsIgnoreCase(scheme)) {
+        if ("redis-cluster".equalsIgnoreCase(scheme)) {
             scheme = "redis";
             isCluster = true;
         }
 
         String redis_url = String.format("%s://%s@%s/%d#%s", scheme, password, hosts, database, sentinelMasterId);
 
-        redisClient = isCluster?RedisClusterClient.create(redis_url):RedisClient.create(redis_url);
+        redisClient = isCluster ? RedisClusterClient.create(redis_url) : RedisClient.create(redis_url);
 
         //connection pool configurations
         GenericObjectPoolConfig poolConfig = new GenericObjectPoolConfig();
@@ -104,10 +105,9 @@ public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> imp
         poolConfig.setMinIdle(Integer.parseInt(props.getProperty("minIdle", "10")));
 
         pool = ConnectionPoolSupport.createGenericObjectPool(() -> {
-            if(redisClient instanceof RedisClient) {
+            if (redisClient instanceof RedisClient) {
                 return ((RedisClient) redisClient).connect(codec);
-            }
-            else if(redisClient instanceof RedisClusterClient) {
+            } else if (redisClient instanceof RedisClusterClient) {
                 return ((RedisClusterClient) redisClient).connect(codec);
             }
             return null;
@@ -123,8 +123,8 @@ public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> imp
 
     @Override
     public Cache buildCache(String region, CacheExpiredListener listener) {
-        return regions.computeIfAbsent(this.namespace + ":" + region, v -> "hash".equalsIgnoreCase(this.storage)?
-                new LettuceHashCache(this.namespace, region, pool):
+        return regions.computeIfAbsent(this.namespace + ":" + region, v -> "hash".equalsIgnoreCase(this.storage) ?
+                new LettuceHashCache(this.namespace, region, pool) :
                 new LettuceGenericCache(this.namespace, region, pool));
     }
 
@@ -140,32 +140,34 @@ public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> imp
 
     /**
      * 删除本地某个缓存条目
+     *
      * @param region 区域名称
      * @param keys   缓存键值
      */
     @Override
     public void evict(String region, String... keys) {
-        holder.getLevel1Cache(region).evict(keys);
+        holder.getLocalCache(region).evict(keys);
     }
 
     /**
      * 清除本地整个缓存区域
+     *
      * @param region 区域名称
      */
     @Override
     public void clear(String region) {
-        holder.getLevel1Cache(region).clear();
+        holder.getLocalCache(region).clear();
     }
 
     /**
      * Get PubSub connection
+     *
      * @return connection instance
      */
     private StatefulRedisPubSubConnection pubsub() {
-        if(redisClient instanceof RedisClient) {
+        if (redisClient instanceof RedisClient) {
             return ((RedisClient) redisClient).connectPubSub();
-        }
-        else if(redisClient instanceof RedisClusterClient) {
+        } else if (redisClient instanceof RedisClusterClient) {
             return ((RedisClusterClient) redisClient).connectPubSub();
         }
         return null;
@@ -183,7 +185,7 @@ public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> imp
         RedisPubSubAsyncCommands<String, String> async = this.pubsub_subscriber.async();
         async.subscribe(this.channel);
 
-        log.info("Connected to redis channel:{}, time {}ms.", this.channel, System.currentTimeMillis()-ct);
+        log.info("Connected to redis channel:{}, time {}ms.", this.channel, System.currentTimeMillis() - ct);
     }
 
     @Override
@@ -194,8 +196,8 @@ public class LettuceCacheProvider extends RedisPubSubAdapter<String, String> imp
 
     @Override
     public void publish(Command cmd) {
-    	cmd.setSrc(LOCAL_COMMAND_ID);
-        try (StatefulRedisPubSubConnection<String, String> connection = this.pubsub()){
+        cmd.setSrc(LOCAL_COMMAND_ID);
+        try (StatefulRedisPubSubConnection<String, String> connection = this.pubsub()) {
             RedisPubSubCommands<String, String> sync = connection.sync();
             sync.publish(this.channel, cmd.json());
         }

@@ -102,7 +102,7 @@ public class CacheProviderHolder {
      * @param region cache region
      * @return level 1 cache instance
      */
-    public LocalCache getLevel1Cache(String region) {
+    public LocalCache getLocalCache(String region) {
         return (LocalCache) l1_provider.buildCache(region, listener);
     }
 
@@ -113,7 +113,7 @@ public class CacheProviderHolder {
      * @param timeToLiveSeconds cache ttl
      * @return level 1 cache instance
      */
-    public LocalCache getLevel1Cache(String region, long timeToLiveSeconds) {
+    public LocalCache getLocalCache(String region, long timeToLiveSeconds) {
         return (LocalCache) l1_provider.buildCache(region, timeToLiveSeconds, listener);
     }
 
@@ -123,7 +123,7 @@ public class CacheProviderHolder {
      * @param region cache region
      * @return level 2 cache instance
      */
-    public ClusterCache getLevel2Cache(String region) {
+    public ClusterCache getClusterCache(String region) {
         return (ClusterCache) l2_provider.buildCache(region, listener);
     }
 

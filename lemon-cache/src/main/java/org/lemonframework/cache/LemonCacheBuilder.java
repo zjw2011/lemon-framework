@@ -96,11 +96,11 @@ public class LemonCacheBuilder {
         //初始化两级的缓存管理
         this.holder = CacheProviderHolder.init(config, (region, key) -> {
             //当一级缓存中的对象失效时，自动清除二级缓存中的数据
-            ClusterCache level2 = this.holder.getLevel2Cache(region);
+            ClusterCache level2 = this.holder.getClusterCache(region);
             level2.evict(key);
             if (!level2.supportTTL()) {
                 //再一次清除一级缓存是为了避免缓存失效时再次从 L2 获取到值
-                this.holder.getLevel1Cache(region).evict(key);
+                this.holder.getLocalCache(region).evict(key);
             }
             log.debug("Local cache object expired, evict level 2 cache object [{},{}]", region, key);
             if (policy != null) {
