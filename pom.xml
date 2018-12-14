@@ -14,6 +14,7 @@
         <module>lemon-core</module>
         <module>lemon-generator</module>
         <module>lemon-uid</module>
+        <module>lemon-cache</module>
     </modules>
 
 
