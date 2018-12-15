@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859a11e7-c73e-4135-9ace-cc3a867e3ffc" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/codec/Codec.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/lemon-cache/README.zh_cn.md" afterPath="$PROJECT_DIR$/lemon-cache/README.zh_cn.md" />
+      <change beforePath="$PROJECT_DIR$/lemon-cache/pom.xml" afterPath="$PROJECT_DIR$/lemon-cache/pom.xml" />
       <change beforePath="$PROJECT_DIR$/lemon-dependencies/pom.xml" afterPath="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,21 +40,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
+      <file leaf-file-name="CacheObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+            <state relative-caret-position="261">
+              <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JGroupsClusterPolicy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/JGroupsClusterPolicy.java">
+      <file leaf-file-name="Codec.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/codec/Codec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1048">
-              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="38" />
+            <state relative-caret-position="190">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaffeineCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/caffeine/CaffeineCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="105" column="31" lean-forward="false" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OuterCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/OuterCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigSupport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ConfigSupport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="138" column="27" lean-forward="false" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LocalCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.zh_cn.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/README.zh_cn.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="133">
+                <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JedisConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/JedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -126,18 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/Cache.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/README.zh_cn.md" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LocalCache.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheException.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ClusterCache.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/SerializationUtils.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/Serializer.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/KryoSerializer.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/KryoPoolSerializer.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/JavaSerializer.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FstSnappySerializer.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FSTSerializer.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/DeserializeException.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FastjsonSerializer.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FstJSONSerializer.java" />
@@ -156,14 +232,12 @@
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ehcache/EhCache.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ehcache/EhCacheProvider.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/Command.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheConfig.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/NullCache.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/NullCacheProvider.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/NullObject.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheCmd.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/caffeine/CaffeineProvider.java" />
-        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCache.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheProviderHolder.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheObject.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheProvider.java" />
@@ -177,6 +251,20 @@
         <option value="$PROJECT_DIR$/lemon-parent/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheBuilder.java" />
         <option value="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/test/java/TestObjectMapper.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/test/java/org/lemonframework/cache/TestObjectMapper.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ConfigSupport.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheClient.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/Config.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/JedisConfig.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LettuceConfig.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/codec/Codec.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCache.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/BaseConfig.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/OuterCache.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LocalCache.java" />
+        <option value="$PROJECT_DIR$/lemon-cache/README.zh_cn.md" />
       </list>
     </option>
   </component>
@@ -211,42 +299,13 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="lemon-cache" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="de.ruedigermoeller:fst:2.57" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.fasterxml.jackson.core:jackson-databind:2.9.7" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="lemon-cache" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="io.lettuce:lettuce-core:5.1.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lemon-cache" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="io.lettuce:lettuce-core:5.1.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-          <item name="io.projectreactor:reactor-core:3.2.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lemon-cache" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="io.lettuce:lettuce-core:5.1.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-          <item name="io.netty:netty-transport:4.1.31.Final" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lemon-cache" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="io.lettuce:lettuce-core:5.1.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-          <item name="io.netty:netty-handler:4.1.31.Final" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lemon-cache" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="io.lettuce:lettuce-core:5.1.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-          <item name="io.netty:netty-handler:4.1.31.Final" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-          <item name="io.netty:netty-codec:4.1.31.Final" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.7" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -398,70 +457,68 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lemonframework" type="462c0819:PsiDirectoryNode" />
               <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="codec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lemonframework" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lemonframework" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="caffeine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lemonframework" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
               <item name="cluster" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
               <item name="lemon-dependencies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="lemon-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="lemon-uid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-io:commons-io:2.6" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-io:commons-io:2.6" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-io-2.6.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-io:commons-io:2.6" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-io-2.6.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-pool2:2.6.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-pool2:2.6.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-pool2-2.6.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-pool2:2.6.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-pool2-2.6.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="pool2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-pool2:2.6.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-pool2-2.6.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="pool2" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -484,6 +541,9 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.lemonframework.cache" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.lemonframework.cache" />
       <recent name="org.lemonframework.cache.ehcache" />
@@ -511,7 +571,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MixUtil">
+  <component name="RunManager" selected="JUnit.TestObjectMapper.testFilter">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -575,25 +635,6 @@
       <module name="lemon-generator" />
       <envs />
     </configuration>
-    <configuration name="VersionHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.lemonframework.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.lemonframework.generator.VersionHandler" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lemon-generator" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -622,6 +663,26 @@
       <option name="MAIN_CLASS_NAME" value="org.lemonframework.log.Log4j2Test" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestObjectMapper.testFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="lemon-cache" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.lemonframework.cache" />
+      <option name="MAIN_CLASS_NAME" value="org.lemonframework.cache.TestObjectMapper" />
+      <option name="METHOD_NAME" value="testFilter" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -694,19 +755,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.VersionHandler" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MainApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MixUtil" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MainApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MixUtil" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestObjectMapper.testFilter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MixUtil" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MainApplication" />
-        <item index="4" class="java.lang.String" itemvalue="Application.VersionHandler" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestObjectMapper.testFilter" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MixUtil" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Log4j2Test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MainApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -728,44 +789,44 @@
       <workItem from="1542161091402" duration="4880000" />
       <workItem from="1543543354782" duration="22663000" />
       <workItem from="1543818068694" duration="25338000" />
-      <workItem from="1543916338428" duration="105271000" />
+      <workItem from="1543916338428" duration="115959000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 28m 10s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 48m 12s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 28m 28s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 48m 31s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 28m 54s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 49m 13s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 29m 07s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 49m 27s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 29m 35s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 49m 38s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 31m 47s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 49m 59s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 32m 34s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 50m 31s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 33m 43s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 51m 02s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 35m 14s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 51m 35s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Log4j2Test - 2018.12.12 at 15h 35m 39s.xml">
-      <configuration name="Log4j2Test" configurationId="JUnit" />
+    <history-entry file="TestObjectMapper_testFilter - 2018.12.15 at 14h 51m 50s.xml">
+      <configuration name="TestObjectMapper.testFilter" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160874000" />
+    <option name="totallyTimeSpent" value="171562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -781,19 +842,19 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.211226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.211226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32791728" sideWeight="0.49674267" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22599705" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29246676" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.495114" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2747415" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41775244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27361563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124076806" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -941,335 +1002,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/NullCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="26" column="15" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2-sources.jar!/com/github/benmanes/caffeine/cache/Cache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2-sources.jar!/com/github/benmanes/caffeine/cache/Caffeine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1338">
-          <caret line="135" column="19" lean-forward="false" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
-          <folding>
-            <element signature="e#9736#9737#0" expanded="false" />
-            <element signature="e#9769#9770#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCacheCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="617" column="17" lean-forward="false" selection-start-line="617" selection-start-column="17" selection-end-line="617" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.3/commons-pool2-2.4.3.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <marker date="1524206541155" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1524206541155" expanded="true" signature="491:498" ph="{}" />
-            <marker date="1524206541155" expanded="false" signature="528:539" ph=" { " />
-            <marker date="1524206541155" expanded="false" signature="560:566" ph=" }" />
-            <marker date="1524206541155" expanded="false" signature="609:620" ph=" { " />
-            <marker date="1524206541155" expanded="false" signature="645:651" ph=" }" />
-            <marker date="1524206541155" expanded="false" signature="680:691" ph=" { " />
-            <marker date="1524206541155" expanded="false" signature="711:717" ph=" }" />
-            <marker date="1524206541155" expanded="false" signature="758:769" ph=" { " />
-            <marker date="1524206541155" expanded="false" signature="792:798" ph=" }" />
-            <marker date="1524206541155" expanded="false" signature="827:838" ph=" { " />
-            <marker date="1524206541155" expanded="false" signature="858:864" ph=" }" />
-            <marker date="1524206541155" expanded="false" signature="905:916" ph=" { " />
-            <marker date="1524206541155" expanded="false" signature="939:945" ph=" }" />
-            <marker date="1524206541155" expanded="true" signature="990:1172" ph="{...}" />
-            <marker date="1524206541155" expanded="true" signature="1237:1519" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.3/commons-pool2-2.4.3-sources.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisCacheProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="94" column="72" lean-forward="false" selection-start-line="94" selection-start-column="64" selection-end-line="94" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.6.0/commons-pool2-2.6.0.jar!/org/apache/commons/pool2/impl/GenericObjectPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/api/StatefulConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.6.0/commons-pool2-2.6.0-sources.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="1642" column="13" lean-forward="false" selection-start-line="1642" selection-start-column="13" selection-end-line="1642" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/cluster/RedisClusterClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3529">
-          <caret line="252" column="37" lean-forward="false" selection-start-line="252" selection-start-column="37" selection-end-line="252" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/NoneClusterPolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/api/sync/BaseRedisCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/cluster/pubsub/api/sync/RedisClusterPubSubCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/api/sync/RedisCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/StatefulRedisConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/pubsub/StatefulRedisPubSubConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
-          <folding>
-            <element signature="e#3140#3141#0" expanded="false" />
-            <element signature="e#3195#3196#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/cluster/StatefulRedisClusterPubSubConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
-          <folding>
-            <element signature="e#3250#3251#0" expanded="false" />
-            <element signature="e#3320#3321#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/pubsub/StatefulRedisPubSubConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="44" column="34" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE-sources.jar!/io/lettuce/core/pubsub/api/sync/RedisPubSubCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/caffeine/CaffeineProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/NullObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/ClusterPolicyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/Cache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="62" column="14" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisPubSubClusterPolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisHashCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCacheConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="125" column="18" lean-forward="false" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
-          <folding>
-            <element signature="e#4451#4452#0" expanded="false" />
-            <element signature="e#4483#4484#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheProviderHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheExpiredListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="6" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.6.0/commons-pool2-2.6.0-sources.jar!/org/apache/commons/pool2/impl/GenericObjectPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="364" column="22" lean-forward="true" selection-start-line="364" selection-start-column="22" selection-end-line="364" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/lettuce/LettuceByteCodec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1310,14 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-808">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/lettuce/LettuceCacheProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1869">
@@ -1330,75 +1054,575 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/ClusterPolicy.java">
+    <entry file="file://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/Command.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="62" column="19" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        <state relative-caret-position="836">
+          <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
           <folding>
-            <element signature="e#1913#1914#0" expanded="false" />
-            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#1427#1428#0" expanded="false" />
+            <element signature="e#1477#1478#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/caffeine/CaffeineCache.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/type/ClassKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1308#1309#0" expanded="false" />
-            <element signature="e#1364#1365#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCacheBuilder.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/introspect/SimpleMixInResolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="63" />
-          <folding>
-            <element signature="e#842#843#0" expanded="false" />
-            <element signature="e#878#879#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1153#1154#0" expanded="false" />
-            <element signature="e#1890#1891#0" expanded="false" />
-            <element signature="e#1979#1980#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheChannel.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0-sources.jar!/com/fasterxml/jackson/annotation/JsonIgnoreProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/com/fasterxml/jackson/annotation/JsonIgnoreProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
-            <element signature="e#1046#1047#0" expanded="false" />
-            <element signature="e#1085#1086#0" expanded="false" />
+            <marker date="1525947226672" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1525947226672" expanded="false" signature="156:416" ph="..." />
+            <marker date="1525947226672" expanded="true" signature="418:593" ph="@{...}" />
+            <marker date="1525947226672" expanded="true" signature="899:10456" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="1463:1818" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="1900:2052" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="2216:2413" ph="{...}" />
+            <marker date="1525947226672" expanded="false" signature="2471:2486" ph=" { " />
+            <marker date="1525947226672" expanded="false" signature="2499:2509" ph=" }" />
+            <marker date="1525947226672" expanded="true" signature="2637:2725" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="2823:3267" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="3362:3422" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="3515:3615" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="3698:3794" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="3890:4688" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="4765:4889" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="4964:5096" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="5157:5283" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="5347:5491" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="5558:5704" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="5767:5911" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="5977:6123" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="6186:6330" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="6396:6542" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="6598:6742" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="6801:6947" ph="{...}" />
+            <marker date="1525947226672" expanded="false" signature="7002:7017" ph=" { " />
+            <marker date="1525947226672" expanded="false" signature="7051:7061" ph=" }" />
+            <marker date="1525947226672" expanded="true" signature="7102:7244" ph="{...}" />
+            <marker date="1525947226672" expanded="false" signature="7285:7300" ph=" { " />
+            <marker date="1525947226672" expanded="false" signature="7321:7331" ph=" }" />
+            <marker date="1525947226672" expanded="true" signature="7390:7481" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="7542:7633" ph="{...}" />
+            <marker date="1525947226672" expanded="false" signature="7676:7691" ph=" { " />
+            <marker date="1525947226672" expanded="false" signature="7718:7728" ph=" }" />
+            <marker date="1525947226672" expanded="false" signature="7770:7785" ph=" { " />
+            <marker date="1525947226672" expanded="false" signature="7811:7821" ph=" }" />
+            <marker date="1525947226672" expanded="false" signature="7863:7878" ph=" { " />
+            <marker date="1525947226672" expanded="false" signature="7904:7914" ph=" }" />
+            <marker date="1525947226672" expanded="false" signature="7949:7964" ph=" { " />
+            <marker date="1525947226672" expanded="false" signature="7983:7993" ph=" }" />
+            <marker date="1525947226672" expanded="true" signature="8028:8262" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="8294:8471" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="8513:8787" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="8888:9089" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="9145:9583" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="9659:10008" ph="{...}" />
+            <marker date="1525947226672" expanded="true" signature="10151:10450" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        <state relative-caret-position="179">
+          <caret line="326" column="25" lean-forward="false" selection-start-line="322" selection-start-column="12" selection-end-line="326" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar!/com/fasterxml/jackson/core/JsonFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <marker date="1541904329296" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1541904329296" expanded="false" signature="150:1778" ph="..." />
+            <marker date="1541904329296" expanded="false" signature="2913:2924" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="2948:2954" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="2995:3438" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="3502:4334" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="4366:4481" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="4534:4756" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="4792:4803" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="4851:4857" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="4904:4915" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="4928:4934" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="4980:4991" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="5004:5010" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="5049:5060" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="5072:5078" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="5114:5125" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="5154:5160" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="5230:5241" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="5253:5259" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="5330:5341" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="5353:5359" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="5414:5639" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="5674:5685" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="5745:5751" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="5826:5919" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="5961:5972" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="5985:5991" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="6073:6142" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="6172:6183" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="6213:6219" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="6298:6362" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="6417:6491" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="6547:6622" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="6681:6692" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="6742:6748" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="6853:6917" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="6998:7071" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="7153:7227" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="7313:7378" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="7425:7436" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="7464:7470" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="7531:7593" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="7701:7765" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="7849:7925" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="8010:8087" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="8176:8244" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="8295:8306" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="8336:8342" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="8409:8475" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="8524:8535" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="8564:8570" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="8633:8696" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="8755:8866" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="8910:9011" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="9061:9121" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="9156:9167" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="9192:9198" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="9282:9473" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="9558:9749" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="9841:9972" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="10058:10187" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="10276:10644" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="10754:11116" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="11208:11683" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="11755:11832" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="11925:12136" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="12206:12337" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="12415:12766" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="12772:12790" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="12893:12937" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="12943:12961" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="13065:13111" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="13117:13135" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="13246:13291" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="13297:13315" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="13420:13464" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="13470:13488" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="13596:13643" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="13649:13667" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="13796:13856" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="13862:13880" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="13991:14041" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="14139:14513" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="14593:14661" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="14733:14865" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="14953:15392" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="15488:15573" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="15651:15750" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="15756:15774" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="15891:15945" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="15951:15969" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="16062:16111" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="16117:16135" ph="/**...*/" />
+            <marker date="1541904329296" expanded="true" signature="16234:16302" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="16394:16594" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="16680:16835" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="16965:17171" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="17281:17496" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="17589:17976" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="18070:18516" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="18620:19052" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="19160:19295" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="19390:19615" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="19700:19920" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="20011:20234" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="20332:20565" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="20651:20878" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="20927:21102" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="21183:21272" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="21339:21457" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="21526:21537" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="21572:21578" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="21658:22036" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="22093:22243" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="22287:22298" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="22336:22342" ph=" }" />
+            <marker date="1541904329296" expanded="true" signature="22355:22452" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="22485:23512" ph="{...}" />
+            <marker date="1541904329296" expanded="true" signature="22749:23117" ph="{...}" />
+            <marker date="1541904329296" expanded="false" signature="23164:23179" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="23213:23223" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="23266:23281" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="23307:23317" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="23362:23377" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="23414:23424" ph=" }" />
+            <marker date="1541904329296" expanded="false" signature="23454:23469" ph=" { " />
+            <marker date="1541904329296" expanded="false" signature="23496:23506" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0-sources.jar!/com/fasterxml/jackson/annotation/JsonTypeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/test/java/org/lemonframework/cache/TestObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#935#936#0" expanded="false" />
+            <element signature="e#979#980#0" expanded="false" />
+            <element signature="e#1019#1020#0" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1088#1089#0" expanded="false" />
+            <element signature="e#1131#1132#0" expanded="false" />
+            <element signature="e#1169#1170#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/type/TypeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="210" column="30" lean-forward="false" selection-start-line="210" selection-start-column="30" selection-end-line="210" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCacheBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1397">
+          <caret line="1642" column="13" lean-forward="false" selection-start-line="1642" selection-start-column="13" selection-end-line="1642" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="950" column="29" lean-forward="false" selection-start-line="950" selection-start-column="14" selection-end-line="950" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LocalCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisGenericCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="170" column="25" lean-forward="false" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/FstJSONSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/ClusterPolicyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="83" column="90" lean-forward="true" selection-start-line="83" selection-start-column="90" selection-end-line="83" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheProviderHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/BaseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="1672" column="24" lean-forward="false" selection-start-line="1672" selection-start-column="24" selection-end-line="1672" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/ClusterPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LettuceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/JGroupsClusterPolicy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1048">
-          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="38" />
+        <state relative-caret-position="134">
+          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jgroups/jgroups/4.0.15.Final/jgroups-4.0.15.Final.jar!/org/jgroups/ReceiverAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <marker date="1544775375234" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544775375234" expanded="false" signature="135:249" ph="..." />
+            <marker date="1544775375234" expanded="true" signature="331:338" ph="{}" />
+            <marker date="1544775375234" expanded="true" signature="377:384" ph="{}" />
+            <marker date="1544775375234" expanded="true" signature="430:696" ph="{...}" />
+            <marker date="1544775375234" expanded="true" signature="761:768" ph="{}" />
+            <marker date="1544775375234" expanded="true" signature="831:838" ph="{}" />
+            <marker date="1544775375234" expanded="true" signature="880:887" ph="{}" />
+            <marker date="1544775375234" expanded="true" signature="926:933" ph="{}" />
+            <marker date="1544775375234" expanded="true" signature="959:966" ph="{}" />
+            <marker date="1544775375234" expanded="true" signature="994:1001" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jgroups/jgroups/4.0.15.Final/jgroups-4.0.15.Final-sources.jar!/org/jgroups/ReceiverAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/OuterCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ConfigSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="138" column="27" lean-forward="false" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LocalCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/codec/Codec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/caffeine/CaffeineCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="105" column="31" lean-forward="false" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/README.zh_cn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/JedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="58" />
           <folding />
         </state>
       </provider>
