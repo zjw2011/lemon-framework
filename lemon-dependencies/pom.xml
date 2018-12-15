@@ -51,6 +51,8 @@
         <fastjson.version>1.2.54</fastjson.version>
         <jgroups.version>4.0.15.Final</jgroups.version>
         <spring.version>4.3.21.RELEASE</spring.version>
+        <jackson.version>2.9.7</jackson.version>
+        <snakeyaml.version>1.23</snakeyaml.version>
 
         <lemon.core.version>0.0.1-SNAPSHOT</lemon.core.version>
         <lemon.generator.version>0.0.1-SNAPSHOT</lemon.generator.version>
@@ -83,7 +85,21 @@
                 <artifactId>commons-pool2</artifactId>
                 <version>${commons-pool2.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-yaml</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.mybatis.generator</groupId>

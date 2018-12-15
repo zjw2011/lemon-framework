@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859a11e7-c73e-4135-9ace-cc3a867e3ffc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/Cache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/Cache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheChannel.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheChannel.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheException.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheException.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheExpiredListener.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheExpiredListener.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheObject.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheObject.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheProvider.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheProvider.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheProviderHolder.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheProviderHolder.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ClusterCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/ClusterCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/Command.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/Command.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheBuilder.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCacheBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheCmd.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCacheCmd.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheConfig.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LemonCacheConfig.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LocalCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/LocalCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/NullCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/NullCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/NullCacheProvider.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/NullCacheProvider.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/NullObject.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/NullObject.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/caffeine/CaffeineCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/caffeine/CaffeineCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/caffeine/CaffeineProvider.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/caffeine/CaffeineProvider.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/cluster/ClusterPolicy.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/ClusterPolicy.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/cluster/ClusterPolicyFactory.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/ClusterPolicyFactory.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/cluster/JGroupsClusterPolicy.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/JGroupsClusterPolicy.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/cluster/NoneClusterPolicy.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/NoneClusterPolicy.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ehcache/EhCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/ehcache/EhCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/ehcache/EhCacheProvider.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/ehcache/EhCacheProvider.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/lettuce/LettuceByteCodec.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/lettuce/LettuceByteCodec.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/lettuce/LettuceCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/lettuce/LettuceCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/lettuce/LettuceCacheProvider.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/lettuce/LettuceCacheProvider.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/lettuce/LettuceGenericCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/lettuce/LettuceGenericCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/lettuce/LettuceHashCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/lettuce/LettuceHashCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/ReadonlyRedisCacheProvider.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/ReadonlyRedisCacheProvider.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisCacheProvider.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisCacheProvider.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisClient.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisClient.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisGenericCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisGenericCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisHashCache.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisHashCache.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisPubSubClusterPolicy.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisPubSubClusterPolicy.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisUtils.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/redis/RedisUtils.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/DeserializeException.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/DeserializeException.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FSTSerializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/FSTSerializer.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FastjsonSerializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/FastjsonSerializer.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FstJSONSerializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/FstJSONSerializer.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/FstSnappySerializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/FstSnappySerializer.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/JavaSerializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/JavaSerializer.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/KryoPoolSerializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/KryoPoolSerializer.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/KryoSerializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/KryoSerializer.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/SerializationUtils.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/SerializationUtils.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/util/Serializer.java" afterPath="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/util/Serializer.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/lemon-dependencies/pom.xml" afterPath="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,15 +37,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CacheChannel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/CacheChannel.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="40" />
-              <folding>
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="149">
+              <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JGroupsClusterPolicy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/JGroupsClusterPolicy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1048">
+              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>epochSeconds</find>
       <find>paddingFactor</find>
       <find>rejectedPutBufferHandler</find>
       <find>rejectedPutHandler</find>
@@ -139,6 +100,7 @@
       <find>LOCAL_COMMAND_ID</find>
       <find>ev</find>
       <find>publish</find>
+      <find>jackson</find>
     </findStrings>
     <dirStrings>
       <dir>$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1.jar!/org/apache/logging/log4j/core</dir>
@@ -207,7 +169,6 @@
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/CacheProvider.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisCacheProvider.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/lettuce/LettuceCacheProvider.java" />
-        <option value="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/cluster/ClusterPolicy.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/cluster/JGroupsClusterPolicy.java" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/cluster/ClusterPolicyFactory.java" />
@@ -215,6 +176,7 @@
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/redis/RedisPubSubClusterPolicy.java" />
         <option value="$PROJECT_DIR$/lemon-parent/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/cache/LemonCacheBuilder.java" />
+        <option value="$PROJECT_DIR$/lemon-dependencies/pom.xml" />
       </list>
     </option>
   </component>
@@ -407,6 +369,41 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lemonframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lemonframework" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lemonframework" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-dependencies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -731,7 +728,7 @@
       <workItem from="1542161091402" duration="4880000" />
       <workItem from="1543543354782" duration="22663000" />
       <workItem from="1543818068694" duration="25338000" />
-      <workItem from="1543916338428" duration="103686000" />
+      <workItem from="1543916338428" duration="105271000" />
     </task>
     <servers />
   </component>
@@ -768,10 +765,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159289000" />
+    <option name="totallyTimeSpent" value="160874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38109306" sideWeight="0.50651467" order="7" side_tool="true" content_ui="tabs" />
@@ -794,7 +792,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.495114" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2747415" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38680783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41775244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1205,34 +1203,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/JGroupsClusterPolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2182#2183#0" expanded="false" />
-            <element signature="e#2237#2238#0" expanded="false" />
-            <element signature="e#2393#2394#0" expanded="false" />
-            <element signature="e#2449#2450#0" expanded="false" />
-            <element signature="e#2563#2564#0" expanded="false" />
-            <element signature="e#2615#2616#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1407,9 +1381,25 @@
         <state relative-caret-position="969">
           <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="40" />
           <folding>
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="false" />
+            <element signature="e#1085#1086#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-dependencies/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/src/main/java/org/lemonframework/old/cache/cluster/JGroupsClusterPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1048">
+          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
