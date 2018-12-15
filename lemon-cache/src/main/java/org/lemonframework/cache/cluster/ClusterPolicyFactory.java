@@ -8,7 +8,8 @@ import org.lemonframework.cache.lettuce.LettuceCacheProvider;
 import org.lemonframework.cache.redis.RedisPubSubClusterPolicy;
 
 /**
- * 集群策略工厂
+ * 集群策略工厂.
+ *
  * @author jiawei zhang
  * @since 0.0.1
  */
@@ -45,7 +46,7 @@ public class ClusterPolicyFactory {
     }
 
     /**
-     * 使用 Redis 订阅和发布机制，该方法只能调用一次
+     * 使用 Redis 订阅和发布机制，该方法只能调用一次.
      * @param props 框架配置
      * @return 返回 Redis 集群策略的实例
      */
@@ -57,7 +58,7 @@ public class ClusterPolicyFactory {
     }
 
     /**
-     * 使用 JGroups 组播机制
+     * 使用 JGroups 组播机制.
      * @param props 框架配置
      * @return 返回 JGroups 集群策略的实例
      */
@@ -75,7 +76,7 @@ public class ClusterPolicyFactory {
     }
 
     /**
-     * 加载自定义的集群通知策略
+     * 加载自定义的集群通知策略.
      * @param classname
      * @param props
      * @return

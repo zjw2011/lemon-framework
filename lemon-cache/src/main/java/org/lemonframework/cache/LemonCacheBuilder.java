@@ -21,7 +21,7 @@ public class LemonCacheBuilder {
 
     private CacheChannel channel;
     private CacheProviderHolder holder;
-    //不同的广播策略
+//    不同的广播策略
     private ClusterPolicy policy;
     private AtomicBoolean opened = new AtomicBoolean(false);
     private LemonCacheConfig config;
@@ -96,9 +96,9 @@ public class LemonCacheBuilder {
         //初始化两级的缓存管理
         this.holder = CacheProviderHolder.init(config, (region, key) -> {
             //当一级缓存中的对象失效时，自动清除二级缓存中的数据
-            ClusterCache level2 = this.holder.getClusterCache(region);
-            level2.evict(key);
-            if (!level2.supportTTL()) {
+            ClusterCache clusterCache = this.holder.getClusterCache(region);
+            clusterCache.evict(key);
+            if (!clusterCache.supportTTL()) {
                 //再一次清除一级缓存是为了避免缓存失效时再次从 L2 获取到值
                 this.holder.getLocalCache(region).evict(key);
             }

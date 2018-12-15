@@ -8,9 +8,10 @@ import org.lemonframework.log.Log;
 import org.lemonframework.log.LogFactory;
 
 /**
- * 缓存集群策略接口
+ * 缓存集群策略接口.
  *
- * @author Winter Lau(javayou@gmail.com)
+ * @author jiawei zhang
+ * @since 0.0.1
  */
 public interface ClusterPolicy {
 

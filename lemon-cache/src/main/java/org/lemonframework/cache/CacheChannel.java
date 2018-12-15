@@ -257,7 +257,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
     }
 
     /**
-     * Write data to J2Cache
+     * Write data to LemonCache.
      *
      * @param region:         Cache Region name
      * @param key:            Cache key
@@ -305,7 +305,7 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
     }
 
     /**
-     * Write data to j2cache with expired setting
+     * Write data to localcache with expired setting
      * <p>
      * <strong>注意：强烈不推荐使用带 TTL 的 set 方法，所有的缓存 TTL 都应该预先配置好，避免多个节点的缓存 Region 配置不同步</strong>
      *
@@ -331,12 +331,12 @@ public abstract class CacheChannel implements Closeable, AutoCloseable {
         else {
             try {
                 holder.getLocalCache(region, timeToLiveInSeconds).put(key, (value == null && cacheNullObject) ? newNullObject() : value);
-                ClusterCache level2 = holder.getClusterCache(region);
+                ClusterCache clusterCache = holder.getClusterCache(region);
                 if (config.isSyncTtlToRedis()) {
-                    level2.put(key, (value == null && cacheNullObject) ? newNullObject() : value, timeToLiveInSeconds);
+                    clusterCache.put(key, (value == null && cacheNullObject) ? newNullObject() : value, timeToLiveInSeconds);
                 }
                 else {
-                    level2.put(key, (value == null && cacheNullObject) ? newNullObject() : value);
+                    clusterCache.put(key, (value == null && cacheNullObject) ? newNullObject() : value);
                 }
             } finally {
                 //清除原有的一级缓存的内容

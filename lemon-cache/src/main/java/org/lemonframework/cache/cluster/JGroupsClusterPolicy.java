@@ -21,20 +21,25 @@ import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import net.oschina.j2cache.CacheException;
-import net.oschina.j2cache.CacheProviderHolder;
-import net.oschina.j2cache.Command;
-import org.jgroups.*;
+import org.jgroups.JChannel;
+import org.jgroups.Message;
+import org.jgroups.ReceiverAdapter;
+import org.jgroups.View;
+import org.lemonframework.cache.CacheException;
+import org.lemonframework.cache.CacheProviderHolder;
+import org.lemonframework.cache.Command;
 
 /**
  * 使用 JGroups 组播进行集群内节点通讯
- * @author Winter Lau(javayou@gmail.com)
+ * @author jiawei zhang
+ * @since 0.0.1
  */
 public class JGroupsClusterPolicy extends ReceiverAdapter implements ClusterPolicy {
 
     private final static Logger log = LoggerFactory.getLogger(JGroupsClusterPolicy.class);
 
-    private int LOCAL_COMMAND_ID = Command.genRandomSrc(); //命令源标识，随机生成，每个节点都有唯一标识
+    //命令源标识，随机生成，每个节点都有唯一标识
+    private int LOCAL_COMMAND_ID = Command.genRandomSrc();
 
     private String configXml;
     private JChannel channel;
@@ -42,7 +47,8 @@ public class JGroupsClusterPolicy extends ReceiverAdapter implements ClusterPoli
     private CacheProviderHolder holder;
 
     static {
-        System.setProperty("java.net.preferIPv4Stack", "true"); //Disable IPv6 in JVM
+        //Disable IPv6 in JVM
+        System.setProperty("java.net.preferIPv4Stack", "true");
     }
 
     /**
@@ -52,11 +58,13 @@ public class JGroupsClusterPolicy extends ReceiverAdapter implements ClusterPoli
      */
     public JGroupsClusterPolicy(String name, Properties props) {
         this.name = name;
-        if(this.name == null || this.name.trim().equalsIgnoreCase(""))
-            this.name = "j2cache";
+        if(this.name == null || this.name.trim().equalsIgnoreCase("")) {
+            this.name = "lemoncache";
+        }
         this.configXml = props.getProperty("configXml");
-        if(configXml == null || configXml.trim().length() == 0)
+        if(configXml == null || configXml.trim().length() == 0) {
             this.configXml = "/network.xml";
+        }
     }
 
     @Override
@@ -69,16 +77,18 @@ public class JGroupsClusterPolicy extends ReceiverAdapter implements ClusterPoli
      * @param region 区域名称
      * @param keys   缓存键值
      */
+    @Override
     public void evict(String region, String... keys) {
-        holder.getLevel1Cache(region).evict(keys);
+        holder.getLocalCache(region).evict(keys);
     }
 
     /**
      * 清除本地整个缓存区域
      * @param region 区域名称
      */
+    @Override
     public void clear(String region) {
-        holder.getLevel1Cache(region).clear();
+        holder.getLocalCache(region).clear();
     }
 
     @Override
@@ -88,8 +98,9 @@ public class JGroupsClusterPolicy extends ReceiverAdapter implements ClusterPoli
             long ct = System.currentTimeMillis();
 
             URL xml = getClass().getResource(configXml);
-            if(xml == null)
+            if(xml == null) {
                 xml = getClass().getClassLoader().getParent().getResource(configXml);
+            }
             channel = new JChannel(xml);
             channel.setReceiver(this);
             channel.connect(name);
@@ -111,8 +122,9 @@ public class JGroupsClusterPolicy extends ReceiverAdapter implements ClusterPoli
     @Override
     public void receive(Message msg) {
         //不处理发送给自己的消息
-        if(msg.getSrc().equals(channel.getAddress()))
-            return ;
+        if(msg.getSrc().equals(channel.getAddress())) {
+            return;
+        }
         handleCommand(Command.parse((String)msg.getObject()));
     }
 

@@ -20,8 +20,8 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 import redis.clients.util.Pool;
 
 /**
- * 使用 Redis 的订阅和发布进行集群中的节点通知
- * 该策略器使用 j2cache.properties 中的 redis 配置自行保持两个到 redis 的连接用于发布和订阅消息（并在失败时自动重连）
+ * 使用 Redis 的订阅和发布进行集群中的节点通知.
+ * 该策略器使用 lemon.cache.properties 中的 redis 配置自行保持两个到 redis 的连接用于发布和订阅消息（并在失败时自动重连）
  *
  * @author jiawei zhang
  * @since 0.0.1
@@ -30,7 +30,8 @@ public class RedisPubSubClusterPolicy extends JedisPubSub implements ClusterPoli
 
     private final static Logger log = LoggerFactory.getLogger(RedisPubSubClusterPolicy.class);
 
-    private int LOCAL_COMMAND_ID = Command.genRandomSrc(); //命令源标识，随机生成，每个节点都有唯一标识
+    //命令源标识，随机生成，每个节点都有唯一标识
+    private int LOCAL_COMMAND_ID = Command.genRandomSrc();
 
     private Pool<Jedis> client;
     private String channel;
@@ -56,10 +57,11 @@ public class RedisPubSubClusterPolicy extends JedisPubSub implements ClusterPoli
         if ("sentinel".equalsIgnoreCase(props.getProperty("mode"))) {
             Set<String> hosts = new HashSet();
             hosts.addAll(Arrays.asList(node.split(",")));
-            String masterName = props.getProperty("cluster_name", "j2cache");
+            String masterName = props.getProperty("cluster_name", "lemoncache");
             this.client = new JedisSentinelPool(masterName, hosts, config, timeout, password, database);
         } else {
-            node = node.split(",")[0]; //取第一台主机
+            //取第一台主机
+            node = node.split(",")[0];
             String[] infos = node.split(":");
             String host = infos[0];
             int port = (infos.length > 1) ? Integer.parseInt(infos[1]) : 6379;
@@ -80,17 +82,17 @@ public class RedisPubSubClusterPolicy extends JedisPubSub implements ClusterPoli
      */
     @Override
     public void evict(String region, String... keys) {
-        holder.getLevel1Cache(region).evict(keys);
+        holder.getLocalCache(region).evict(keys);
     }
 
     /**
-     * 清除本地整个缓存区域
+     * 清除本地整个缓存区域.
      *
      * @param region 区域名称
      */
     @Override
     public void clear(String region) {
-        holder.getLevel1Cache(region).clear();
+        holder.getLocalCache(region).clear();
     }
 
     /**
@@ -103,8 +105,8 @@ public class RedisPubSubClusterPolicy extends JedisPubSub implements ClusterPoli
 
         this.publish(Command.join());
 
+        //当 Redis 重启会导致订阅线程断开连接，需要进行重连
         Thread subscribeThread = new Thread(() -> {
-            //当 Redis 重启会导致订阅线程断开连接，需要进行重连
             while (!client.isClosed()) {
                 try (Jedis jedis = client.getResource()) {
                     jedis.subscribe(this, channel);
@@ -112,12 +114,13 @@ public class RedisPubSubClusterPolicy extends JedisPubSub implements ClusterPoli
                     break;
                 } catch (JedisConnectionException e) {
                     log.error("Failed connect to redis, reconnect it.", e);
-                    if (!client.isClosed())
+                    if (!client.isClosed()) {
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException ie) {
                             break;
                         }
+                    }
                 }
             }
         }, "RedisSubscribeThread");
