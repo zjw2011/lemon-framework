@@ -26,6 +26,8 @@
       <module name="lemon-generator" target="1.8" />
       <module name="lemon-generator-sample" target="1.5" />
       <module name="lemon-parent" target="1.8" />
+      <module name="lemon-spring-dependencies" target="1.5" />
+      <module name="lemon-spring-parent" target="1.8" />
       <module name="lemon-uid" target="1.8" />
     </bytecodeTargetLevel>
   </component>

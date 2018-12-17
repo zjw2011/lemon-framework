@@ -27,6 +27,7 @@
         <disruptor.version>3.3.11</disruptor.version>
         <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
         <kafka-clients.version>2.0.1</kafka-clients.version>
         <servlet.version>3.1.0</servlet.version>
         <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
@@ -34,6 +35,9 @@
         <enjoy.version>3.5</enjoy.version>
         <beetl.version>2.9.6</beetl.version>
         <junit.version>4.12</junit.version>
+        <junit5.version>5.3.2</junit5.version>
+        <junit-platform-launcher.version>1.3.2</junit-platform-launcher.version>
+        <mockito.version>2.23.4</mockito.version>
         <assertj-core.version>3.11.1</assertj-core.version>
         <commons-logging.version>1.2</commons-logging.version>
         <tinylog.version>1.3.5</tinylog.version>
@@ -51,13 +55,13 @@
         <fst.version>2.57</fst.version>
         <fastjson.version>1.2.54</fastjson.version>
         <jgroups.version>4.0.15.Final</jgroups.version>
-        <spring.version>5.1.3.RELEASE</spring.version>
         <jackson.version>2.9.7</jackson.version>
         <jetcache.version>2.5.10.1</jetcache.version>
         <snakeyaml.version>1.23</snakeyaml.version>
 
-        <lemon.core.version>0.0.1-SNAPSHOT</lemon.core.version>
-        <lemon.generator.version>0.0.1-SNAPSHOT</lemon.generator.version>
+        <lemon-core.version>0.0.1-SNAPSHOT</lemon-core.version>
+        <lemon-cache.version>0.0.1-SNAPSHOT</lemon-cache.version>
+        <lemon-generator.version>0.0.1-SNAPSHOT</lemon-generator.version>
     </properties>
 
     <dependencyManagement>
@@ -331,36 +335,20 @@
             </dependency>
 
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.lemonframework</groupId>
                 <artifactId>lemon-core</artifactId>
-                <version>${lemon.core.version}</version>
+                <version>${lemon-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.lemonframework</groupId>
                 <artifactId>lemon-generator</artifactId>
-                <version>${lemon.generator.version}</version>
+                <version>${lemon-generator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-core</artifactId>
+                <version>${lemon-cache.version}</version>
             </dependency>
 
             <dependency>
@@ -368,7 +356,32 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+            </dependency>
 
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-launcher</artifactId>
+                <version>${junit-platform-launcher.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.assertj</groupId>
@@ -391,6 +404,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>

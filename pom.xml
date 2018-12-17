@@ -15,6 +15,8 @@
         <module>lemon-generator</module>
         <module>lemon-uid</module>
         <module>lemon-cache</module>
+        <module>lemon-spring-dependencies</module>
+        <module>lemon-spring-parent</module>
     </modules>
 
 
