@@ -17,6 +17,7 @@
         <module>lemon-cache</module>
         <module>lemon-spring-dependencies</module>
         <module>lemon-spring-parent</module>
+        <module>lemon-boot-dependencies</module>
     </modules>
 
 

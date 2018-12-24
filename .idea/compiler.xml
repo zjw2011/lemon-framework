@@ -16,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lemon-bom" target="1.5" />
+      <module name="lemon-boot-dependencies" target="1.5" />
       <module name="lemon-cache" target="1.8" />
       <module name="lemon-core" target="1.8" />
       <module name="lemon-demo-generator" target="1.8" />
