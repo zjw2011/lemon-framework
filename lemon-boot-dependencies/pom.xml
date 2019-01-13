@@ -8,19 +8,157 @@
     <artifactId>lemon-boot-dependencies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>lemon dependencies embed in springboot</description>
+    <description>lemon dependencies embed in springboot2</description>
 
     <properties>
+        <mybatis-generator-core.version>1.3.7</mybatis-generator-core.version>
+
+        <redisson.version>3.10.0</redisson.version>
+
+        <hutool-all.version>4.3.1</hutool-all.version>
+
         <disruptor.version>3.3.11</disruptor.version>
+        <commons-collections4.version>4.2</commons-collections4.version>
+        <commons-collections.version>3.2.2</commons-collections.version>
+
+        <junit.version>4.12</junit.version>
+        <junit5.version>5.3.2</junit5.version>
+        <junit-platform-launcher.version>1.3.2</junit-platform-launcher.version>
+        <mockito.version>2.23.4</mockito.version>
+        <assertj-core.version>3.11.1</assertj-core.version>
+        <easymock.version>4.0.2</easymock.version>
+
+        <lemon-core.version>0.0.1-SNAPSHOT</lemon-core.version>
+        <lemon-cache.version>0.0.1-SNAPSHOT</lemon-cache.version>
+        <lemon-disruptor.version>0.0.1-SNAPSHOT</lemon-disruptor.version>
+        <lemon-generator.version>0.0.1-SNAPSHOT</lemon-generator.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.lmax</groupId>
                 <artifactId>disruptor</artifactId>
                 <version>${disruptor.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collections4.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons-collections.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.lemonframework</groupId>
+                <artifactId>lemon-core</artifactId>
+                <version>${lemon-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework</groupId>
+                <artifactId>lemon-generator</artifactId>
+                <version>${lemon-generator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-core</artifactId>
+                <version>${lemon-cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-anno</artifactId>
+                <version>${lemon-cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-anno-api</artifactId>
+                <version>${lemon-cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-autoconfigure</artifactId>
+                <version>${lemon-cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-redis</artifactId>
+                <version>${lemon-cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-redis-lettuce</artifactId>
+                <version>${lemon-cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework.cache</groupId>
+                <artifactId>lemon-cache-redisson</artifactId>
+                <version>${lemon-cache.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.lemonframework.disruptor</groupId>
+                <artifactId>lemon-disruptor-core</artifactId>
+                <version>${lemon-disruptor.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+                <version>${junit5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-launcher</artifactId>
+                <version>${junit-platform-launcher.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.easymock</groupId>
+                <artifactId>easymock</artifactId>
+                <version>${easymock.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

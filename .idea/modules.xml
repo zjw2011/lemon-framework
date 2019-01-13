@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/lemon-autoconfigure/lemon-autoconfigure.iml" filepath="$PROJECT_DIR$/lemon-autoconfigure/lemon-autoconfigure.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-boot-dependencies/lemon-boot-dependencies.iml" filepath="$PROJECT_DIR$/lemon-boot-dependencies/lemon-boot-dependencies.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-cache/lemon-cache.iml" filepath="$PROJECT_DIR$/lemon-cache/lemon-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/lemon-core/lemon-core.iml" filepath="$PROJECT_DIR$/lemon-core/lemon-core.iml" />

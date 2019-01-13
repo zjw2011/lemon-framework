@@ -18,6 +18,7 @@
         <module>lemon-spring-dependencies</module>
         <module>lemon-spring-parent</module>
         <module>lemon-boot-dependencies</module>
+        <module>lemon-autoconfigure</module>
     </modules>
 
 
