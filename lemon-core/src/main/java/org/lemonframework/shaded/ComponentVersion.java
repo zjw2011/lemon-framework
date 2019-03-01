@@ -7,5 +7,8 @@ package org.lemonframework.shaded;
  * @since 0.0.1
  */
 interface ComponentVersion {
+    /**
+     * patch, 21.0 >=jdk1.6.
+     */
     String GUAVA = "com.google.guava/guava/27.0.1-jre";
 }

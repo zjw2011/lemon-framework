@@ -24,6 +24,7 @@
       <module name="lemon-demo-generator" target="1.8" />
       <module name="lemon-dependencies" target="1.5" />
       <module name="lemon-dependencies-bom" target="1.5" />
+      <module name="lemon-dependencies-old" target="1.5" />
       <module name="lemon-framework" target="1.5" />
       <module name="lemon-framework-bom" target="1.5" />
       <module name="lemon-generator" target="1.8" />

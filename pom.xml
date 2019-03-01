@@ -19,6 +19,7 @@
         <module>lemon-spring-parent</module>
         <module>lemon-boot-dependencies</module>
         <module>lemon-autoconfigure</module>
+        <module>lemon-dependencies-old</module>
     </modules>
 
 
