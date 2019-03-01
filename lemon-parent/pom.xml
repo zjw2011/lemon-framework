@@ -18,6 +18,10 @@
     <name>Lemon Parent</name>
     <description>所有项目的父项目</description>
 
+    <properties>
+        <maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
+    </properties>
+
 
     <dependencyManagement>
 
@@ -138,5 +142,8 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <finalName>${project.artifactId}_${project.version}_${maven.build.timestamp}</finalName>
+    </build>
 
 </project>
