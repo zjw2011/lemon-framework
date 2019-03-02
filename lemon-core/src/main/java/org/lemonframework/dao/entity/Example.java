@@ -154,6 +154,8 @@ public class Example implements Serializable {
 
         private String fieldName;
 
+        private String aliasTableName;
+
         protected GeneratedCriteria() {
             super();
             criteria = new ArrayList<Criterion>();
@@ -253,12 +255,22 @@ public class Example implements Serializable {
         }
 
         public Criteria start(String fieldName) {
-            this.fieldName = fieldName;
+            return this.start(fieldName, null);
+        }
+
+        public Criteria start(String fieldName, String aliasTableName) {
+            if (aliasTableName != null) {
+                this.fieldName = aliasTableName + "." + fieldName;
+            } else {
+                this.fieldName = fieldName;
+            }
+
             return (Criteria) this;
         }
 
         public Criteria end() {
             this.fieldName = null;
+            this.aliasTableName = null;
             return (Criteria) this;
         }
     }

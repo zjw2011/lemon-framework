@@ -18,19 +18,19 @@
     <bytecodeTargetLevel>
       <module name="lemon-autoconfigure" target="1.8" />
       <module name="lemon-bom" target="1.5" />
-      <module name="lemon-boot-dependencies" target="1.5" />
+      <module name="lemon-boot-dependencies" target="1.8" />
       <module name="lemon-cache" target="1.8" />
       <module name="lemon-core" target="1.8" />
       <module name="lemon-demo-generator" target="1.8" />
-      <module name="lemon-dependencies" target="1.5" />
+      <module name="lemon-dependencies" target="1.8" />
       <module name="lemon-dependencies-bom" target="1.5" />
-      <module name="lemon-dependencies-old" target="1.5" />
-      <module name="lemon-framework" target="1.5" />
+      <module name="lemon-dependencies-old" target="1.8" />
+      <module name="lemon-framework" target="1.8" />
       <module name="lemon-framework-bom" target="1.5" />
       <module name="lemon-generator" target="1.8" />
-      <module name="lemon-generator-sample" target="1.5" />
+      <module name="lemon-generator-sample" target="1.8" />
       <module name="lemon-parent" target="1.8" />
-      <module name="lemon-spring-dependencies" target="1.5" />
+      <module name="lemon-spring-dependencies" target="1.8" />
       <module name="lemon-spring-parent" target="1.8" />
       <module name="lemon-uid" target="1.8" />
     </bytecodeTargetLevel>
