@@ -154,8 +154,6 @@ public class Example implements Serializable {
 
         private String fieldName;
 
-        private String aliasTableName;
-
         protected GeneratedCriteria() {
             super();
             criteria = new ArrayList<Criterion>();
@@ -270,7 +268,6 @@ public class Example implements Serializable {
 
         public Criteria end() {
             this.fieldName = null;
-            this.aliasTableName = null;
             return (Criteria) this;
         }
     }

@@ -122,4 +122,12 @@ public class JoinTableHandler implements GeneratorHandler {
 
         return StrUtil.split(cols, ',', true, false);
     }
+
+    public String getAliasSource() {
+        return aliasSource;
+    }
+
+    public void setAliasSource(String aliasSource) {
+        this.aliasSource = aliasSource;
+    }
 }
