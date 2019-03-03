@@ -1,4 +1,4 @@
-package org.lemonframework.dao.entity;
+package ${package_name};
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -10,12 +10,7 @@ import java.util.List;
  * @author jiawei zhang
  * @since 0.0.1
  */
-public class Example implements Serializable {
-    /**
-     * 序列号.
-     */
-    private static final long serialVersionUID = -3708295920344686921L;
-
+public class Example {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -202,63 +197,53 @@ public class Example implements Serializable {
             return (Criteria) this;
         }
 
-        public Criteria andEqualTo(Object value) {
+        public Criteria andEqualTo(Long value) {
             addCriterion(fieldName + " =", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andNotEqualTo(Object value) {
+        public Criteria andNotEqualTo(Long value) {
             addCriterion(fieldName + " <>", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andGreaterThan(Object value) {
+        public Criteria andGreaterThan(Long value) {
             addCriterion(fieldName + " >", value, fieldName);
             return (Criteria) this;
         }
 
-        public Criteria andGreaterThanOrEqualTo(Object value) {
+        public Criteria andGreaterThanOrEqualTo(Long value) {
             addCriterion(fieldName + " >=", value, fieldName);
             return (Criteria) this;
         }
 
-        public Criteria andLessThan(Object value) {
+        public Criteria andLessThan(Long value) {
             addCriterion(fieldName + " <", value, fieldName);
             return (Criteria) this;
         }
 
-        public Criteria andLessThanOrEqualTo(Object value) {
+        public Criteria andLessThanOrEqualTo(Long value) {
             addCriterion(fieldName + " <=", value, fieldName);
             return (Criteria) this;
         }
 
-        public Criteria andIn(List<?> values) {
+        public Criteria andIn(List<Long> values) {
             addCriterion(fieldName + " in", values, fieldName);
             return (Criteria) this;
         }
 
-        public Criteria andNotIn(List<?> values) {
+        public Criteria andNotIn(List<Long> values) {
             addCriterion(fieldName + " not in", values, fieldName);
             return (Criteria) this;
         }
 
-        public Criteria andBetween(Object value1, Object value2) {
+        public Criteria andBetween(Long value1, Long value2) {
             addCriterion(fieldName + " between", value1, value2, fieldName);
             return (Criteria) this;
         }
 
-        public Criteria andNotBetween(Object value1, Object value2) {
+        public Criteria andNotBetween(Long value1, Long value2) {
             addCriterion(fieldName + " not between", value1, value2, fieldName);
-            return (Criteria) this;
-        }
-
-        public Criteria andLike(Object value) {
-            addCriterion(fieldName + " like", value, fieldName);
-            return (Criteria) this;
-        }
-
-        public Criteria andNotLike(Object value) {
-            addCriterion(fieldName + " not like", value, fieldName);
             return (Criteria) this;
         }
 

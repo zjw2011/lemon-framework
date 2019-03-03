@@ -1,0 +1,18 @@
+package ${package_name};
+
+import java.io.Serializable;
+
+/**
+ * Example查询.
+ *
+ * @author jiawei zhang
+ * @since 0.0.1
+ */
+public class ${cls_name}Example extends Example implements Serializable {
+    /**
+     * 序列号.
+     *
+     * @mbg.generated
+     */
+    private static final long serialVersionUID = 1L;
+}

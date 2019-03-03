@@ -27,6 +27,8 @@ public class MainApplication {
         generator.registerHandler(new VersionHandler());
         generator.setClear(false);
         generator.run();
+
+        System.out.println(System.getProperty("user.dir"));
     }
 
 }

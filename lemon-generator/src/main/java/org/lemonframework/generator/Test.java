@@ -1,6 +1,7 @@
 package org.lemonframework.generator;
 
 import java.io.IOException;
+import java.nio.file.Files;
 
 import org.lemonframework.dao.entity.Example;
 
@@ -41,6 +42,7 @@ public class Test {
                 .andLessThan(151L)
                 .end();
         example.or().start("id").andLessThan( 41L).end();
-        System.out.println(example.getOredCriteria());
+        System.out.println(example.getOredCriter);
+
     }
 }
