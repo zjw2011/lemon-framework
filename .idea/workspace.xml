@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859a11e7-c73e-4135-9ace-cc3a867e3ffc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lemon-generator/src/main/resources/template/OverrideExample.vm" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lemon-core/lemon-core.iml" afterPath="$PROJECT_DIR$/lemon-core/lemon-core.iml" />
-      <change beforePath="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/dao/entity/Example.java" afterPath="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/dao/entity/Example.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-demo-generator/src/main/java/org/lemonframework/demo/generator/MainApplication.java" afterPath="$PROJECT_DIR$/lemon-demo-generator/src/main/java/org/lemonframework/demo/generator/MainApplication.java" />
-      <change beforePath="$PROJECT_DIR$/lemon-generator/lemon-generator.iml" afterPath="$PROJECT_DIR$/lemon-generator/lemon-generator.iml" />
-      <change beforePath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java" afterPath="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java" />
+      <change beforePath="$PROJECT_DIR$/lemon-autoconfigure/pom.xml" afterPath="$PROJECT_DIR$/lemon-autoconfigure/pom.xml" />
       <change beforePath="$PROJECT_DIR$/lemon-parent/pom.xml" afterPath="$PROJECT_DIR$/lemon-parent/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,7 +60,7 @@
       <file leaf-file-name="LemonGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="2166">
               <caret line="123" column="21" lean-forward="false" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
               <folding />
             </state>
@@ -93,7 +89,7 @@
       <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/dao/entity/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3040">
+            <state relative-caret-position="2964">
               <caret line="180" column="83" lean-forward="false" selection-start-line="180" selection-start-column="75" selection-end-line="180" selection-end-column="83" />
               <folding>
                 <element signature="e#9059#9060#0" expanded="true" />
@@ -106,7 +102,7 @@
       <file leaf-file-name="PersonExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-generator-sample/src/main/java/org/lemonframework/generator/sample/dao/model/PersonExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2311">
+            <state relative-caret-position="2584">
               <caret line="156" column="45" lean-forward="false" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="45" />
               <folding>
                 <element signature="e#14474#14475#0" expanded="true" />
@@ -119,7 +115,7 @@
       <file leaf-file-name="AppointmentRecordMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lemon-generator-sample/src/main/resources/org/lemonframework/generator/sample/dao/mapper/AppointmentRecordMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="6403">
               <caret line="337" column="42" lean-forward="false" selection-start-line="337" selection-start-column="22" selection-end-line="337" selection-end-column="42" />
               <folding>
                 <marker date="1544595320577" expanded="true" signature="5940:6053" ph="select from appointment_record" />
@@ -138,22 +134,29 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lemon-parent/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="608">
+              <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Paths.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/file/Paths.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-autoconfigure/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
-              <folding>
-                <element signature="e#2673#2674#0" expanded="true" />
-                <element signature="e#2741#2742#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="418">
+              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lemon-generator/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,7 +164,7 @@
       <file leaf-file-name="FileSystem.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/file/FileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
+            <state relative-caret-position="5073">
               <caret line="294" column="32" lean-forward="false" selection-start-line="294" selection-start-column="25" selection-end-line="294" selection-end-column="32" />
               <folding />
             </state>
@@ -171,7 +174,7 @@
       <file leaf-file-name="ZipFileSystem.class" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/zipfs.jar!/com/sun/nio/zipfs/ZipFileSystem.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2337">
+            <state relative-caret-position="2109">
               <caret line="184" column="19" lean-forward="false" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="19" />
               <folding>
                 <marker date="1504666617000" expanded="false" signature="0:104" ph="/.../" />
@@ -356,16 +359,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Path.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/file/Path.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -380,7 +373,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hutool-all</find>
       <find>lemon-core</find>
       <find>logback</find>
       <find>redisson.version</find>
@@ -410,6 +402,7 @@
       <find>%</find>
       <find>getAllCriteria</find>
       <find>andIdGreaterThanOrEqualTo</find>
+      <find>fastjson</find>
     </findStrings>
     <dirStrings>
       <dir>$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1.jar!/org/apache/logging/log4j/core</dir>
@@ -438,7 +431,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/shaded/com/google/common/primitives/UnsignedInts.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/shaded/com/google/common/primitives/UnsignedInteger.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/shaded/com/google/common/primitives/UnsignedBytes.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/shaded/com/google/common/primitives/SignedBytes.java" />
@@ -488,6 +480,7 @@
         <option value="$PROJECT_DIR$/lemon-demo-generator/src/main/java/org/lemonframework/demo/generator/MainApplication.java" />
         <option value="$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java" />
         <option value="$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/dao/entity/Example.java" />
+        <option value="$PROJECT_DIR$/lemon-autoconfigure/pom.xml" />
         <option value="$PROJECT_DIR$/lemon-parent/pom.xml" />
       </list>
     </option>
@@ -512,18 +505,28 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lemon-generator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lemon Parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lemon-generator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="lemon-autoconfigure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lemon-autoconfigure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lemon-autoconfigure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.apache.dubbo:dubbo:2.7.0" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="503" />
     <option name="y" value="90" />
     <option name="width" value="1280" />
@@ -593,13 +596,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-autoconfigure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-autoconfigure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-autoconfigure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-autoconfigure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-boot-dependencies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemon-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lemon-generator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lemon-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -617,6 +655,7 @@
       <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -894,7 +933,8 @@
       <workItem from="1549958838207" duration="2113000" />
       <workItem from="1551407680092" duration="2128000" />
       <workItem from="1551496671407" duration="205000" />
-      <workItem from="1551500697369" duration="20224000" />
+      <workItem from="1551500697369" duration="20778000" />
+      <workItem from="1551623233204" duration="5449000" />
     </task>
     <servers />
   </component>
@@ -931,7 +971,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254527000" />
+    <option name="totallyTimeSpent" value="260530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,40 +983,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.116691284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38109306" sideWeight="0.50651467" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42915308" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75570035" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3677991" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.495114" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.317388" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13835725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980457" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21713442" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.116691284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.090103395" sideWeight="0.49674267" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3677991" sideWeight="0.49348533" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.495114" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16838996" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27687296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124076806" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21713442" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.090103395" sideWeight="0.49674267" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124076806" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1117,22 +1156,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../company/repository/commons-io/commons-io/2.6/commons-io-2.6-sources.jar!/org/apache/commons/io/DirectoryWalker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="361" column="58" lean-forward="false" selection-start-line="361" selection-start-column="48" selection-end-line="361" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/JoinTableHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -1168,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="44" column="85" lean-forward="false" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-550">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="2122" column="38" lean-forward="false" selection-start-line="2122" selection-start-column="29" selection-end-line="2122" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,9 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1520">
           <caret line="79" column="96" lean-forward="false" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,9 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1220,7 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,7 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
           <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1236,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,7 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,25 +1262,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/OverrideExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/OverrideExample.java" />
     <entry file="file://$PROJECT_DIR$/lemon-generator-sample/src/main/java/org/lemonframework/generator/sample/dao/model/TradeOrderRecord1Example.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,7 +1285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="1530" column="23" lean-forward="false" selection-start-line="1530" selection-start-column="23" selection-end-line="1530" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,9 +1303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="11" column="56" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1315,7 +1310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,7 +1317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,7 +1324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-802">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,7 +1347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1363,7 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1371,7 +1361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="93" column="45" lean-forward="false" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1412,7 +1401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,17 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lemon-generator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="13" column="37" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,7 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-319">
           <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,7 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,7 +1456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1489,10 +1463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
-          <folding>
-            <element signature="e#2673#2674#0" expanded="true" />
-            <element signature="e#2741#2742#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1500,13 +1470,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="145" column="22" lean-forward="false" selection-start-line="145" selection-start-column="22" selection-end-line="145" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/file/FileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="5073">
           <caret line="294" column="32" lean-forward="false" selection-start-line="294" selection-start-column="25" selection-end-line="294" selection-end-column="32" />
           <folding />
         </state>
@@ -1514,7 +1483,7 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/zipfs.jar!/com/sun/nio/zipfs/ZipFileSystem.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2337">
+        <state relative-caret-position="2109">
           <caret line="184" column="19" lean-forward="false" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="19" />
           <folding>
             <marker date="1504666617000" expanded="false" signature="0:104" ph="/.../" />
@@ -1700,7 +1669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lemon-generator/src/main/java/org/lemonframework/generator/LemonGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="2166">
           <caret line="123" column="21" lean-forward="false" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
           <folding />
         </state>
@@ -1725,7 +1694,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lemon-generator-sample/src/main/resources/org/lemonframework/generator/sample/dao/mapper/AppointmentRecordMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="6403">
           <caret line="337" column="42" lean-forward="false" selection-start-line="337" selection-start-column="22" selection-end-line="337" selection-end-column="42" />
           <folding>
             <marker date="1544595320577" expanded="true" signature="5940:6053" ph="select from appointment_record" />
@@ -1742,7 +1711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lemon-generator-sample/src/main/java/org/lemonframework/generator/sample/dao/model/PersonExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2311">
+        <state relative-caret-position="2584">
           <caret line="156" column="45" lean-forward="false" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="45" />
           <folding>
             <element signature="e#14474#14475#0" expanded="true" />
@@ -1753,7 +1722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lemon-core/src/main/java/org/lemonframework/dao/entity/Example.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3040">
+        <state relative-caret-position="2964">
           <caret line="180" column="83" lean-forward="false" selection-start-line="180" selection-start-column="75" selection-end-line="180" selection-end-column="83" />
           <folding>
             <element signature="e#9059#9060#0" expanded="true" />
@@ -1762,10 +1731,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-cache/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-autoconfigure/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lemon-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="608">
+          <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
           <folding />
         </state>
       </provider>
