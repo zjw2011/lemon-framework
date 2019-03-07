@@ -6,7 +6,11 @@
 
     <groupId>org.lemonframework</groupId>
     <artifactId>lemon-framework</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>lemon-parent</module>
+    </modules>
 
 
 </project>
