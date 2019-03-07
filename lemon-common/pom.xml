@@ -2,16 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>lemon-parent</artifactId>
+        <groupId>org.lemonframework</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../lemon-parent/pom.xml</relativePath>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.lemonframework</groupId>
-    <artifactId>lemon-framework</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>lemon-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>lemon-parent</module>
-        <module>lemon-common</module>
-    </modules>
+    <name>Lemon Common</name>
+    <description>通用处理库</description>
 
 
 </project>
