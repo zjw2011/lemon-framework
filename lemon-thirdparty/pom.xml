@@ -11,10 +11,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.lemonframework</groupId>
-    <artifactId>lemon-common</artifactId>
+    <artifactId>lemon-thirdparty</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Lemon Common</name>
-    <description>通用处理库，不依赖任何包</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
 
 </project>

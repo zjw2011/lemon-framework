@@ -11,6 +11,7 @@
     <modules>
         <module>lemon-parent</module>
         <module>lemon-common</module>
+        <module>lemon-thirdparty</module>
     </modules>
 
 

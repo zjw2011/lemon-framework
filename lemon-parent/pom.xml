@@ -24,6 +24,7 @@
         <zookeeper.version>3.4.13</zookeeper.version>
         <curator.version>4.0.1</curator.version>
         <fastjson.version>1.2.56</fastjson.version>
+        <commons-io.version>2.6</commons-io.version>
         <maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
     </properties>
 
@@ -107,7 +108,7 @@
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.6</version>
+                <version>${commons-io.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-dbutils</groupId>
@@ -196,6 +197,11 @@
             <!-- 序列化 -->
             <dependency>
                 <groupId>org.lemonframework</groupId>
+                <artifactId>lemon-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework</groupId>
                 <artifactId>lemon-core</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
@@ -261,6 +267,11 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
