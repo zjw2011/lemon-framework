@@ -18,7 +18,7 @@ class VelocityTemplate extends AbstractTemplate implements Serializable {
 
     private String charset;
 
-    public VelocityTemplate(TemplateBuilder builder, TemplateLoader loader) {
+    public VelocityTemplate(TemplateBuilder builder, ResourceLoader loader) {
 
         final org.apache.velocity.app.VelocityEngine ve = new org.apache.velocity.app.VelocityEngine();
 

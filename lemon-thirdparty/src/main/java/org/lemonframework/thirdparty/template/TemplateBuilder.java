@@ -1,7 +1,7 @@
 package org.lemonframework.thirdparty.template;
 
 /**
- * 模板引擎.
+ * 模板builder.
  *
  * @author jiawei zhang
  * @since 0.0.1
@@ -43,10 +43,10 @@ public final class TemplateBuilder {
     }
 
     public Template build() {
-        return this.build(TemplateLoader.CLASSPATH);
+        return this.build(ResourceLoader.CLASSPATH);
     }
 
-    public Template build(TemplateLoader loader) {
+    public Template build(ResourceLoader loader) {
         if (this.template == null) {
             return null;
         }

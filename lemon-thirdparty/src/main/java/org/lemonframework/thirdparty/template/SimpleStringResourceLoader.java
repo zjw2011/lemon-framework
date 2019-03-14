@@ -4,10 +4,10 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 
 import org.apache.commons.collections.ExtendedProperties;
-import org.apache.commons.io.IOUtils;
 import org.apache.velocity.exception.ResourceNotFoundException;
 import org.apache.velocity.runtime.resource.Resource;
 import org.apache.velocity.runtime.resource.loader.ResourceLoader;
+import org.lemonframework.shaded.org.apache.commons.io.IOUtils;
 
 /**
  * {@link ResourceLoader} 的字符串实现形式<br>.

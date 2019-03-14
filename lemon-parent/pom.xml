@@ -250,6 +250,12 @@
                 <artifactId>serialization-string</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.lemonframework.shaded</groupId>
+                <artifactId>shaded-commons-io</artifactId>
+                <version>2.6</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

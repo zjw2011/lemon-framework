@@ -10,7 +10,7 @@ import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Map;
 
-import org.apache.commons.io.FileUtils;
+import org.lemonframework.shaded.org.apache.commons.io.FileUtils;
 
 /**
  * 模板抽象类.
