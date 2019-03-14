@@ -10,6 +10,8 @@ public final class TemplateBuilder {
 
     private static final String DEFAULT_CHARSET = "UTF-8";
 
+    private static final String DEFAULT_PATH = "/";
+
     private String charset;
 
     private String path;
@@ -18,7 +20,7 @@ public final class TemplateBuilder {
 
     private TemplateBuilder() {
         this.charset = DEFAULT_CHARSET;
-        this.path = "/";
+        this.path = DEFAULT_PATH;
     }
 
     public static TemplateBuilder newBuilder() {

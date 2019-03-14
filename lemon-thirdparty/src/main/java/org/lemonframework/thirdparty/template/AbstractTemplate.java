@@ -51,7 +51,7 @@ abstract class AbstractTemplate implements Template {
             try {
                 flushable.flush();
             } catch (Exception e) {
-                // 静默刷出
+                // ignore
             }
         }
     }
@@ -61,7 +61,7 @@ abstract class AbstractTemplate implements Template {
             try {
                 closeable.close();
             } catch (Exception e) {
-                // 静默刷出
+                // ignore
             }
         }
     }
