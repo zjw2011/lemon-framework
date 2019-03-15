@@ -34,12 +34,6 @@
         <dependencies>
 
             <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>27.1-jre</version>
-            </dependency>
-
-            <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>${okhttp3.version}</version>
@@ -287,6 +281,11 @@
                 <groupId>org.lemonframework.shaded</groupId>
                 <artifactId>shaded-commons-io</artifactId>
                 <version>2.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework.shaded</groupId>
+                <artifactId>shaded-guava</artifactId>
+                <version>27.1-jre</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
