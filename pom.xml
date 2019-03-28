@@ -12,6 +12,9 @@
         <module>lemon-parent</module>
         <module>lemon-common</module>
         <module>lemon-thirdparty</module>
+        <module>commons-httpclient</module>
+        <module>commons-template</module>
+        <module>commons-util</module>
     </modules>
 
 

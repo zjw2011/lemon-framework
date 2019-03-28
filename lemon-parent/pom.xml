@@ -34,6 +34,12 @@
         <dependencies>
 
             <dependency>
+                <groupId>com.typesafe</groupId>
+                <artifactId>config</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.apache.rocketmq</groupId>
                 <artifactId>rocketmq-spring-boot-starter</artifactId>
                 <version>2.0.2</version>
@@ -283,6 +289,11 @@
             <dependency>
                 <groupId>org.lemonframework</groupId>
                 <artifactId>lemon-core</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lemonframework</groupId>
+                <artifactId>lemon-thirdparty</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
